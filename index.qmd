@@ -16,6 +16,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/simon-oiry-140289134/
+    - icon: search
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Simon-Oiry  
     - icon: envelope
       text: Email
       href: "mailto:oirysimon@gmail.com"  
