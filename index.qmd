@@ -1,9 +1,11 @@
 ---
-name: "Simon Oiry"
+title: "Simon Oiry"
 about:
-  template: jolla
+  template: trestles
+  image-shape: round
   id: about-block
   image: "img/simonteledetection.jpg"
+  image-width: 23em
   links:
     - icon: twitter
       text: Twitter
@@ -20,7 +22,7 @@ about:
 ---
 :::{#about-block}
 
-# Simon Oiry {style="text-align: center"}
+# About me: {style="text-align: center"}
 I'm a PhD student at the University of Nantes, France. As a drone pilot, I utilize this tool to map the intertidal areas along the Western-European coastlines. 
 
 These areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing. 
