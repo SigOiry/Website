@@ -1,9 +1,8 @@
 ---
 title: "About"
 ---
+This website is currently being developed.
 
-About this site
-
-```{r}
-1 + 1
-```
+::: {.absolute bottom="35%" left="5%"}
+![](img/work_in_progress.gif){height="300"}
+:::

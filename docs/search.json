@@ -4,13 +4,27 @@
     "href": "index.html",
     "title": "Simon Oiry",
     "section": "",
-    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     ResearchGate\n  \n  \n    \n     Email\n  \n\n  \n  \n\nAbout me:\nI’m a PhD student at the University of Nantes, France. As a drone pilot, I utilize this tool to map the intertidal areas along the Western-European coastlines.\nThese areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing.\nTherefore, the objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing."
+    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     ResearchGate\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nI’m a PhD student at the University of Nantes, France. As a drone pilot, I utilize this tool to map the intertidal areas along the Western-European coastlines.\nThese areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing.\nTherefore, the objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This website is currently being developed."
+  },
+  {
+    "objectID": "index.html#where-i-have-worked",
+    "href": "index.html#where-i-have-worked",
+    "title": "Simon Oiry",
+    "section": "Where I have worked:",
+    "text": "Where I have worked:"
+  },
+  {
+    "objectID": "index.html#map-of-places-where-i-worked",
+    "href": "index.html#map-of-places-where-i-worked",
+    "title": "Simon Oiry",
+    "section": "map of places where I worked",
+    "text": "map of places where I worked"
   }
 ]

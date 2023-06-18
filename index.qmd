@@ -25,10 +25,51 @@ about:
 ---
 :::{#about-block}
 
+```{r library}
+#| cache: false
+#| echo: false
+#| warning: false
+library(leaflet)
+library(tidyverse)
+library(sf)
+```
+
+
 # About me: {style="text-align: center"}
 I'm a PhD student at the University of Nantes, France. As a drone pilot, I utilize this tool to map the intertidal areas along the Western-European coastlines. 
 
 These areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing. 
 
 Therefore, the objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing.
+:::
+
+:::{.absolute width="1200"}
+
+## map of places where I worked
+```{r map}
+#| cache: false
+#| echo: false
+#| warning: false
+
+shp<-read_sf("data/Sites_presentation_EN.shp") %>% 
+  mutate(ID=c(1:nrow(.)))
+    
+shp_xy<-data.frame(st_coordinates(st_cast(shp$geometry,"POINT"))) %>% 
+  mutate(ID=c(1:nrow(.)))
+
+df_shp<-shp %>% 
+  dplyr::select(-geometry) %>% 
+  left_join(shp_xy, by="ID") %>% 
+  dplyr::select(-ID)
+
+leaflet(df_shp) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = 50, lat = 43, zoom = 2) %>%
+  addMarkers(~X, ~Y, label = df_shp$Name, popup = df_shp$Descr,clusterOptions = markerClusterOptions()) %>% 
+  addProviderTiles(providers$Esri.NatGeoWorldMap)
+
+
+
+```
+
 :::
