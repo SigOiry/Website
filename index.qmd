@@ -45,7 +45,7 @@ Therefore, the objective of my PhD research is to identify effective methods for
 
 :::{.absolute width="1200"}
 
-## map of places where I worked
+## Map of places where I worked
 ```{r map}
 #| cache: false
 #| echo: false
