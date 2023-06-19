@@ -46,31 +46,43 @@ server <- function(input, output) {
      })
    output$map <- renderLeaflet({   
   
-  temp2 <-temp()
-  
-  meanX<-mean(temp2$X)
-  meanY<-mean(temp2$Y)
-if (nrow(temp2)>1) {
-  lng1=min(temp2$X)
-  lng2=max(temp2$X)
-  lat1=min(temp2$Y)
-  lat2=max(temp2$Y)
-}else{
-  lng1=temp2$X-(temp2$X/100)
-  lng2=temp2$X+(temp2$X/100)
-  lat1=temp2$Y-(temp2$Y/100)
-  lat2=temp2$Y+(temp2$Y/100) 
-}  
-
-
-    leaflet(temp2) %>%
-      addTiles() %>%  # Add default OpenStreetMap map tiles
-      setView(lng = 50, lat = 400 , zoom = 5) %>%
-      flyToBounds(lng1 = lng1, lat1 = lat1, lng2 = lng2, lat2 = lat2, options = list()) %>% 
-      addMarkers(~X, ~Y, label = temp2$Name, popup = temp2$Descr,clusterOptions = markerClusterOptions()) %>% 
-      addProviderTiles(providers$Esri.NatGeoWorldMap)
+  leaflet() %>%
+    addTiles() %>%  # Add default OpenStreetMap map tiles
+    
+    # flyToBounds(lng1 = lng1, lat1 = lat1, lng2 = lng2, lat2 = lat2, options = list()) %>% 
+    # setView(lng = 50, lat = 40 , zoom = 10) %>%
+    # addMarkers(~X, ~Y, label = temp2$Name, popup = temp2$Descr,clusterOptions = markerClusterOptions()) %>% 
+    addProviderTiles(providers$Esri.NatGeoWorldMap)
   
   })  
+   
+   observe({
+     
+     temp2 <-temp()
+     
+     meanX<-mean(temp2$X)
+     meanY<-mean(temp2$Y)
+     if (nrow(temp2)>1) {
+       lng1=min(temp2$X)
+       lng2=max(temp2$X)
+       lat1=min(temp2$Y)
+       lat2=max(temp2$Y)
+     }else{
+       lng1=temp2$X-(temp2$X/100)
+       lng2=temp2$X+(temp2$X/100)
+       lat1=temp2$Y-(temp2$Y/100)
+       lat2=temp2$Y+(temp2$Y/100) 
+     } 
+     leafletProxy("map", data = temp2) %>% 
+       clearShapes() %>%
+       flyToBounds(lng1 = lng1, lat1 = lat1, lng2 = lng2, lat2 = lat2) %>% 
+       addMarkers(~X, ~Y, label = temp2$Name, popup = temp2$Descr,clusterOptions = markerClusterOptions())
+       
+     
+     
+   })
+   
+   
 
 }
 
