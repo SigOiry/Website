@@ -40,7 +40,7 @@ I'm a PhD student at the University of Nantes, France. As a drone pilot, I utili
 
 These areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing. 
 
-Therefore, the objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing.
+Therefore, one objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing.
 :::
 
 :::{.absolute width="1200"}
