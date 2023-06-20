@@ -17,7 +17,7 @@ body, label, input, button, select {
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 200;
 }
-h1, h2, h3, h4 { font-weight: 400; }
+h1, h2, h3, h4 { font-weight: 400; line-height: 150%; }
 
 #controls {
   /* Appearance */
@@ -27,12 +27,22 @@ h1, h2, h3, h4 { font-weight: 400; }
   /* Fade out while not hovering */
   opacity: 0.4;
   zoom: 0.9;
-  transition: opacity 500ms 1s;
+  transition: opacity 10ms 250ms;
 }
+
+#text_box {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  opacity: 0.7;
+  
+
+}
+
 #controls:hover {
   /* Fade in while hovering */
   opacity: 0.95;
-  transition-delay: 0;
+  transition-delay: 1ms;
 }
 
 /* Position and style citation */

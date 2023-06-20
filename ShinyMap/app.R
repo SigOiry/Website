@@ -35,7 +35,7 @@ ui <- bootstrapPage(
   tags$head(includeCSS("styles.css")),
   tags$style(type = "text/css", "html, body {width:100%;height:100%}"), 
   leafletOutput("map", width = "100%", height = "100%"),
-  absolutePanel(id = "controls",top = 10, right = 10,
+  absolutePanel(id = "controls", class = "panel panel-default",top = 10, right = 10,
                 h3("Select a project:"),
                 selectInput("selected_project","",Project, selected = "All"),
                 h3("Select a Goal:"),
@@ -43,14 +43,20 @@ ui <- bootstrapPage(
                 h3("Select an interest:"),
                 selectInput("selected_interest","",Interest, selected = "All"),
                 h3("Select a tool:"),
-                selectInput("selected_tool","",Tool, selected = "All")
-               )
-
+                selectInput("selected_tool","",Tool, selected = "All"),
+                actionButton("buttonReset", "Reset filters")
+               ),
+  absolutePanel(bottom = 10, left = 10, width = "35%",
+                uiOutput("Media")
+                ),
+  uiOutput("textprj")
 )
 
 
-server <- function(input, output) {
-  
+
+
+server <- function(input, output,session) {
+
   
   temp <- reactive({
     
@@ -102,15 +108,15 @@ server <- function(input, output) {
      
      if (input$selected_project != "Office Français de la Biodiversité"){
        if (nrow(temp2)>1) {
-         lng1=min(temp2$X)
-         lng2=max(temp2$X)
-         lat1=min(temp2$Y)
-         lat2=max(temp2$Y)
+         lng1=min(temp2$X)-(min(temp2$X)/80)
+         lng2=max(temp2$X)+(max(temp2$X)/80)
+         lat1=min(temp2$Y)-(min(temp2$Y)/80)
+         lat2=max(temp2$Y)+(max(temp2$Y)/80)
        }else{
-         lng1=temp2$X-(temp2$X/50)
-         lng2=temp2$X+(temp2$X/50)
-         lat1=temp2$Y-(temp2$Y/50)
-         lat2=temp2$Y+(temp2$Y/50) 
+         lng1=temp2$X-(temp2$X/100)
+         lng2=temp2$X+(temp2$X/100)
+         lat1=temp2$Y-(temp2$Y/100)
+         lat2=temp2$Y+(temp2$Y/100) 
        } 
      }else{
        lng1=-5
@@ -127,6 +133,24 @@ server <- function(input, output) {
        
      )
      
+     Project_updated <- gsub(", ",",",temp2$Project) 
+     Project_updated <- c("All",sort(unique(unlist(strsplit(Project_updated,",")))))
+     
+     Description_updated <- gsub(", ",",",temp2$Descr) 
+     Description_updated <- c("All",sort(unique(unlist(strsplit(Description_updated,",")))))
+     
+     Interest_updated <- gsub(", ",",",temp2$Interest) 
+     Interest_updated <- c("All",sort(unique(unlist(strsplit(Interest_updated,",")))))
+     
+     Tool_updated <- gsub(", ",",",temp2$Tool) 
+     Tool_updated <- c("All",sort(unique(unlist(strsplit(Tool_updated,",")))))
+     
+     updateSelectizeInput(session, "selected_project","",Project_updated, selected = input$selected_project)
+     updateSelectizeInput(session, "selected_descr","",Description_updated, selected = input$selected_descr)
+     updateSelectizeInput(session, "selected_interest","",Interest_updated, selected = input$selected_interest)
+     updateSelectizeInput(session, "selected_tool","",Tool_updated, selected = input$selected_tool)
+     
+     
      rendered_map<-leafletProxy("map", data = temp2) %>% 
        clearMarkers() %>%
        clearMarkerClusters() %>% 
@@ -141,10 +165,70 @@ server <- function(input, output) {
      }
      
     rendered_map
+    
+    })
+   
+   output$Media <- renderUI({
      
+     if (input$selected_project == "BiCOME") {
+       tags$video(type = "video/mp4", src = "BiCOME.MP4", controls = TRUE,width="100%", autoplay = TRUE, replay = T)
+     }
    })
    
    
+
+   observeEvent(input$buttonReset, {
+     updateSelectizeInput(session, "selected_project","",Project, selected = "All")
+     updateSelectizeInput(session, "selected_descr","",Description, selected = "All")
+     updateSelectizeInput(session, "selected_interest","",Interest, selected = "All")
+     updateSelectizeInput(session, "selected_tool","",Tool, selected = "All")
+    
+     
+   })
+
+   observeEvent(input$selected_project, {  
+     if (input$selected_project == "BiCOME") {
+     output$textprj <- renderUI({
+      list(
+        absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                      h1(a(href="https://www.bicome.info", "BiCOME"), align = "center"),
+                      h1(""),
+                      h3("    The project is one of three studies that form part of the European Space Agency's ",a(href="https://www.bicome.info/Biodiversity_precursors_en", "Biodiversity+ Precursors"),
+                         " on ",a(href="https://www.eo4diversity.info", "Terrestrial (EO4Diversity),"),
+                         a(href="https://www.eo4diversity.info", "Freshwater (BIOMONDO)"), " and Coastal ecosystems (BiCOME).", align = "justify"),
+                      h1(""),
+                      h3("This project aims to develop and demonstrate that Essential Biodiversity Variables",
+                         a(href="https://www.science.org/doi/10.1126/science.1229931#:~:text=species%20and%20locations.-,Essential%20Biodiversity%20Variables%20in%20Practice,and%20management%20of%20biodiversity%20change.&text=Dozens%20of%20biodiversity%20variables%20were,sensitivity%2C%20feasibility%2C%20and%20relevance.", "(EBVs, Pereira et al., 2013)"),
+                         "relevant for scientific and monitoring applications, can be obtained from state-of-the-art remotely sensed reflectance close to the shoreline,
+                         and that they can be scalable globally. By addressing relevant scientific and societal problems.", align = "justify")
+                      ),
+        absolutePanel(bottom = "5%", left = "88%", width = "10%",
+                      a(href="http://bicome.info", img(src="BiCOME_Logo.png", width = "100%"))
+                      ),
+        absolutePanel(bottom = "9%", left = "75%", width = "10%",
+                      a(href="https://www.esa.int", img(src="ESA_logo.png", width = "100%"))
+                      ),
+        absolutePanel(bottom = "8%", left = "63%", width = "10%",
+                      a(href="https://www.dlr.de/de", img(src="DLR_logo.png", width = "90%"))
+                      ),
+        absolutePanel(bottom = "7%", left = "55%", width = "10%",
+                      a(href="https://isomer.univ-nantes.fr", img(src="UN_Logo.png", width = "50%"))
+                      ),
+        absolutePanel(bottom = "25%", left = "77%", width = "20%",
+                      a(href="https://www.pml.ac.uk", img(src="PML_logo.png", width = "100%"))
+                      )
+        )
+     })
+     }else{
+       if (input$selected_project == "All") {
+         output$textprj <- renderUI({
+           absolutePanel(top = 10, left = 10, width = "35%")
+         })
+       }
+       
+     }
+  })
+
 
 }
 
