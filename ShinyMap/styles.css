@@ -17,7 +17,8 @@ body, label, input, button, select {
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 200;
 }
-h1, h2, h3, h4 { font-weight: 400; line-height: 150%; }
+ h1{ font-size: 2vw; line-height: 150%; }
+ h3{ font-size: 1vw; line-height: 150%; }
 
 #controls {
   /* Appearance */
@@ -35,9 +36,26 @@ h1, h2, h3, h4 { font-weight: 400; line-height: 150%; }
   background-color: white;
   padding: 0 20px 20px 20px;
   opacity: 0.7;
+  font-size: 5vw;
+  line-height: 150%;
   
 
 }
+
+ /*#text_h1 {
+ 
+  
+  font-size: 5vw;
+  line-height: 150%;
+
+}
+
+#text_h3 {
+
+  
+  font-size: 3vw;
+  line-height: 150%;
+} */
 
 #controls:hover {
   /* Fade in while hovering */
