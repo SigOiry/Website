@@ -1,0 +1,11 @@
+name: shinymap
+title:
+username:
+account: oirysimon
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9344841
+bundleId: 7372543
+url: https://oirysimon.shinyapps.io/shinymap/
+when: 1687378618.07199
+lastSyncTime: 1687378618.072

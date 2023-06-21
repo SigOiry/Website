@@ -19,6 +19,7 @@ df_shp<-shp %>%
 
 Project <- gsub(", ",",",df_shp$Project) 
 Project <- c("All",sort(unique(unlist(strsplit(Project,",")))))
+Project<-Project[-which(Project=="NA")]
 
 Description <- gsub(", ",",",df_shp$Descr) 
 Description <- c("All",sort(unique(unlist(strsplit(Description,",")))))
@@ -135,6 +136,8 @@ server <- function(input, output,session) {
      
      Project_updated <- gsub(", ",",",temp2$Project) 
      Project_updated <- c("All",sort(unique(unlist(strsplit(Project_updated,",")))))
+     Project_updated<-Project_updated[which(Project_updated != "NA")]
+     
      
      Description_updated <- gsub(", ",",",temp2$Descr) 
      Description_updated <- c("All",sort(unique(unlist(strsplit(Description_updated,",")))))
@@ -174,7 +177,7 @@ server <- function(input, output,session) {
        tags$video(type = "video/mp4", src = "BiCOME.MP4", controls = TRUE,width="100%", autoplay = TRUE, replay = T)
      }else{
        if (input$selected_project == "CoastOBS") {
-         tags$video(type = "video/mp4", src = "CoastObs.mp4", controls = TRUE,width="100%", autoplay = TRUE, replay = T)
+         tags$video(type = "video/mp4", src = "CoastObs.mp4", controls = TRUE,width="100%", autoplay = TRUE, muted = T)
        }
      }
    })
@@ -208,7 +211,7 @@ server <- function(input, output,session) {
                       # h3("As part as the intertidal study case, one of our goal was to develop an algorithm to discriminate accuratly intertidal green macrophytes. 
                       #    The main limitation of intertidal vegetation mapping is that taxonomicaly different vegatation types can share the same pigment compostion and therefore be difficult to distinguish using the spectral informations retrieved from remote sensing.", align = "justify"),
                       # h3(""),
-                      h3(a(href="https://www.bicome.info", "Know more about this project"))
+                      h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about this project"))
                       ),
         absolutePanel(bottom = "5%", left = "88%", width = "10%",
                       a(href="http://bicome.info", img(src="BiCOME_Logo.png", width = "100%"))
@@ -241,8 +244,8 @@ server <- function(input, output,session) {
                        h3(""),
                        h3("As part of this project, my goal was to map microphytobenthic biofilms over 42 french estuaries of the Altantic coastlines. 
                           Sentinel-2 data from 2018 to 2020 were used and a random forest classifier was app^lied to discriminate microphytobenthos from other kind of intertidal vegetation.
-                          The spatio-temporal variability of biofilm across the 42 estuaries has then being compared to anthropogenic pressures to try to build a bio-indicator."),
-                       h3(a(href="https://www.bicome.info", "Know more about this project"))
+                          The spatio-temporal variability of biofilm across the 42 estuaries has then being compared to anthropogenic pressures to try to build a bio-indicator.", align = "justify"),
+                       h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about this project"))
                       ),
          absolutePanel(bottom = 10, left = 10, width = "35%",
                        img(src="MPB_sampling.jpg", width = "100%")
@@ -258,37 +261,57 @@ server <- function(input, output,session) {
            output$textprj <- renderUI({
              list(
                absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
-                             h1(a(href="https://coastobs.eu", "CoastObs"), align = "center"),
-                             h3("In order to establish the ecological status of transitional water bodies, 
-                          the European Water Framework Directive (WFD) is based on the evaluation of a certain number of biological quality elements, 
-                          as well as physicochemical parameters supporting biology. As phytoplankton monitoring is not considered relevant due to the high turbidity characterizing the large estuaries in mainland France and overseas departments (French Guiana), 
-                          the possibility of using microphytobenthos as a biological indicator of the ecological status of estuaries is being explored as a possible alternative.", align = "justify"),
-                             h3(""),
-                             h3("As part of this project, my goal was to map microphytobenthic biofilms over 42 french estuaries of the Altantic coastlines. 
-                          Sentinel-2 data from 2018 to 2020 were used and a random forest classifier was app^lied to discriminate microphytobenthos from other kind of intertidal vegetation.
-                          The spatio-temporal variability of biofilm across the 42 estuaries has then being compared to anthropogenic pressures to try to build a bio-indicator."),
-                             h3(a(href="https://www.bicome.info", "Know more about this project"))
-               ),
-               absolutePanel(bottom = 10, left = 10, width = "35%",
-                             img(src="MPB_sampling.jpg", width = "100%")
+                             h1(a(href="https://coastobs.eu", "CoastObs"), align = "center"), 
+                             h3("CoastObs uses satellite remote sensing to monitor coastal water environments. ", align = "justify"),
+                             h3("CoastObs products and services include algal blooms, 
+                                chlorophyll-a concentration, turbidity, seagrass per cent coverage, phytoplankton size classes, harmful algae, sediment plumes,
+                                and water surface temperature as well as integration with predictive models for products such as shellfish growth potential.", align = "justify"),
+                             h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about this project"))
                ),
                absolutePanel(bottom = "5%", left = "88%", width = "10%",
-                             a(href="https://www.ofb.gouv.fr", img(src="OFB_logo.png", width = "100%"))
+                             a(href="https://coastobs.eu", img(src="coastobs_logo.png", width = "100%"))
                )
              )
            })
            
          }else{
-         if (input$selected_project == "All") {
-         output$textprj <- renderUI({
-           absolutePanel(top = 10, left = 10, width = "35%")
-         })
+           if (input$selected_project == "PHC NUSANTARA") {
+             output$textprj <- renderUI({
+               list(
+                 absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                               h1(a(href="https://www.campusfrance.org/en/node/2355", "PHC NUSANTARA"), align = "center"), 
+                               h3("The PHC NUSANTARA is a joint initiative between the governments of France and Indonesia,
+                                  aiming to encourage collaboration on research and innovation while strengthening
+                                  connections that will lead to greater collaboration in the future. This program is managed by
+                                  the French Ministry for Europe and Foreign Affairs, the French Ministry of Higher Education
+                                  and Research, and the Indonesian Ministry for Education, Culture, Research and Technology
+                                  (KEMDIKBUDRISTEK).", align = "justify"),
+                               h1("", align = "justify"),
+                               h3("", align = "justify"),
+                               h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about this project"))
+                 ),
+                 absolutePanel(bottom = "5%", left = "88%", width = "10%",
+                               a(href="https://isomer.univ-nantes.fr", img(src="UN_logo.png", width = "50%"))
+                 ),
+                 absolutePanel(bottom = "5%", left = "78%", width = "10%",
+                               a(href="https://lp2m.unhas.ac.id", img(src="Hasanuddin_logo.png", width = "60%"))
+                 ),
+                 absolutePanel(bottom = 10, left = 10, width = "35%",
+                               img(src="Kapaphycus.jpeg", width = "100%")
+                 )
+               )
+             })
+             
+           }else{
+             if (input$selected_project == "All") {
+               output$textprj <- renderUI({
+                 absolutePanel(top = 10, left = 10, width = "35%")
+               })
+             }
+           }
+         }
        }
-       }
- 
-       
-       }
-     }
+    }
   })
 
 
