@@ -48,7 +48,7 @@ ui <- bootstrapPage(
                 selectInput("selected_tool","",Tool, selected = "All"),
                 actionButton("buttonReset", "Reset filters"),
                 h3("Show text, pictures and videos: "),
-                switchInput(inputId = "showOverlay", value = TRUE)
+                switchInput(inputId = "showOverlay", value = TRUE, width ="100%")
                ),
   absolutePanel(bottom = 10, left = 10, width = "35%",
                 uiOutput("Media")
@@ -94,12 +94,12 @@ server <- function(input, output,session) {
    output$map <- renderLeaflet({   
   
   leaflet() %>%
-    addTiles() %>%   # Add default OpenStreetMap map tiles
+    # addTiles() %>%   # Add default OpenStreetMap map tiles
     
     # flyToBounds(lng1 = lng1, lat1 = lat1, lng2 = lng2, lat2 = lat2, options = list()) %>% 
     # setView(lng = 50, lat = 40 , zoom = 10) %>%
     # addMarkers(~X, ~Y, label = temp2$Name, popup = temp2$Descr,clusterOptions = markerClusterOptions()) %>% 
-    addProviderTiles(providers$Esri.WorldImagery)
+    addProviderTiles(providers$Esri.WorldImagery, options = tileOptions(minZoom = 3, maxZoom = 12))
   
   })  
    
@@ -118,10 +118,10 @@ server <- function(input, output,session) {
          lat2=-66
        }else{
          if (nrow(temp2)>1) {
-           lng1=min(temp2$X)-(min(temp2$X)/80)
-           lng2=max(temp2$X)+(max(temp2$X)/80)
-           lat1=min(temp2$Y)-(min(temp2$Y)/80)
-           lat2=max(temp2$Y)+(max(temp2$Y)/80)
+           lng1=min(temp2$X)-(min(temp2$X)/150)
+           lng2=max(temp2$X)+(max(temp2$X)/150)
+           lat1=min(temp2$Y)-(min(temp2$Y)/150)
+           lat2=max(temp2$Y)+(max(temp2$Y)/150)
          }else{
            lng1=temp2$X-(temp2$X/100)
            lng2=temp2$X+(temp2$X/100)
@@ -183,24 +183,6 @@ server <- function(input, output,session) {
     rendered_map
     
     })
-   observe({ 
-     if (input$showOverlay) {
-       output$Media <- renderUI({
-         
-         if (input$selected_project == "BiCOME" & input$showOverlay) {
-           tags$video(type = "video/mp4", src = "BiCOME.MP4", controls = TRUE,width="100%", autoplay = TRUE, replay = T)
-         }else{
-           if (input$selected_project == "CoastOBS" & input$showOverlay) {
-             tags$video(type = "video/mp4", src = "CoastObs.mp4", controls = TRUE,width="100%", autoplay = TRUE, muted = T)
-           }
-         }
-       })
-     }
-   })
-   
-
-   
-   
 
    observeEvent(input$buttonReset, {
      updateSelectizeInput(session, "selected_project","",Project, selected = "All")
@@ -249,6 +231,9 @@ server <- function(input, output,session) {
                         )
           )
        })
+       output$Media<-renderUI({
+         tags$video(type = "video/mp4", src = "BiCOME.mp4", controls = TRUE,width="100%", autoplay = TRUE, muted = T)
+       })
        
        }else{
          if (input$selected_project == "Office Français de la Biodiversité" & input$showOverlay) {
@@ -292,6 +277,9 @@ server <- function(input, output,session) {
                  )
                )
              })
+             output$Media<-renderUI({
+               tags$video(type = "video/mp4", src = "CoastObs.mp4", controls = TRUE,width="100%", autoplay = TRUE, muted = T)
+             })
              
            }else{
              if (input$selected_project == "PHC NUSANTARA" & input$showOverlay) {
@@ -325,14 +313,19 @@ server <- function(input, output,session) {
                   output$textprj <- renderUI({
                    absolutePanel(top = 10, left = 10, width = "35%")
                  })
+                  output$Media <- renderUI({
+                    absolutePanel(top = 10, left = 10, width = "35%")
+                  })
                }
            }
          }
       }
     })
+       
+       
      
      observeEvent(input$selected_descr, {
-       if (input$selected_descr == "Drone survey") {
+       if (input$selected_descr == "Drone survey" & input$showOverlay) {
          output$textprj <- renderUI({
            list(
              absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
@@ -346,32 +339,92 @@ server <- function(input, output,session) {
                               "As a result, I have developed expertise in processing drone data, whether it is RGB or multispectral, using photogrammetry software such as Agisoft Metashape or Pix4D. 
                               I have also had the opportunity to work with Lidar data.", align = "justify"),
                            h1(""),
-                           h3("", align = "justify"),
+                           h3("I have used :"), 
+                           h3("- Micasense MX Dual Camera"),
+                           h3("- Lidar DJI Zenmuse L1"),
+                           h3("- DJI Matrice RTK 200 and 300"),
+                           h3("- DJI Phantom 4 mutlispectral"),
+                           h3("- DJI mavic 3 and Parrot Anafi"),
                            h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my drone surveys"))
              ),
-             absolutePanel(bottom = "1%", left = "1%", width = "35%",
+             absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
                            img(src="AlexSimonOyster.jpeg", width = "100%")
              ),
-             absolutePanel(bottom = "1%", left = "40%", width = "35%",
+             absolutePanel(bottom = "1%", left = "36%", width = "35%",
                            img(src="Drone_title.jpg", width = "100%")
              )
              
            )
          })
          
+         output$Media <- renderUI({
+           absolutePanel(top = 10, left = 10, width = "35%")
+         })
+         
+         
+         
        }else{
-         if (input$selected_project == "All") {
+         if (input$selected_descr == "Teaching" & input$showOverlay) {
            output$textprj <- renderUI({
-             absolutePanel(top = 10, left = 10, width = "35%")
+             list(
+               absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                             h1(a(href="https://sigoiry.github.io/Website/about.html", "Teaching"), align = "center"), 
+                             h3("As a member of the University of Nantes, I have had numerous opportunities to teach courses to undergraduate and master's students. 
+                                In addition to classroom lectures, I have also had the chance to give field-based instruction to students, 
+                                teaching them various sampling methods used in ecology and how to extrapolate these observations using satellite data.", align = "justify"),
+                              h3("This practical experience has been invaluable in helping students understand the real-world applications of ecological 
+                                research and how remote sensing can enhance our understanding of environmental patterns and processes.", align = "justify"),
+                             h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my teaching experiences"))
+               ),
+               absolutePanel(bottom = "5%", left = "88%", width = "10%",
+                             a(href="https://isomer.univ-nantes.fr", img(src="UN_logo.png", width = "50%"))
+               )
+             )
            })
+           output$Media<-renderUI({
+             tags$video(type = "video/mp4", src = "Teaching.mp4", controls = TRUE,width="100%", autoplay = TRUE, muted = T)
+           })
+         }else{
+           if (input$selected_descr == "Vegetation extent assessment" & input$showOverlay) {
+             output$textprj <- renderUI({
+               list(
+                 absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                               h1(a(href="https://sigoiry.github.io/Website/about.html", "Vegetation extent assessment"), align = "center"),
+                               h3("Often, when we conduct drone flights, we also perform measurements on the ground, which later allow us to validate the various 
+                                  algorithms we develop.", align = "justify"),
+                               h3("For this purpose, we have a dGPS (differential Global Positioning System) with positioning accuracy of a few centimeters.
+                                  This GPS enables us to precisely geolocate the data we acquire in the field within the drone images and in the spatial context. 
+                                  The acquired data can include hyperspectral data obtained using an ASD (Analytical Spectral Device), height data (e.g., height of oyster tables)
+                                  , or simply quadrats that help us estimate the percentage of vegetation cover for different types of vegetation.", align = "justify"),
+                               h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my teaching experiences"))
+                 ),
+                 absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                               img(src="LaurentLisboa.jpg", width = "100%")
+                 )
+               )
+             })
+             output$Media <- renderUI({
+               absolutePanel(top = 10, left = 10, width = "35%")
+             })
+           }else{
+             if (input$selected_project == "All") {
+               output$textprj <- renderUI({
+                 absolutePanel(top = 10, left = 10, width = "35%")
+               })
+             }
+           }
+           
          }
        }
-       
-       })
+    })
      
      }else{
        output$textprj <- renderUI({
          absolutePanel(top = 10, left = 10, width = "35%")
+         
+         output$Media <- renderUI({
+           absolutePanel(top = 10, left = 10, width = "35%")
+         })
        })
      }
    })
