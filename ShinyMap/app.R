@@ -304,7 +304,7 @@ server <- function(input, output,session) {
                                  a(href="https://lp2m.unhas.ac.id", img(src="Hasanuddin_logo.png", width = "60%"))
                    ),
                    absolutePanel(bottom = 10, left = 10, width = "35%",
-                                 img(src="Kapaphycus.jpeg", width = "100%")
+                                 img(src="Kapaphycus.png", width = "100%")
                    )
                  )
                })
@@ -417,6 +417,153 @@ server <- function(input, output,session) {
          }
        }
     })
+     
+     observeEvent(input$selected_interest, {
+       if (input$selected_interest == "Ulvophyceae" & input$showOverlay) {
+         output$textprj <- renderUI({
+           list(
+             absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                           h1(a(href="https://sigoiry.github.io/Website/about.html", "Ulvophyceae"), align = "center"),
+                           h3("Ulvophyceae, commonly known as green seaweeds or ulvophytes, are a diverse group of photosynthetic organisms belonging to the phylum Chlorophyta. 
+                              With their characteristic green pigmentation resulting from chlorophyll-a and chlorophyll-b, 
+                              they share a common evolutionary heritage with land plants. Ulvophyceae display a wide range of morphological forms, 
+                              including filamentous, sheet-like, and tubular structures, reflecting their ability to adapt to various ecological niches.", align = "justify"),
+                           h3(""),
+                           h3("Because Ulvophyceae share the same pigment composition has marine magnoliopsida, these to class can be difficult to distinguish using remote sensing.
+                              Furthemore, green algae and seagrass are often mixed together especially in places where green tides can occur."),
+                           h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on green algae"))
+                           ),
+           absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                         img(src="GreenAlgae.png", width = "100%")
+           )
+             
+           ) 
+         })
+         output$Media <- renderUI({
+           
+         })
+         
+       }else{
+         if (input$selected_interest == "Gracilaria vermiculophylla" & input$showOverlay) {
+           output$textprj <- renderUI({
+             list(
+               absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                             h1(a(href="https://sigoiry.github.io/Website/about.html", "Gracilaria vermiculophylla"), align = "center"),
+                             h3("Gracilaria vermiculophylla, commonly known as the Asian seaweed or vermicular seaweed, 
+                                belongs to the family Gracilariaceae. It is characterized by its delicate, 
+                                branching structure and vibrant reddish coloration. Originally native to coastal areas of the Western Pacific, 
+                                including Japan and Korea, this seaweed species has spread rapidly to numerous regions worldwide, 
+                                facilitated by human activities such as shipping and aquaculture.", align = "justify"),
+                             h3(""),
+                             h3("It has gained notoriety as a highly invasive species due to its exceptional adaptability and reproductive capabilities. 
+                                It can tolerate a wide range of environmental conditions.  
+                                These trait enable it to outcompete native species and establish dense populations in invaded areas."),
+                             h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on Gracilaria"))
+               ),
+               absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                             img(src="Gracilaria.png", width = "100%")
+               )
+               
+             ) 
+           })
+           output$Media <- renderUI({
+             
+           })
+           
+         }else{
+           if (input$selected_interest == "Kappaphycus alvarezii" & input$showOverlay) {
+             output$textprj <- renderUI({
+               list(
+                 absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                               h1(a(href="https://sigoiry.github.io/Website/about.html", "Kappaphycus alvarezii"), align = "center"),
+                               h3("Kappaphycus alvarezii, also known as Kappa or Eucheuma seaweed, is cultivated primarily for its carrageenan content. 
+                                  Indonesia stands as a major producer of this algae. The cultivation of Kappaphycus alvarezii involves floating raft systems and vertical 
+                                  longlines in coastal areas. Water quality, nutrient availability, and disease control are carefully managed during cultivation. 
+                                  Indonesia's significant production contributes to the global supply of carrageenan.", align = "justify"),
+                               h3("Cultivating Kappaphycus alvarezii provides a reliable source of this valuable ingredient. 
+                                  The country's expertise in cultivation methods supports the efficient growth of the algae.
+                                  Kappaphycus alvarezii cultivation in Indonesia plays a vital role in meeting industrial demands for carrageenan.", align = "justify"),
+                               h3(""),
+                               h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on Kappaphycus alvarezii"))
+                 ),
+                 absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                               img(src="Kapaphycus.png", width = "100%")
+                 )
+                 
+               ) 
+             })
+             output$Media <- renderUI({
+               
+             })
+             
+           }else{
+             if (input$selected_interest == "Microphytobenthos" & input$showOverlay) {
+               output$textprj <- renderUI({
+                 list(
+                   absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                                 h1(a(href="https://sigoiry.github.io/Website/about.html", "Microphytobenthos"), align = "center"),
+                                 h3("Intertidal microphytobenthos are microscopic photosynthetic organisms found in the upper layers of sediment in intertidal zones. 
+                                    They form dense biofilms on sediment surfaces, playing a vital role in coastal ecosystems. 
+                                    These organisms contribute to primary production and nutrient cycling in the benthic environment. 
+                                    Intertidal microphytobenthos serve as a crucial food source for various organisms, supporting the growth and survival of 
+                                    invertebrates and higher trophic levels.", align = "justify"),
+                                 h3(" Studying their responses to environmental changes helps understand the impacts of human activities and climate change on coastal ecosystems. 
+                                    The interactions of intertidal microphytobenthos with light, nutrients, and temperature are areas of interest in ecological research.", align = "justify"),
+                                 h3(""),
+                                 h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on microphybenthos"))
+                   ),
+                   absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                                 img(src="MPB_sampling.jpg", width = "100%")
+                   )
+                   
+                 ) 
+               })
+               output$Media <- renderUI({
+                 
+               })
+               
+             }else{
+               if (input$selected_interest == "Oyster reefs and Oyster farms" & input$showOverlay) {
+                 output$textprj <- renderUI({
+                   list(
+                     absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                                   h1(a(href="https://sigoiry.github.io/Website/about.html", "Oysters"), align = "center"),
+                                   h3("Oysters, highly valued bivalve mollusks, are widely cultivated through aquaculture practices. 
+                                      Their cultivation in marine and brackish water environments provides both ecological and economic benefits. 
+                                      Oyster farms contribute to the creation of essential habitat for diverse marine organisms, enhancing biodiversity in coastal ecosystems. 
+                                      As filter feeders, oysters improve water quality by efficiently removing nutrients and particulate matter from the surrounding environment.
+                                      Oyster reefs serve as protective nurseries, supporting the growth and survival of various fish and invertebrate species. 
+                                      Moreover, oyster reefs act as natural buffers, reducing coastal erosion and mitigating wave energy. ", align = "justify"),
+                                   h3("Oysters are highly sought-after in the aquaculture industry, providing a valuable source of food and economic revenue. 
+                                      Sustainable management practices are essential to maintain healthy oyster populations and ensure the long-term viability of oyster aquaculture.", align = "justify"),
+                                   h3(""),
+                                   h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on oysters"))
+                     ),
+                     absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                                   img(src="oyster_slide2.jpg", width = "100%")
+                     )
+                     
+                   ) 
+                 })
+                 output$Media <- renderUI({
+                   
+                 })
+                 
+               }else{
+                 if (input$selected_interest == "All") {
+                   output$textprj <- renderUI({
+                     absolutePanel(top = 10, left = 10, width = "35%")
+                   })
+                 }
+               }
+             }
+           }
+           
+         }
+         
+       }
+       
+     })
      
      }else{
        output$textprj <- renderUI({
