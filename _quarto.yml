@@ -8,10 +8,11 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-
+      - href: GeneralMap.qmd
+        text: General Map
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 

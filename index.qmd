@@ -1,5 +1,11 @@
 ---
 title: "Simon Oiry"
+format:
+  html:
+    # page-layout: full
+    grid:
+    #   sidebar-width: 0px
+      body-width: 1500px
 about:
   template: trestles
   image-shape: round
@@ -41,34 +47,39 @@ I'm a PhD student at the University of Nantes, France. As a drone pilot, I utili
 These areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing.
 
 Therefore, one objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing.
+
 :::
 
-::: {.absolute width="1200"}
-## Map of places where I worked
 
-```{r map}
-#| cache: false
-#| echo: false
-#| warning: false
+<!-- ::: {.absolute width="1200"} -->
+<!-- ## Map of places where I worked -->
 
-shp<-read_sf("data/Sites_presentation_EN.shp") %>% 
-  mutate(ID=c(1:nrow(.)))
-    
-shp_xy<-data.frame(st_coordinates(st_cast(shp$geometry,"POINT"))) %>% 
-  mutate(ID=c(1:nrow(.)))
+<!-- ```{r map} -->
+<!-- #| cache: false -->
+<!-- #| echo: false -->
+<!-- #| warning: false -->
 
-df_shp<-shp %>% 
-  dplyr::select(-geometry) %>% 
-  left_join(shp_xy, by="ID") %>% 
-  dplyr::select(-ID)
+<!-- shp<-read_sf("data/Sites_presentation_EN.shp") %>% -->
+<!--   mutate(ID=c(1:nrow(.))) -->
 
-leaflet(df_shp) %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = 50, lat = 43, zoom = 2) %>%
-  addMarkers(~X, ~Y, label = df_shp$Name, popup = df_shp$Descr,clusterOptions = markerClusterOptions()) %>% 
-  addProviderTiles(providers$Esri.NatGeoWorldMap)
+<!-- shp_xy<-data.frame(st_coordinates(st_cast(shp$geometry,"POINT"))) %>% -->
+<!--   mutate(ID=c(1:nrow(.))) -->
+
+<!-- df_shp<-shp %>% -->
+<!--   dplyr::select(-geometry) %>% -->
+<!--   left_join(shp_xy, by="ID") %>% -->
+<!--   dplyr::select(-ID) -->
+
+<!-- leaflet(df_shp) %>% -->
+<!--   addTiles() %>%  # Add default OpenStreetMap map tiles -->
+<!--   setView(lng = 50, lat = 43, zoom = 2) %>% -->
+<!--   addMarkers(~X, ~Y, label = df_shp$Name, popup = df_shp$Descr,clusterOptions = markerClusterOptions()) %>% -->
+<!--   addProviderTiles(providers$Esri.NatGeoWorldMap) -->
 
 
 
-```
-:::
+<!-- ``` -->
+<!-- ::: -->
+
+
+
