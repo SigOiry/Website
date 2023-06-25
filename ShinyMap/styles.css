@@ -19,6 +19,7 @@ body, label, input, button, select {
 }
  h1{ font-size: 2vw; line-height: 150%; }
  h3{ font-size: 1vw; line-height: 150%; }
+ h2{ font-size: 1vw; line-height: 90%; }
 
 #controls {
   /* Appearance */

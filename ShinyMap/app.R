@@ -43,16 +43,16 @@ ui <- bootstrapPage(
   tags$style(type = "text/css", "html, body {width:100%;height:100%}"), 
   leafletOutput("map", width = "100%", height = "100%"),
   absolutePanel(id = "controls", class = "panel panel-default",top = 10, right = 10,
-                h3("Select a project:"),
+                h2("Select a project:"),
                 selectInput("selected_project","",Project, selected = "All"),
-                h3("Select a Goal:"),
+                h2("Select a Goal:"),
                 selectInput("selected_descr","",Description, selected = "All"),
-                h3("Select an interest:"),
+                h2("Select an interest:"),
                 selectInput("selected_interest","",Interest, selected = "All"),
-                h3("Select a tool:"),
+                h2("Select a tool:"),
                 selectInput("selected_tool","",Tool, selected = "All"),
                 actionButton("buttonReset", "Reset filters"),
-                h3("Show text, pictures and videos: "),
+                h2("Show text, pictures and videos: "),
                 switchInput(inputId = "showOverlay", value = TRUE, width ="100%")
                ),
   absolutePanel(bottom = 10, left = 10, width = "35%",
@@ -128,16 +128,23 @@ server <- function(input, output,session) {
            lat1=63
            lat2=-46
          }else{
-           if (nrow(temp2)>1) {
+           if (nrow(temp2)== nrow(df_shp)) {
              lng1=min(temp2$X)-(min(temp2$X)/80)
              lng2=max(temp2$X)+(max(temp2$X)/80)
              lat1=min(temp2$Y)-(min(temp2$Y)/80)
              lat2=max(temp2$Y)+(max(temp2$Y)/80)
            }else{
-             lng1=temp2$X-(temp2$X/100)
-             lng2=temp2$X+(temp2$X/100)
-             lat1=temp2$Y-(temp2$Y/100)
-             lat2=temp2$Y+(temp2$Y/100) 
+             if (nrow(temp2)>1) {
+               lng1=min(temp2$X)-(min(temp2$X)/80)
+               lng2=max(temp2$X)+(max(temp2$X)/80)
+               lat1=min(temp2$Y)-(min(temp2$Y)/80)
+               lat2=max(temp2$Y)+(max(temp2$Y)/80)
+             }else{
+               lng1=temp2$X-(temp2$X/100)
+               lng2=temp2$X+(temp2$X/100)
+               lat1=temp2$Y-(temp2$Y/100)
+               lat2=temp2$Y+(temp2$Y/100) 
+             }
            }
          }
        }
@@ -237,7 +244,7 @@ server <- function(input, output,session) {
           absolutePanel(bottom = "8%", left = "63%", width = "10%",
                         a(target="_blank", target="_blank", href="https://www.dlr.de/de", img(src="DLR_logo.png", width = "90%"))
                         ),
-          absolutePanel(bottom = "8%", left = "55%", width = "10%",
+          absolutePanel(bottom = "7%", left = "55%", width = "10%",
                         a(target="_blank", href="https://isomer.univ-nantes.fr", img(src="UN_Logo.png", width = "50%"))
                         ),
           absolutePanel(bottom = "25%", left = "77%", width = "20%",
