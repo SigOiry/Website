@@ -118,7 +118,7 @@ server <- function(input, output,session) {
      if (input$selected_project != "Office Français de la Biodiversité"){
        if (input$selected_project == "All" & input$selected_descr == "Drone survey" & input$showOverlay){
          lng1=-133
-         lng2=179
+         lng2=158
          lat1=43
          lat2=-66
        }else{
@@ -129,10 +129,10 @@ server <- function(input, output,session) {
            lat2=-46
          }else{
            if (nrow(temp2)== nrow(df_shp)) {
-             lng1=min(temp2$X)-(min(temp2$X)/80)
-             lng2=max(temp2$X)+(max(temp2$X)/80)
-             lat1=min(temp2$Y)-(min(temp2$Y)/80)
-             lat2=max(temp2$Y)+(max(temp2$Y)/80)
+             lng1=-47
+             lng2=168
+             lat1=-64
+             lat2=72
            }else{
              if (nrow(temp2)>1) {
                lng1=min(temp2$X)-(min(temp2$X)/80)
