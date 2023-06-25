@@ -27,9 +27,11 @@ Description <- c("All",sort(unique(unlist(strsplit(Description,",")))))
 
 Interest <- gsub(", ",",",df_shp$Interest) 
 Interest <- c("All",sort(unique(unlist(strsplit(Interest,",")))))
+Interest<-Interest[-which(Interest=="None")]
 
 Tool <- gsub(", ",",",df_shp$Tool) 
 Tool <- c("All",sort(unique(unlist(strsplit(Tool,",")))))
+Tool<-Tool[-which(Tool=="None")]
 
 shp_OFB<-read_sf("data/TWB_OFB.shp")
 
@@ -117,16 +119,23 @@ server <- function(input, output,session) {
          lat1=43
          lat2=-66
        }else{
-         if (nrow(temp2)>1) {
-           lng1=min(temp2$X)-(min(temp2$X)/150)
-           lng2=max(temp2$X)+(max(temp2$X)/150)
-           lat1=min(temp2$Y)-(min(temp2$Y)/150)
-           lat2=max(temp2$Y)+(max(temp2$Y)/150)
+         if (input$selected_project == "All" & input$selected_tool == "Drone" & input$showOverlay){
+           lng1=-133
+           lng2=179
+           lat1=63
+           lat2=-46
          }else{
-           lng1=temp2$X-(temp2$X/100)
-           lng2=temp2$X+(temp2$X/100)
-           lat1=temp2$Y-(temp2$Y/100)
-           lat2=temp2$Y+(temp2$Y/100) 
+           if (nrow(temp2)>1) {
+             lng1=min(temp2$X)-(min(temp2$X)/150)
+             lng2=max(temp2$X)+(max(temp2$X)/150)
+             lat1=min(temp2$Y)-(min(temp2$Y)/150)
+             lat2=max(temp2$Y)+(max(temp2$Y)/150)
+           }else{
+             lng1=temp2$X-(temp2$X/100)
+             lng2=temp2$X+(temp2$X/100)
+             lat1=temp2$Y-(temp2$Y/100)
+             lat2=temp2$Y+(temp2$Y/100) 
+           }
          }
        }
 
@@ -157,9 +166,11 @@ server <- function(input, output,session) {
      
      Interest_updated <- gsub(", ",",",temp2$Interest) 
      Interest_updated <- c("All",sort(unique(unlist(strsplit(Interest_updated,",")))))
+     Interest_updated<-Interest_updated[which(Interest_updated != "None")]
      
      Tool_updated <- gsub(", ",",",temp2$Tool) 
      Tool_updated <- c("All",sort(unique(unlist(strsplit(Tool_updated,",")))))
+     Tool_updated<-Tool_updated[which(Tool_updated != "None")]
      
      updateSelectizeInput(session, "selected_project","",Project_updated, selected = input$selected_project)
      updateSelectizeInput(session, "selected_descr","",Description_updated, selected = input$selected_descr)
@@ -360,9 +371,6 @@ server <- function(input, output,session) {
          output$Media <- renderUI({
            absolutePanel(top = 10, left = 10, width = "35%")
          })
-         
-         
-         
        }else{
          if (input$selected_descr == "Teaching" & input$showOverlay) {
            output$textprj <- renderUI({
@@ -413,10 +421,13 @@ server <- function(input, output,session) {
                })
              }
            }
-           
          }
        }
     })
+     
+     
+     
+     
      
      observeEvent(input$selected_interest, {
        if (input$selected_interest == "Ulvophyceae" & input$showOverlay) {
@@ -550,19 +561,184 @@ server <- function(input, output,session) {
                  })
                  
                }else{
-                 if (input$selected_interest == "All") {
+                 if (input$selected_interest == "Sabellaria alveolata" & input$showOverlay) {
                    output$textprj <- renderUI({
-                     absolutePanel(top = 10, left = 10, width = "35%")
+                     list(
+                       absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                                     h1(a(href="https://sigoiry.github.io/Website/about.html", "Sabellaria alveolata"), align = "center"),
+                                     h3("Sabellaria alveolata, known as the honeycomb worm, forms biogenic reefs with sand and shell fragments. These reefs provide vital habitat in coastal areas. 
+                                        They create a complex structure, offering shelter for diverse marine organisms. Sabellaria alveolata reefs serve as nursery grounds, supporting the growth of various fish and invertebrates. 
+                                        They also play a role in sediment stabilization and reducing coastal erosion. As filter feeders, honeycomb worms improve water quality by filtering plankton and organic particles. 
+                                        The reefs contribute to biodiversity and are valued for their aesthetic and recreational opportunities. 
+                                       ", align = "justify"),
+                                     h3(" Conservation efforts are crucial to protect Sabellaria alveolata populations and preserve these unique reefs. Understanding their ecological 
+                                        significance aids in implementing sustainable management practices for coastal ecosystem health.", align = "justify"),
+                                     h3(""),
+                                     h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on honeycomb reefs"))
+                       ),
+                       absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                                     img(src="Honeycomb_reef.jpg", width = "100%")
+                       )
+                       
+                     ) 
                    })
+                   output$Media <- renderUI({
+                     
+                   })
+                   
+                 }else{
+                   if (input$selected_interest == "Xanthophyceae" & input$showOverlay) {
+                     output$textprj <- renderUI({
+                       list(
+                         absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                                       h1(a(href="https://sigoiry.github.io/Website/about.html", "Xanthophyceae"), align = "center"),
+                                       h3("Xanthophyceae, or yellow-green algae, are diverse organisms found in freshwater and marine habitats. 
+                                          Their distinct yellow-green pigmentation sets them apart. Xanthophyceae contribute to primary production and nutrient cycling through photosynthesis, 
+                                          indicating healthy water quality. They form symbiotic relationships, providing habitats for other organisms and enhancing ecosystem diversity. 
+                                          These algae can adapt to various environmental conditions, thriving in freshwater lakes, ponds, and coastal regions. 
+                                          Their versatility allows them to occupy diverse ecological niches. Xanthophyceae serve as indicators of water quality,
+                                          offering insights into environmental changes.", align = "justify"),
+                                       h3("Studying their diversity and ecological interactions aids in understanding and managing aquatic ecosystems. 
+                                          Conservation efforts should prioritize preserving their habitats and supporting water quality for the continued well-being of Xanthophyceae and overall
+                                          aquatic ecosystem health.", align = "justify"),
+                                       h3(""),
+                                       h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on Vaucheria sp."))
+                         ),
+                         absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                                       img(src="jpg", width = "100%")
+                         )
+                         
+                       ) 
+                     })
+                     output$Media <- renderUI({
+                       
+                     })
+                     
+                   }else{
+                     if (input$selected_interest == "Xanthophyceae" & input$showOverlay) {
+                       output$textprj <- renderUI({
+                         list(
+                           absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                                         h1(a(href="https://sigoiry.github.io/Website/about.html", "Xanthophyceae"), align = "center"),
+                                         h3("Xanthophyceae, or yellow-green algae, are diverse organisms found in freshwater and marine habitats. 
+                                          Their distinct yellow-green pigmentation sets them apart. Xanthophyceae contribute to primary production and nutrient cycling through photosynthesis, 
+                                          indicating healthy water quality. They form symbiotic relationships, providing habitats for other organisms and enhancing ecosystem diversity. 
+                                          These algae can adapt to various environmental conditions, thriving in freshwater lakes, ponds, and coastal regions. 
+                                          Their versatility allows them to occupy diverse ecological niches. Xanthophyceae serve as indicators of water quality,
+                                          offering insights into environmental changes.", align = "justify"),
+                                         h3("Studying their diversity and ecological interactions aids in understanding and managing aquatic ecosystems. 
+                                          Conservation efforts should prioritize preserving their habitats and supporting water quality for the continued well-being of Xanthophyceae and overall
+                                          aquatic ecosystem health.", align = "justify"),
+                                         h3(""),
+                                         h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on Vaucheria sp."))
+                           ),
+                           absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                                         img(src="jpg", width = "100%")
+                           )
+                           
+                         ) 
+                       })
+                       output$Media <- renderUI({
+                         
+                       })
+                       
+                     }else{
+                       if (input$selected_interest == "Zostera noltii" & input$showOverlay) {
+                         output$textprj <- renderUI({
+                           list(
+                             absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                                           h1(a(href="https://sigoiry.github.io/Website/about.html", "Zostera noltii"), align = "center"),
+                                           h3("Intertidal Zostera noltii meadows are vital coastal ecosystems found between land and sea. 
+                                              They provide important nursery habitats for diverse marine organisms.
+                                              These meadows stabilize sediments, reducing erosion and enhancing shoreline protection. 
+                                              Zostera noltii's extensive root systems help anchor sediments, ensuring coastal stability. 
+                                              They contribute to nutrient cycling and water quality improvement. Intertidal Zostera noltii meadows tolerate tidal fluctuations and exposure to air during low tides. 
+                                              Conservation efforts are necessary to protect and preserve these valuable ecosystems.", align = "justify"),
+                                          h3("Understanding their significance aids in implementing sustainable management practices for their long-term survival.", align = "justify"),
+                                          h3(""),
+                                          h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work on seagrass meadows "))
+                             ),
+                             absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                                           img(src="zostera.jpg", width = "100%")
+                             )
+                             
+                           ) 
+                         })
+                         output$Media <- renderUI({
+                           
+                         })
+                         
+                       }else{
+                         if (input$selected_interest == "All") {
+                           output$textprj <- renderUI({
+                             absolutePanel(top = 10, left = 10, width = "35%")
+                           })
+                         }
+                       }
+                     }
+                   }
                  }
                }
              }
            }
-           
          }
-         
        }
-       
+     })
+     
+     observeEvent(input$selected_tool, {
+       if (input$selected_tool == "Drone" & input$showOverlay) {
+         output$textprj <- renderUI({
+           list(
+             absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                           h1(a(href="https://sigoiry.github.io/Website/about.html", "Drone"), align = "center"),
+                           h3("Drone usage in remote sensing has revolutionized data collection. Equipped with sensors and cameras, drones provide cost-effective, high-resolution imagery. 
+                              They access previously challenging areas, expanding remote sensing capabilities. Drones capture aerial imagery, perform surveys, and monitor environmental changes. 
+                              Their agility allows for precise and targeted data acquisition. The collected data aids in mapping, monitoring, and analysis for various applications. 
+                              Drones democratize geospatial data collection, making it accessible and affordable. They transform environmental observation and decision-making processes. 
+                              Drones offer new possibilities for research, conservation, and planning.", align = "justify"),
+                           h3(""),
+                           h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work with drones."))
+                           ),
+             absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
+                           img(src="dronezoom.jpg", width = "100%")
+             )
+             
+           )
+         })
+         
+       }else{
+         if (input$selected_tool == "Satellite" & input$showOverlay) {
+           output$textprj <- renderUI({
+             list(
+               absolutePanel(id="text_box", class = "panel panel-default", top = 10, left = 10, width = "35%",
+                             h1(a(href="https://sigoiry.github.io/Website/about.html", "Satellites"), align = "center"),
+                             h3("Satellite usage in remote sensing has transformed intertidal ecology research. 
+                                Specialized sensors on satellites provide global-scale monitoring of intertidal habitats. 
+                                Satellite imagery captures information on coastal vegetation, tidal dynamics, and sediment distribution. 
+                                Researchers utilize satellite data to assess biodiversity and study the impacts of coastal development and climate change. 
+                                Satellites help map intertidal habitats and track species distribution and migration patterns.
+                                Satellite observations aid in monitoring pollution and human impacts on intertidal areas. 
+                                They inform conservation efforts and guide restoration projects. 
+                                Satellite remote sensing enhances our understanding of the dynamic interactions between land and sea. 
+                                It supports sustainable coastal management practices and the preservation of intertidal ecosystem integrity.", align = "justify"),
+                             h3(""),
+                             h3(a(href="https://sigoiry.github.io/Website/about.html", "Know more about my work with Satellites"))
+               ),
+               absolutePanel(bottom = "1%", left = "8%", width = "25%",
+                             img(src="Sentinel2.png", width = "100%")
+               )
+               
+             )
+           })
+           
+         }else{
+           if (input$selected_tool == "All") {
+             output$textprj <- renderUI({
+               absolutePanel(top = 10, left = 10, width = "35%")
+             })
+           }
+         }
+       }
      })
      
      }else{

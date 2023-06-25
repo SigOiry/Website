@@ -8,6 +8,6 @@ This website is currently being developed.
 :::
 
 
-All the code used to make this website and the siny map can be found on my [GitHub](https://github.com/SigOiry/Website) 
+All the code used to make this website and the shiny map can be found on my [GitHub](https://github.com/SigOiry/Website) 
 
 
