@@ -40,14 +40,19 @@ library(tidyverse)
 library(sf)
 ```
 
-# About me: {style="text-align: center"}
+# Who am I ?: {style="text-align: center"}
 
-I'm a PhD student at the University of Nantes, France. As a drone pilot, I utilize this tool to map the intertidal areas along the Western-European coastlines.
+Welcome to my website! I'm Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from drones and satellites, to investigate these captivating coastal ecosystems.
 
-These areas harbor various types of vegetation, which can exhibit distinct taxonomies but sometimes share similar pigmentary compositions. This similarity in pigment composition among intertidal macrophytes poses a challenge in accurately discriminating them using remote sensing.
+Using a spectroradiometer, I collect hyperspectral data with high spectral resolution, allowing me to capture detailed information about the unique spectral signatures of intertidal macrophytes. This data provides valuable insights into the pigments composition of these vegetation types, enabling me to explore their taxonomic characteristics.
 
-Therefore, one objective of my PhD research is to identify effective methods for distinguishing macrophytes with similar pigment compositions using remote sensing.
+In addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. Drones equipped with multispectral sensors allow me to capture high-resolution data at a local scale, providing a detailed view of the intertidal areas. Furthermore, satellite multispectral data provide a broader perspective, enabling me to investigate macrophyte distributions and changes over larger spatial scales.
 
+By combining these different data sources, I aim to gain a comprehensive understanding of intertidal macrophytes and their ecological dynamics. My research focuses on developing effective methods for analyzing and interpreting hyperspectral and multispectral data to discriminate between macrophyte species with similar pigment compositions.
+
+Through my work, I strive to contribute to the conservation and sustainable management of these critical coastal habitats. By monitoring and mapping the distribution and health of intertidal macrophytes, we can better understand their ecological roles and implement appropriate measures for their preservation.
+
+Collaboration and interdisciplinary exchange are core values in my research journey. I actively engage with scientific communities, attend conferences, and collaborate with experts in remote sensing, marine ecology, and related fields. By working together, we can advance our knowledge and make a significant impact on the understanding and conservation of intertidal macrophytes.
 :::
 
 

@@ -6,10 +6,11 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Home      
       - href: GeneralMap.qmd
         text: General Map
+      - about.qmd
+
 format:
   html:
     theme: sandstone

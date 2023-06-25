@@ -237,7 +237,7 @@ server <- function(input, output,session) {
           absolutePanel(bottom = "8%", left = "63%", width = "10%",
                         a(target="_blank", target="_blank", href="https://www.dlr.de/de", img(src="DLR_logo.png", width = "90%"))
                         ),
-          absolutePanel(bottom = "7%", left = "55%", width = "10%",
+          absolutePanel(bottom = "8%", left = "55%", width = "10%",
                         a(target="_blank", href="https://isomer.univ-nantes.fr", img(src="UN_Logo.png", width = "50%"))
                         ),
           absolutePanel(bottom = "25%", left = "77%", width = "20%",
