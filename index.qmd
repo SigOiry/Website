@@ -29,20 +29,7 @@ about:
       text: Email
       href: "mailto:oirysimon@gmail.com"  
 ---
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 75e498c488574ab830d60ae8383755ad6148d642
 ::: {#about-block}
-<!-- # ```{r library} -->
-<!-- # #| cache: false -->
-<!-- # #| echo: false -->
-<!-- # #| warning: false -->
-<!-- # library(leaflet) -->
-<!-- # library(tidyverse) -->
-<!-- # library(sf) -->
-<!-- # ``` -->
 ::: {.content-visible when-profile="english"}
 # Who am I ? {style="text-align: center"}
 
@@ -69,8 +56,6 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 :::
 :::
 
-<<<<<<< HEAD
-=======
 
 ::: {.grid}
 
@@ -83,7 +68,6 @@ Work in progress
 # Professional experiences
 ::: {.grid}
 ::: {.g-col-1}
-
 :::
 ::: {.g-col-11}
 ## 2022 - 2025 - Nantes Université 
@@ -200,9 +184,7 @@ Work in progress
 :::
 
 :::
->>>>>>> 75e498c488574ab830d60ae8383755ad6148d642
-<!-- ::: {.absolute width="1200"} -->
-<!-- ## Map of places where I worked -->
+
 
 <!-- ```{r map} -->
 <!-- #| cache: false -->
