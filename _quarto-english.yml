@@ -18,11 +18,13 @@ website:
 
 format:
   html:
-    theme: sandstone
+    theme: minty
     css: styles.css
     toc: true
     grid:
       body-width: 1500px
+      margin-width: 0px
+      sidebar-width: 0px
 
 lang: en
 
