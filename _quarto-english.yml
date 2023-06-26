@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: "./docs/en"
+  output-dir: "./docs"
 
 website:
   navbar:
@@ -11,9 +11,9 @@ website:
         text: General Map
       - about.qmd
     right:
-      - href: ../en/index.html
+      - href: ./index.html
         text: English
-      - href: ../fr/index.html
+      - href: ./fr/index.html
         text: Français
 
 format:
@@ -21,6 +21,8 @@ format:
     theme: sandstone
     css: styles.css
     toc: true
+    grid:
+      body-width: 1500px
 
 lang: en
 
