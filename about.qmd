@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+
+::: {.content-visible when-profile="english"}
 This website is currently being developed.
 
 ::: {.absolute bottom="35%" left="5%"}
@@ -9,3 +11,15 @@ This website is currently being developed.
 :::
 
 All the code used to make this website and the shiny map can be found on my [GitHub](https://github.com/SigOiry/Website)
+:::
+
+
+::: {.content-visible when-profile="french"}
+Ce site web est en cours de développement
+
+::: {.absolute bottom="35%" left="5%"}
+![](img/work_in_progress.gif){height="300"}
+:::
+Tous le code utiliser pour créer ce site internet ainsi que la carte est disponible sur mon 
+ [GitHub](https://github.com/SigOiry/Website)
+:::
