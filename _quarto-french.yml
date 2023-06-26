@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: "./docs/fr"
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: A propos de moi      
+      - href: GeneralMap.qmd
+        text: Carte générale
+      - about.qmd
+    right:
+      - href: ../en/index.html
+        text: English
+      - href: ../fr/index.html
+        text: Français
+
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    toc: true
+
+lang: fr
+
+editor: visual
+
