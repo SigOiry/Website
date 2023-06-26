@@ -6,12 +6,14 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Home      
+      - href: GeneralMap.qmd
+        text: General Map
       - about.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 

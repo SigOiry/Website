@@ -1,0 +1,14 @@
+---
+title: "About"
+format:
+  html:
+     page-layout: article
+---
+
+This website is currently being developed.
+
+::: {.absolute bottom="35%" left="5%"}
+![](img/work_in_progress.gif){height="300"}
+:::
+
+All the code used to make this website and the shiny map can be found on my [GitHub](https://github.com/SigOiry/Website)

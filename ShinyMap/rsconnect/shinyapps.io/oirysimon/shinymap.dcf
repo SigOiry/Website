@@ -4,8 +4,8 @@ username:
 account: oirysimon
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 9344841
-bundleId: 7372543
+appId: 9362716
+bundleId: 7386372
 url: https://oirysimon.shinyapps.io/shinymap/
-when: 1687378618.07199
-lastSyncTime: 1687378618.072
+when: 1687727041.63619
+lastSyncTime: 1687727041.6362
