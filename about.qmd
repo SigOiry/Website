@@ -1,8 +1,5 @@
 ---
 title: "About"
-format:
-  html:
-     page-layout: article
 ---
 
 This website is currently being developed.

@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Simon Oiry",
-    "section": "",
-    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     ResearchGate\n  \n  \n    \n     Email\n  \n\n  \n  \n\nWho am I ?:\nWelcome to my website! I’m Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from drones and satellites, to investigate these captivating coastal ecosystems.\nUsing a spectroradiometer, I collect hyperspectral data with high spectral resolution, allowing me to capture detailed information about the unique spectral signatures of intertidal macrophytes. This data provides valuable insights into the pigments composition of these vegetation types, enabling me to explore their taxonomic characteristics.\nIn addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. Drones equipped with multispectral sensors allow me to capture high-resolution data at a local scale, providing a detailed view of the intertidal areas. Furthermore, satellite multispectral data provide a broader perspective, enabling me to investigate macrophyte distributions and changes over larger spatial scales.\nBy combining these different data sources, I aim to gain a comprehensive understanding of intertidal macrophytes and their ecological dynamics. My research focuses on developing effective methods for analyzing and interpreting hyperspectral and multispectral data to discriminate between macrophyte species with similar pigment compositions.\nThrough my work, I strive to contribute to the conservation and sustainable management of these critical coastal habitats. By monitoring and mapping the distribution and health of intertidal macrophytes, we can better understand their ecological roles and implement appropriate measures for their preservation.\nCollaboration and interdisciplinary exchange are core values in my research journey. I actively engage with scientific communities, attend conferences, and collaborate with experts in remote sensing, marine ecology, and related fields. By working together, we can advance our knowledge and make a significant impact on the understanding and conservation of intertidal macrophytes."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,31 +7,10 @@
     "text": "This website is currently being developed.\n\n\n\nAll the code used to make this website and the shiny map can be found on my GitHub"
   },
   {
-    "objectID": "index.html#where-i-have-worked",
-    "href": "index.html#where-i-have-worked",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Simon Oiry",
-    "section": "Where I have worked:",
-    "text": "Where I have worked:"
-  },
-  {
-    "objectID": "index.html#map-of-places-where-i-worked",
-    "href": "index.html#map-of-places-where-i-worked",
-    "title": "Simon Oiry",
-    "section": "Map of places where I worked",
-    "text": "Map of places where I worked"
-  },
-  {
-    "objectID": "ShinyMap/data/TWB_OFB.html",
-    "href": "ShinyMap/data/TWB_OFB.html",
-    "title": "",
     "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n      PROJCRS[“WGS 84 / UTM zone 30N”,BASEGEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],ID[“EPSG”,4326]],CONVERSION[“UTM zone 30N”,METHOD[“Transverse Mercator”,ID[“EPSG”,9807]],PARAMETER[“Latitude of natural origin”,0,ANGLEUNIT[“degree”,0.0174532925199433],ID[“EPSG”,8801]],PARAMETER[“Longitude of natural origin”,-3,ANGLEUNIT[“degree”,0.0174532925199433],ID[“EPSG”,8802]],PARAMETER[“Scale factor at natural origin”,0.9996,SCALEUNIT[“unity”,1],ID[“EPSG”,8805]],PARAMETER[“False easting”,500000,LENGTHUNIT[“metre”,1],ID[“EPSG”,8806]],PARAMETER[“False northing”,0,LENGTHUNIT[“metre”,1],ID[“EPSG”,8807]]],CS[Cartesian,2],AXIS[“(E)”,east,ORDER[1],LENGTHUNIT[“metre”,1]],AXIS[“(N)”,north,ORDER[2],LENGTHUNIT[“metre”,1]],USAGE[SCOPE[“Engineering survey, topographic mapping.”],AREA[“Between 6�W and 0�W, northern hemisphere between equator and 84�N, onshore and offshore. Algeria. Burkina Faso. C�te’ Ivoire (Ivory Coast). Faroe Islands - offshore. France. Ghana. Gibraltar. Ireland - offshore Irish Sea. Mali. Mauritania. Morocco. Spain. United Kingdom (UK).”],BBOX[0,-6,84,0]],ID[“EPSG”,32630]] +proj=utm +zone=30 +datum=WGS84 +units=m +no_defs 3114 32630 EPSG:32630 WGS 84 / UTM zone 30N utm EPSG:7030 false"
-  },
-  {
-    "objectID": "GeneralMap.html",
-    "href": "GeneralMap.html",
-    "title": "",
-    "section": "",
-    "text": "coucou"
+    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     ResearchGate\n  \n  \n    \n     Email\n  \n\n  \n  \n\nWho am I :\nWelcome to my website! I’m Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from drones and satellites, to investigate these captivating coastal ecosystems.\nUsing a spectroradiometer, I collect hyperspectral data with high spectral resolution, allowing me to capture detailed information about the unique spectral signatures of intertidal macrophytes. In addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. Drones equipped with multispectral sensors allow me to capture high-resolution data at a local scale, providing a detailed view of the intertidal areas. Furthermore, satellite multispectral data provide a broader perspective, enabling me to investigate macrophyte distributions and changes over larger spatial scales.\nBy combining these different data sources, I aim to gain a comprehensive understanding of intertidal macrophytes and their ecological dynamics. My research focuses on developing effective methods for analyzing and interpreting hyperspectral and multispectral data to discriminate between macrophyte species with similar pigment compositions.\nThrough my work, I strive to contribute to the conservation and sustainable management of these critical coastal habitats. By monitoring and mapping the distribution and health of intertidal macrophytes, we can better understand their ecological roles and implement appropriate measures for their preservation."
   }
 ]
