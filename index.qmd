@@ -29,7 +29,8 @@ about:
       text: Email
       href: "mailto:oirysimon@gmail.com"  
 ---
-:::{.content-visible when-profile="english"}
+
+
 ::: {#about-block}
 <!-- # ```{r library} -->
 <!-- # #| cache: false -->
@@ -39,7 +40,7 @@ about:
 <!-- # library(tidyverse) -->
 <!-- # library(sf) -->
 <!-- # ``` -->
-
+::: {.content-visible when-profile="english"}
 # Who am I ? {style="text-align: center"}
 
 Welcome to my website! I'm Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from drones and satellites, to investigate these captivating coastal ecosystems.
@@ -51,21 +52,9 @@ By combining these different data sources, I aim to gain a comprehensive underst
 
 Through my work, I strive to contribute to the conservation and sustainable management of these critical coastal habitats. By monitoring and mapping the distribution and health of intertidal macrophytes, we can better understand their ecological roles and implement appropriate measures for their preservation.
 :::
-:::
 
 ::: {.content-visible when-profile="french"}
-::: {#about-block}
-<!-- # ```{r library} -->
-<!-- # #| cache: false -->
-<!-- # #| echo: false -->
-<!-- # #| warning: false -->
-<!-- # library(leaflet) -->
-<!-- # library(tidyverse) -->
-<!-- # library(sf) -->
-<!-- # ``` -->
-
 # Qui suis-je ? {style="text-align: center"}
-
 Bienvenue sur mon site web ! Je suis Simon Oiry, un doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidales. Ma recherche se concentre sur l'utilisation de la télédétection, en particulier des données hyperspectrales issues de spectroradiomètres, ainsi que des données multispectrales provenant de drones et de satellites, pour étudier ces écosystèmes côtiers.
 
 En utilisant un spectroradiomètre, je collecte des données hyperspectrales avec une résolution spectrale élevée, ce qui me permet de capturer des informations détaillées sur les signatures spectrales uniques des macrophytes intertidales.
@@ -76,7 +65,6 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 À travers mon travail, je m'efforce de contribuer à la conservation et à la gestion durable de ces habitats côtiers essentiels. En surveillant et en cartographiant la distribution et la santé des macrophytes intertidales, nous pouvons mieux comprendre leur rôle écologique et mettre en œuvre des mesures appropriées pour leur préservation.
 :::
 :::
-
 
 <!-- ::: {.absolute width="1200"} -->
 <!-- ## Map of places where I worked -->

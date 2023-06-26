@@ -414,7 +414,7 @@ server <- function(input, output,session) {
                                   This GPS enables us to precisely geolocate the data we acquire in the field within the drone images and in the spatial context. 
                                   The acquired data can include hyperspectral data obtained using an ASD (Analytical Spectral Device), height data (e.g., height of oyster tables)
                                   , or simply quadrats that help us estimate the percentage of vegetation cover for different types of vegetation.", align = "justify"),
-                               h3(a(target="_blank", href="https://sigoiry.github.io/Website/about.html", "Know more about my teaching experiences"))
+                               h3(a(target="_blank", href="https://sigoiry.github.io/Website/about.html", "Know more about my validation protocols"))
                  ),
                  absolutePanel(bottom = "1%", left = "0.5%", width = "35%",
                                img(src="LaurentLisboa.jpg", width = "100%")

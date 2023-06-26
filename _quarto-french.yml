@@ -11,9 +11,9 @@ website:
         text: Carte générale
       - about.qmd
     right:
-      - href: ../en/index.html
+      - href: ../index.html
         text: English
-      - href: ../fr/index.html
+      - href: .index.html
         text: Français
 
 format:
