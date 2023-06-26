@@ -7,7 +7,6 @@ format:
       body-width: 1500px
     #   margin-width: 200px
     #   gutter-width: 0px
-
 ---
 
 ```{=html}
