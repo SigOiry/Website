@@ -7,7 +7,6 @@ format:
     grid:
       # margin-width: 500px
       body-width: 1500px
-backgroundcolor: "#c1e2ca"
 about:
   template: solana
   id: about-block
