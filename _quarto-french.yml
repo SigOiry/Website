@@ -23,9 +23,9 @@ website:
         href: https://www.researchgate.net/profile/Simon-Oiry  
       - icon: envelope
         href: "mailto:oirysimon@gmail.com"  
-      - href: ./index.html
+      - href: ../index.html
         text: English
-      - href: ./fr/index.html
+      - href: ./index.html
         text: Français
 backgroundcolor: "#c1e2ca"
 format:
