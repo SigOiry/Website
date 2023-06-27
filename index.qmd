@@ -1,6 +1,6 @@
 ---
 linkcolor: "#b57714"
-fontcolor: black
+color: black
 format:
   html:
     # page-layout: full
@@ -45,7 +45,6 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 
 ::: {.grid}
 ::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #78c2ae;"}
-Work in progress
 
 :::
 
@@ -112,7 +111,6 @@ Work in progress
 # Experiences professionnelles
 ::: {.grid}
 ::: {.g-col-1}
-
 :::
 ::: {.g-col-11}
 ## 2022 - 2025 - Nantes Université 

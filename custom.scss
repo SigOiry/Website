@@ -1,0 +1,87 @@
+/*-- scss:defaults --*/
+
+$body-bg: #F2E4AE;
+$presentation-heading-color: #004b8b;
+$code-color: #61574B;
+$code-block-bg: #DAAF75;
+$code-block-border-color: #000000;
+
+$Simon-light: #E0FFFF;
+$Simon-dark: #DA9C4B;
+$Simon-font:#2B6A6C;
+
+$body-color: $Simon-font;
+
+$code-block-font-size: 500px;
+
+$p: 80px;
+
+$font-size: 40px;
+
+/*-- scss:rules --*/
+
+.reveal .slide-logo {
+  max-height: 50px !important;
+}
+
+.reveal .footer {
+  background-color: $Simon-dark;
+  color: $Simon-font;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  font-size: 0.50em !important;
+  text-align: center !important;
+  bottom: 0px !important; // makes sure there isn't any space below the footer box
+  z-index: -1 !important; // makes sure it is places behind the logo
+}
+
+.reveal .slide-number {
+  color: $link-color;
+}
+
+
+.sectionhead {
+  font-size: 1em;
+  color: $Simon-font;
+  text-align: center;
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  background-color: $body-bg;
+  margin: 1px;
+  padding: 2px 2px 2px 2px;
+  width: 120px;
+  border-left: 10px solid;
+}
+
+.redbox {
+  color: #EC0000;
+  background-color: transparent;
+  margin: 1px;
+  padding: 5px 2px 5px 2px;
+  border: 5px solid;
+}
+
+.greenbox {
+  color: #0EA019;
+  background-color: transparent;
+  margin: 1px;
+  padding: 5px 2px 5px 2px;
+  border: 5px solid;
+}
+
+.blackarrow {
+  color: #000000;
+  background-color: transparent;
+  margin: 1px;
+  padding: 0px 0px 0px 0px;
+  border: 5px solid;
+}
+
+
+.gradient_box {
+  background: radial-gradient(rgba(218,156,75,0.6) 0%,rgba(218,156,75,0.5) 50%,rgba(218,156,75,0.2) 60%,  rgba(242,228,174,0) 70%);
+}
+
+
+
+

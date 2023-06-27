@@ -8,10 +8,11 @@ website:
     logo: img/Website_logo.png
     left:
       - href: index.qmd
-        text: About me      
+        text: "**About me**"   
       - href: GeneralMap.qmd
-        text: General Map
-      - about.qmd
+        text: "**General Map**"
+      - href: about.qmd
+        text: "**About this Website**" 
     right:
       - icon: twitter
         href: https://twitter.com/OirySig
@@ -28,9 +29,11 @@ website:
       - href: ./fr/index.html
         text: Français
 backgroundcolor: "#c1e2ca"
+fontcolor: black
 format:
   html:
-    theme: minty
+    theme: 
+      - minty
     css: styles.css
     toc: true
     grid:
