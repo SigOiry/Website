@@ -1,5 +1,4 @@
 ---
-title: "Simon Oiry"
 linkcolor: "#b57714"
 fontcolor: black
 format:
@@ -10,27 +9,12 @@ format:
       body-width: 1500px
 backgroundcolor: "#c1e2ca"
 about:
-  template: trestles
-  image-shape: round
+  template: solana
   id: about-block
-  image: "img/simonteledetection.jpg"
-  image-width: 23em
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/OirySig
-    - icon: github
-      text: Github
-      href: https://github.com/SigOiry
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/simon-oiry-140289134/
-    - icon: search
-      text: ResearchGate
-      href: https://www.researchgate.net/profile/Simon-Oiry  
-    - icon: envelope
-      text: Email
-      href: "mailto:oirysimon@gmail.com"  
+  image: "img/simonteledetection2.jpg"
+  image-shape: round
+  image-width: 30em
+ 
 ---
 ::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #78c2ae;"}
 ::: {.content-visible when-profile="english"}

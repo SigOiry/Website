@@ -3,7 +3,9 @@ project:
   output-dir: "./docs"
 
 website:
+  favicon: img/Website_logo.png
   navbar:
+    logo: img/Website_logo.png
     left:
       - href: index.qmd
         text: About me      
@@ -11,6 +13,16 @@ website:
         text: General Map
       - about.qmd
     right:
+      - icon: twitter
+        href: https://twitter.com/OirySig
+      - icon: github
+        href: https://github.com/SigOiry
+      - icon: linkedin
+        href: https://www.linkedin.com/in/simon-oiry-140289134/
+      - icon: search
+        href: https://www.researchgate.net/profile/Simon-Oiry  
+      - icon: envelope
+        href: "mailto:oirysimon@gmail.com"  
       - href: ./index.html
         text: English
       - href: ./fr/index.html
