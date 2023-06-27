@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website is currently being developed.\n\n\n\nAll the code used to make this website and the shiny map can be found on my GitHub"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Who am I ?",
+    "section": "",
+    "text": "Welcome to my website! I’m Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from drones and satellites, to investigate these captivating coastal ecosystems.\nUsing a spectroradiometer, I collect hyperspectral data with high spectral resolution, allowing me to capture detailed information about the unique spectral signatures of intertidal macrophytes. In addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. Drones equipped with multispectral sensors allow me to capture high-resolution data at a local scale, providing a detailed view of the intertidal areas. Furthermore, satellite multispectral data provide a broader perspective, enabling me to investigate macrophyte distributions and changes over larger spatial scales.\nBy combining these different data sources, I aim to gain a comprehensive understanding of intertidal macrophytes and their ecological dynamics. My research focuses on developing effective methods for analyzing and interpreting hyperspectral and multispectral data to discriminate between macrophyte species with similar pigment compositions.\nThrough my work, I strive to contribute to the conservation and sustainable management of these critical coastal habitats. By monitoring and mapping the distribution and health of intertidal macrophytes, we can better understand their ecological roles and implement appropriate measures for their preservation."
+  },
+  {
+    "objectID": "index.html#nantes-université",
+    "href": "index.html#nantes-université",
+    "title": "Who am I ?",
+    "section": "2022 - 2025 - Nantes Université",
+    "text": "2022 - 2025 - Nantes Université\n\nPhd in marine ecology\n\nMulti-scale remote sensing characterization of intertidal vegetation changes related to natural and anthropogenic pressures."
+  },
+  {
+    "objectID": "index.html#september-2019---december-2021---nantes-université",
+    "href": "index.html#september-2019---december-2021---nantes-université",
+    "title": "Who am I ?",
+    "section": "September 2019 - December 2021 - Nantes Université",
+    "text": "September 2019 - December 2021 - Nantes Université\n\nStudy engineer\n\nMapping of intertidal zones in the 42 transitional water bodies of France.\nDevelopment of a bioindicator for the quality assessment of transitional water bodies based on microphytobenthos observed by remote sensing on behalf of the French Office for Biodiversity (OFB).\nWriting scientific articles and technical reports.\nCo-supervision and mentoring of Master’s level interns.\nTeaching laboratory sessions: ‘Quantitative Ecology’ and ‘Biostatistics’ in the L3 Environmental Biology program."
+  },
+  {
+    "objectID": "index.html#from-february-to-july-2019---nantes-université",
+    "href": "index.html#from-february-to-july-2019---nantes-université",
+    "title": "Who am I ?",
+    "section": "From February to July 2019 - Nantes Université",
+    "text": "From February to July 2019 - Nantes Université\n\nMaster’s internship\n\nMapping of estuarine microphytobenthos using remote sensing (Sentinel 2) on behalf of the French Office for Biodiversity (OFB).\nDevelopment of a semi-automatic method for mapping the 42 transitional water bodies along the Atlantic and English Channel coasts."
+  },
+  {
+    "objectID": "index.html#from-april-to-june-2018---nantes-université",
+    "href": "index.html#from-april-to-june-2018---nantes-université",
+    "title": "Who am I ?",
+    "section": "From April to June 2018 - Nantes Université",
+    "text": "From April to June 2018 - Nantes Université\n\nMaster’s internship\n\nStudy of seasonal variability of microphytobenthos using high-resolution spatial remote sensing (Pléiades)."
+  },
+  {
+    "objectID": "ShinyMap/data/TWB_OFB.html",
+    "href": "ShinyMap/data/TWB_OFB.html",
+    "title": "",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n      PROJCRS[“WGS 84 / UTM zone 30N”,BASEGEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],ID[“EPSG”,4326]],CONVERSION[“UTM zone 30N”,METHOD[“Transverse Mercator”,ID[“EPSG”,9807]],PARAMETER[“Latitude of natural origin”,0,ANGLEUNIT[“degree”,0.0174532925199433],ID[“EPSG”,8801]],PARAMETER[“Longitude of natural origin”,-3,ANGLEUNIT[“degree”,0.0174532925199433],ID[“EPSG”,8802]],PARAMETER[“Scale factor at natural origin”,0.9996,SCALEUNIT[“unity”,1],ID[“EPSG”,8805]],PARAMETER[“False easting”,500000,LENGTHUNIT[“metre”,1],ID[“EPSG”,8806]],PARAMETER[“False northing”,0,LENGTHUNIT[“metre”,1],ID[“EPSG”,8807]]],CS[Cartesian,2],AXIS[“(E)”,east,ORDER[1],LENGTHUNIT[“metre”,1]],AXIS[“(N)”,north,ORDER[2],LENGTHUNIT[“metre”,1]],USAGE[SCOPE[“Engineering survey, topographic mapping.”],AREA[“Between 6�W and 0�W, northern hemisphere between equator and 84�N, onshore and offshore. Algeria. Burkina Faso. C�te’ Ivoire (Ivory Coast). Faroe Islands - offshore. France. Ghana. Gibraltar. Ireland - offshore Irish Sea. Mali. Mauritania. Morocco. Spain. United Kingdom (UK).”],BBOX[0,-6,84,0]],ID[“EPSG”,32630]] +proj=utm +zone=30 +datum=WGS84 +units=m +no_defs 3114 32630 EPSG:32630 WGS 84 / UTM zone 30N utm EPSG:7030 false"
+  }
+]
