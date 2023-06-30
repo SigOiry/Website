@@ -21,8 +21,8 @@ about:
 
 Welcome to my website! I'm Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of **intertidal macrophytes**. My research focuses on harnessing the power of **remote sensing**, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from **drones and satellites**, to investigate these captivating **coastal ecosystems**.
 
-Using a spectroradiometer, I collect hyperspectral data with high spectral resolution, allowing me to capture detailed information about the unique **spectral signatures** of intertidal macrophytes.
-In addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. Drones equipped with multispectral sensors allow me to capture **high-resolution** data at a local scale, providing a detailed view of the intertidal areas. Furthermore, satellite multispectral data provide a broader perspective, enabling me to investigate **macrophyte distributions** and **changes** over larger spatial scales.
+Using a spectroradiometer, I collect **hyperspectral** data with high spectral resolution, allowing me to capture detailed information about the unique **spectral signatures** of intertidal macrophytes.
+In addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. **Drones** equipped with multispectral sensors allow me to capture **high-resolution data at a local scale**, providing a detailed view of the intertidal areas. Furthermore, **satellite** multispectral data provide a broader perspective, enabling me to investigate macrophyte distributions and changes over **larger spatial scales**.
 
 By combining these different data sources, I aim to gain a comprehensive understanding of intertidal macrophytes and their **ecological dynamics**. My research focuses on developing effective methods for analyzing and interpreting hyperspectral and multispectral data to discriminate between macrophyte species with **similar pigment compositions**.
 
