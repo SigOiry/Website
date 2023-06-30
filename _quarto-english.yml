@@ -28,7 +28,7 @@ website:
         text: English
       - href: ./fr/index.html
         text: Français
-backgroundcolor: "#75B8BF"
+backgroundcolor: "#EDF2C4"
 fontcolor: black
 format:
   html:
