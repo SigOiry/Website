@@ -1,6 +1,6 @@
 ---
 linkcolor: "#b57714"
-color: black
+color: "#2C3359"
 format:
   html:
     # page-layout: full
@@ -15,7 +15,7 @@ about:
   image-width: 30em
  
 ---
-::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #c1e2ca;"}
+::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2EDE4;"}
 ::: {.content-visible when-profile="english"}
 # Who am I ? {style="text-align: center;"}
 
@@ -44,11 +44,11 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 
 
 ::: {.grid}
-::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #c1e2ca;"}
+::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2EDE4;"}
 
 :::
 
-::: {.g-col-7 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #c1e2ca;"}
+::: {.g-col-7 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2EDE4;"}
 ::: {.content-visible when-profile="english"}
 # Professional experiences
 ::: {.grid}
