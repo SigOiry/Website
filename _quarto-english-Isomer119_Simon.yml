@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: "./docs"
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: About me      
+      - href: GeneralMap.qmd
+        text: General Map
+      - about.qmd
+    right:
+      - href: ./index.html
+        text: English
+      - href: ./fr/index.html
+        text: Français
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+    grid:
+      body-width: 1500px
+      margin-width: 0px
+      sidebar-width: 0px
+
+lang: en
+
+editor: visual
+

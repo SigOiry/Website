@@ -1,21 +1,38 @@
 ---
+title: "Simon Oiry"
 linkcolor: "#b57714"
-color: black
+fontcolor: black
 format:
   html:
     # page-layout: full
     grid:
       # margin-width: 500px
       body-width: 1500px
+backgroundcolor: "#c1e2ca"
 about:
-  template: solana
-  id: about-block
-  image: "img/simonteledetection2.jpg"
+  template: trestles
   image-shape: round
-  image-width: 30em
- 
+  id: about-block
+  image: "img/simonteledetection.jpg"
+  image-width: 23em
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/OirySig
+    - icon: github
+      text: Github
+      href: https://github.com/SigOiry
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/simon-oiry-140289134/
+    - icon: search
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Simon-Oiry  
+    - icon: envelope
+      text: Email
+      href: "mailto:oirysimon@gmail.com"  
 ---
-::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #c1e2ca;"}
+::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #78c2ae;"}
 ::: {.content-visible when-profile="english"}
 # Who am I ? {style="text-align: center;"}
 
@@ -44,11 +61,12 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 
 
 ::: {.grid}
-::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #c1e2ca;"}
+::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #78c2ae;"}
+Work in progress
 
 :::
 
-::: {.g-col-7 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #c1e2ca;"}
+::: {.g-col-7 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #78c2ae;"}
 ::: {.content-visible when-profile="english"}
 # Professional experiences
 ::: {.grid}
@@ -111,6 +129,7 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 # Experiences professionnelles
 ::: {.grid}
 ::: {.g-col-1}
+
 :::
 ::: {.g-col-11}
 ## 2022 - 2025 - Nantes Université 
