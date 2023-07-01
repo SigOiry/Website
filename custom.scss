@@ -1,87 +1,204 @@
 /*-- scss:defaults --*/
 
-$body-bg: #F2E4AE;
-$presentation-heading-color: #004b8b;
-$code-color: #61574B;
-$code-block-bg: #DAAF75;
-$code-block-border-color: #000000;
+//
+// Color system
+//
 
-$Simon-light: #E0FFFF;
-$Simon-dark: #DA9C4B;
-$Simon-font:#2B6A6C;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f7f7f9 !default;
+$gray-300: #eceeef !default;
+$gray-400: #ced4da !default;
+$gray-500: #aaa !default;
+$gray-600: #888 !default;
+$gray-700: #5a5a5a !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 
-$body-color: $Simon-font;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #ff7851 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffce67 !default;
+$green:   #56cc9d !default;
+$teal:    #20c997 !default;
+$cyan:    #6cc3d5 !default;
+$orange1: #D96B23 !default;
 
-$code-block-font-size: 500px;
+$primary:       #78c2ad !default;
+$secondary:     #f3969a !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
 
-$p: 80px;
+$min-contrast-ratio:   1.45 !default;
 
-$font-size: 40px;
+// Body
+
+$body-color:                $gray-700 !default;
+$color-contrast-dark:       $body-color !default; // Prefer $body-color over $black inside color-contrast()
+$body-bg:                   #CADAD3 !default; 
+
+// Components
+
+$border-radius:               .4rem !default;
+$border-radius-lg:            .6rem !default;
+$border-radius-sm:            .3rem !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$headings-font-family:        Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$headings-color:              $gray-700 !default;
+
+// Tables
+
+$table-border-color:          rgba(0, 0, 0, .05) !default;
+
+$table-bg-scale:              0 !default;
+
+// Dropdowns
+
+$dropdown-link-hover-color:         $white !default;
+$dropdown-link-hover-bg:            $secondary !default;
+
+// Navbar
+$navbar-hl:                         $orange1 !default;
+$navbar-bg:                         #467373 !default;
+$navbar-dark-color:                 $orange1 !default;
+$navbar-dark-hover-color:           $white !default;
+$navbar-light-color:                $orange1 !default;
+$navbar-light-hover-color:          $orange1 !default;
+$navbar-light-active-color:         $orange1 !default;
+$navbar-light-disabled-color:       $orange1 !default;
+
+// Pagination
+
+$pagination-color:                  $white !default;
+$pagination-bg:                     $primary !default;
+$pagination-border-color:           $primary !default;
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               $secondary !default;
+$pagination-hover-border-color:     $pagination-hover-bg !default;
+$pagination-active-bg:              $secondary !default;
+$pagination-active-border-color:    $pagination-active-bg !default;
+$pagination-disabled-color:         $white !default;
+$pagination-disabled-bg:            #cce8e0 !default;
+$pagination-disabled-border-color:  $pagination-disabled-bg !default;
+
+// Alerts
+
+$alert-color-scale:                 0% !default;
+$alert-bg-scale:                    0 !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .375rem !default;
+$breadcrumb-padding-x:              .75rem !default;
+$breadcrumb-bg:                     $primary !default;
+$breadcrumb-divider-color:          $white !default;
+$breadcrumb-active-color:           $breadcrumb-divider-color !default;
+$breadcrumb-border-radius:          .25rem !default;
+
+
 
 /*-- scss:rules --*/
+ h1{ color: #467373; line-height: 90%; margin: 1%}
+ h2{ color: #467373; line-height: 90%; margin: 1%}
+ h3{ color: #D96B23; font-size: 130%; line-height: 90%; margin: 1%}
 
-.reveal .slide-logo {
-  max-height: 50px !important;
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
 }
 
-.reveal .footer {
-  background-color: $Simon-dark;
-  color: $Simon-font;
-  padding-top: 12px;
-  padding-bottom: 30px;
-  font-size: 0.50em !important;
-  text-align: center !important;
-  bottom: 0px !important; // makes sure there isn't any space below the footer box
-  z-index: -1 !important; // makes sure it is places behind the logo
+// Navbar
+
+.navbar {
+  font-family: $headings-font-family;
 }
 
-.reveal .slide-number {
-  color: $link-color;
+.bg-dark {
+  background-color: $orange1 !important;
 }
 
-
-.sectionhead {
-  font-size: 1em;
-  color: $Simon-font;
-  text-align: center;
-  color: $presentation-heading-color;
-  font-family: $presentation-heading-font;
-  background-color: $body-bg;
-  margin: 1px;
-  padding: 2px 2px 2px 2px;
-  width: 120px;
-  border-left: 10px solid;
+.border-dark {
+  border-color: $secondary !important;
 }
 
-.redbox {
-  color: #EC0000;
-  background-color: transparent;
-  margin: 1px;
-  padding: 5px 2px 5px 2px;
-  border: 5px solid;
+// Buttons
+
+.btn {
+  font-family: $headings-font-family;
 }
 
-.greenbox {
-  color: #0EA019;
-  background-color: transparent;
-  margin: 1px;
-  padding: 5px 2px 5px 2px;
-  border: 5px solid;
+// Forms
+
+legend {
+  font-family: $headings-font-family;
 }
 
-.blackarrow {
-  color: #000000;
-  background-color: transparent;
-  margin: 1px;
-  padding: 0px 0px 0px 0px;
-  border: 5px solid;
+// Navs
+
+.dropdown-menu {
+  font-family: $font-family-sans-serif;
 }
 
+.breadcrumb {
+  a {
+    color: $navbar-dark-color;
+  }
 
-.gradient_box {
-  background: radial-gradient(rgba(218,156,75,0.6) 0%,rgba(218,156,75,0.5) 50%,rgba(218,156,75,0.2) 60%,  rgba(242,228,174,0) 70%);
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
+// Indicators
 
+.alert {
+  a,
+  .alert-link {
+    color: $white;
+  }
 
+  &-light {
 
+    &,
+    a:not(.btn),
+    .alert-link {
+      color: $body-color;
+    }
+  }
+}
+
+.badge {
+  color: $white;
+
+  &.bg-light {
+    color: $gray-700;
+  }
+}
+
+// Containers
+
+.card,
+.list-group-item {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: inherit;
+  }
+}

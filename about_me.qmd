@@ -1,0 +1,197 @@
+---
+color: black
+format:
+  html:
+    grid:
+      body-width: 1500px
+about:
+  template: solana
+  id: about-block
+  image: "img/simonteledetection2.jpg"
+  image-shape: round
+  image-width: 30em
+---
+::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.content-visible when-profile="english"}
+# Who am I ? {style="text-align: center;"}
+
+Welcome to my website! I'm Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of **intertidal macrophytes**. My research focuses on harnessing the power of **remote sensing**, particularly hyperspectral data from a spectroradiometer, as well as multispectral data from **drones and satellites**, to investigate these captivating **coastal ecosystems**.
+
+Using a spectroradiometer, I collect **hyperspectral** data with high spectral resolution, allowing me to capture detailed information about the unique **spectral signatures** of intertidal macrophytes.
+In addition to hyperspectral data, I also leverage the capabilities of drones and satellites to acquire multispectral imagery. **Drones** equipped with multispectral sensors allow me to capture **high-resolution data at a local scale**, providing a detailed view of the intertidal areas. Furthermore, **satellite** multispectral data provide a broader perspective, enabling me to investigate macrophyte distributions and changes over **larger spatial scales**.
+
+By combining these different data sources, I aim to gain a comprehensive understanding of intertidal macrophytes and their **ecological dynamics**. My research focuses on developing effective methods for analyzing and interpreting hyperspectral and multispectral data to discriminate between macrophyte species with **similar pigment compositions**.
+
+Through my work, I strive to contribute to the conservation and sustainable management of these critical coastal habitats. By monitoring and mapping the distribution and health of intertidal macrophytes, we can better understand their **ecological roles** and implement appropriate **measures for their preservation**.
+:::
+
+::: {.content-visible when-profile="french"}
+# Qui suis-je ? {style="text-align: center"}
+Bienvenue sur mon site web ! Je suis Simon Oiry, un doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidales. Ma recherche se concentre sur l'utilisation de la télédétection, en particulier des données hyperspectrales issues de spectroradiomètres, ainsi que des données multispectrales provenant de drones et de satellites, pour étudier ces écosystèmes côtiers.
+
+En utilisant un spectroradiomètre, je collecte des données hyperspectrales avec une résolution spectrale élevée, ce qui me permet de capturer des informations détaillées sur les signatures spectrales uniques des macrophytes intertidales.
+En plus des données hyperspectrales, j'utilise également les capacités des drones et des satellites pour acquérir des images multispectrales. Les drones équipés de capteurs multispectraux me permettent de capturer des données à haute résolution à une échelle locale, offrant ainsi une vue détaillée des zones intertidales. De plus, les données multispectrales des satellites offrent une perspective plus large, me permettant d'étudier les distributions et les variations des macrophytes à des échelles spatiales plus vastes.
+
+En combinant ces différentes sources de données, mon objectif est d'obtenir une compréhension globale des macrophytes intertidales et de leur dynamique écologique. Ma recherche se concentre sur le développement de méthodes efficaces pour analyser et interpréter les données hyperspectrales et multispectrales afin de discriminer les espèces de macrophytes ayant des compositions pigmentaires similaires.
+
+À travers mon travail, je m'efforce de contribuer à la conservation et à la gestion durable de ces habitats côtiers essentiels. En surveillant et en cartographiant la distribution et la santé des macrophytes intertidales, nous pouvons mieux comprendre leur rôle écologique et mettre en œuvre des mesures appropriées pour leur préservation.
+:::
+:::
+
+
+::: {.grid}
+::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+
+:::
+
+::: {.g-col-7 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.content-visible when-profile="english"}
+# Professional experiences
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+## 2022 - 2025 - Nantes Université 
+### Phd in marine ecology
+- Multi-scale remote sensing characterization of intertidal vegetation changes related to natural and anthropogenic pressures.
+
+## September 2019 - December 2021 - Nantes Université
+### Study engineer
+- Mapping of intertidal zones in the 42 transitional water bodies of France.
+
+- Development of a bioindicator for the quality assessment of transitional water bodies based on microphytobenthos observed by remote sensing on behalf of the French Office for Biodiversity (OFB).
+
+- Writing scientific articles and technical reports.
+
+- Co-supervision and mentoring of Master's level interns.
+
+- Teaching laboratory sessions: 'Quantitative Ecology' and 'Biostatistics' in the L3 Environmental Biology program.
+
+## From February to July 2019 - Nantes Université
+### Master's internship
+- Mapping of estuarine microphytobenthos using remote sensing (Sentinel 2) on behalf of the French Office for Biodiversity (OFB).
+
+- Development of a semi-automatic method for mapping the 42 transitional water bodies along the Atlantic and English Channel coasts.
+
+## From April to June 2018 - Nantes Université
+### Master's internship
+- Study of seasonal variability of microphytobenthos using high-resolution spatial remote sensing (Pléiades).
+:::
+:::
+# Scientific contributions
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+### Scientific publications
+- **Oiry, S.**, & Barillé, L. (2021). Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries. Ecological Indicators, 121. https://doi.org/10.1016/j.ecolind.2020.107184
+
+- Davies, B. F. R., Gernez, P., Geraud, A., **Oiry, S.**, Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. Remote Sensing of Environment, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
+
+- Brunier, G., **Oiry, S.**, Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. Remote Sensing 2022, Vol. 14, Page 307, 14(2), 307. https://doi.org/10.3390/RS14020307
+
+- Brunier, G., **Oiry, S.**, Lachaussée, N., Barillé, L., Le Fouest, V., & Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. Remote Sensing, 14(22), 5857. https://doi.org/10.3390/rs14225857
+
+- Haro, S., Jesus, B., **Oiry, S.**, Papaspyrou, S., Lara, M., González, C. J., & Corzo, A. (2022). Microphytobenthos spatio-temporal dynamics across an intertidal gradient using Random Forest classification and Sentinel-2 imagery. Science of The Total Environment, 804, 149983. https://doi.org/10.1016/j.scitotenv.2021.149983
+
+- Zoffoli, M. L., Gernez, P., **Oiry, S.**, Godet, L., Dalloyau, S., Davies, B. F. R., & Barillé, L. (2022). Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation. https://doi.org/10.1002/rse2.319
+
+- Zoffoli, M. L., Gernez, P., Godet, L., Peters, S.,**Oiry, S.**, & Barillé, L. (2021). Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators, 130, 108033. https://doi.org/10.1016/j.ecolind.2021.108033
+
+:::
+:::
+
+:::
+
+::: {.content-visible when-profile="french"}
+# Experiences professionnelles
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+## 2022 - 2025 - Nantes Université 
+### Doctorat en écologie marine
+- Caractérisation par télédétection multi-échelle des changements de la végétation intertidale liés aux pressions naturelles et anthropiques
+
+## Septembre 2019 - Décembre 2021 - Nantes Université
+### Ingénieur d'étude
+- Cartographie des zones intertidales des 42 masses d’eau de transition françaises
+
+- Mise au point d’un bioindicateur de la qualité des masses d’eau de transition basé sur le microphytobenthos observé par télédétection pour le compte de l’Office Français pour la Biodiversité (OFB)
+
+- Rédaction d’articles scientifiques et de rapports techniques
+
+- Co-encadrement et accompagnement de stagiaires de Master 2
+
+- Enseignement en TP : « Ecologie quantitative » et « Biostatistiques » en L3 Biologie de l’environnement
+
+## Février à Juillet 2019 - Nantes Université
+### Stage de Master 2
+- Cartographie du microphytobenthos estuarien par télédétection (Sentinel 2) pour le compte de l’Office Français pour la Biodiversité (OFB)
+
+- Création d’une méthode semi-automatique de cartographie des 42 masses d’eau de transition de la façade Atlantique et de la Manche.
+
+## Avril à juin 2018 - Nantes Université
+### Stage de Master 1
+- Etude de la variabilité saisonnière du microphytobenthos par télédétection à haute résolution spatiale (Pléiades)
+:::
+:::
+# Contributions scientifiques
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+### Publications scientifiques
+- Oiry, S., & Barillé, L. (2021). Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries. Ecological Indicators, 121. https://doi.org/10.1016/j.ecolind.2020.107184
+
+- Davies, B. F. R., Gernez, P., Geraud, A., Oiry, S., Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. Remote Sensing of Environment, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
+
+- Brunier, G., Oiry, S., Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. Remote Sensing 2022, Vol. 14, Page 307, 14(2), 307. https://doi.org/10.3390/RS14020307
+
+- Brunier, G., Oiry, S., Lachaussée, N., Barillé, L., Le Fouest, V., & Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. Remote Sensing, 14(22), 5857. https://doi.org/10.3390/rs14225857
+
+- Haro, S., Jesus, B., Oiry, S., Papaspyrou, S., Lara, M., González, C. J., & Corzo, A. (2022). Microphytobenthos spatio-temporal dynamics across an intertidal gradient using Random Forest classification and Sentinel-2 imagery. Science of The Total Environment, 804, 149983. https://doi.org/10.1016/j.scitotenv.2021.149983
+
+- Zoffoli, M. L., Gernez, P., Oiry, S., Godet, L., Dalloyau, S., Davies, B. F. R., & Barillé, L. (2022). Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation. https://doi.org/10.1002/rse2.319
+
+- Zoffoli, M. L., Gernez, P., Godet, L., Peters, S., Oiry, S., & Barillé, L. (2021). Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators, 130, 108033. https://doi.org/10.1016/j.ecolind.2021.108033
+:::
+:::
+
+:::
+
+
+:::
+
+:::
+
+
+<!-- ```{r map} -->
+<!-- #| cache: false -->
+<!-- #| echo: false -->
+<!-- #| warning: false -->
+
+<!-- shp<-read_sf("data/Sites_presentation_EN.shp") %>% -->
+<!--   mutate(ID=c(1:nrow(.))) -->
+
+<!-- shp_xy<-data.frame(st_coordinates(st_cast(shp$geometry,"POINT"))) %>% -->
+<!--   mutate(ID=c(1:nrow(.))) -->
+
+<!-- df_shp<-shp %>% -->
+<!--   dplyr::select(-geometry) %>% -->
+<!--   left_join(shp_xy, by="ID") %>% -->
+<!--   dplyr::select(-ID) -->
+
+<!-- leaflet(df_shp) %>% -->
+<!--   addTiles() %>%  # Add default OpenStreetMap map tiles -->
+<!--   setView(lng = 50, lat = 43, zoom = 2) %>% -->
+<!--   addMarkers(~X, ~Y, label = df_shp$Name, popup = df_shp$Descr,clusterOptions = markerClusterOptions()) %>% -->
+<!--   addProviderTiles(providers$Esri.NatGeoWorldMap) -->
+
+
+
+<!-- ``` -->
+<!-- ::: -->
+
+
+

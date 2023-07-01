@@ -8,11 +8,13 @@ website:
     logo: img/Website_logo.png
     left:
       - href: index.qmd
-        text: "**A propos de moi**"      
+        text: "**Home**"   
       - href: GeneralMap.qmd
-        text: "**Carte générale**"
+        text: "**General Map**"
+      - href: about_me.qmd
+        text: "**About me**"
       - href: about.qmd
-        text: "**A propos de ce site web**"
+        text: "**About this Website**" 
     right:
       - icon: twitter
         href: https://twitter.com/OirySig

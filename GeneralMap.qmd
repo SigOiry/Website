@@ -1,13 +1,8 @@
 ---
-backgroundcolor: "#c1e2ca"
 format:
   html:
-    # page-layout: full
     grid:
-    #   sidebar-width: 0px
       body-width: 1500px
-    #   margin-width: 200px
-    #   gutter-width: 0px
 ---
 
 ```{=html}
