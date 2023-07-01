@@ -10,7 +10,7 @@ website:
       - href: index.qmd
         text: "**Accueil**"   
       - href: GeneralMap.qmd
-        text: "**Carte de mes Projects**"
+        text: "**Carte de mes Projets**"
       - href: about_me.qmd
         text: "**A propos de moi**"
       - href: about.qmd
