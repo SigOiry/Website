@@ -8,13 +8,13 @@ website:
     logo: img/Website_logo.png
     left:
       - href: index.qmd
-        text: "**Home**"   
+        text: "**Accueil**"   
       - href: GeneralMap.qmd
-        text: "**General Map**"
+        text: "**Carte de mes Projects**"
       - href: about_me.qmd
-        text: "**About me**"
+        text: "**A propos de moi**"
       - href: about.qmd
-        text: "**About this Website**" 
+        text: "**A propos de ce site web**" 
     right:
       - icon: twitter
         href: https://twitter.com/OirySig
@@ -30,13 +30,10 @@ website:
         text: English
       - href: ./index.html
         text: Français
-backgroundcolor: "#CADAD3"
-fontcolor: black
 format:
   html:
     theme: 
-      - minty
-    css: styles.css
+      - custom.scss
     toc: true
     grid:
       body-width: 1500px

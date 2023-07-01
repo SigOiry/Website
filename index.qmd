@@ -7,10 +7,11 @@ format:
       margin-width: 0px
       sidebar-width: 0px
 website:
+  google-analytics: "G-1E839G8CKR"
   open-graph:
     locale: fr_FR
     site-name: Simon Oiry
-  google-analytics: "G-1E839G8CKR"
+  
 ---
 
  
