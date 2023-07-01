@@ -1,10 +1,4 @@
 ---
-format:
-  html:
-    grid:
-      body-width: 3000px
-      margin-width: 0px
-      sidebar-width: 0px
 ---
 
 ```{=html}

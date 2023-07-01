@@ -1,11 +1,5 @@
 ---
 color: black
-format:
-  html:
-    grid:
-      body-width: 3000px
-      margin-width: 0px
-      sidebar-width: 0px
 website:
   google-analytics: "G-1E839G8CKR"
   open-graph:
