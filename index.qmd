@@ -1,8 +1,4 @@
 ---
-format:
-  html:
-    grid:
-      gutter-width: 0px
 ---
 
 ![](img/PortugalMeadow.png){width=100%}
