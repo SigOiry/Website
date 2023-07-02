@@ -35,7 +35,7 @@ La télédétection est une méthode permettant de collecter des données sur qu
 
 :::
 ::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/SimonDrone.jpg); background-size: cover; background-repeat: no-repeat;"}
-
+![](img/SimonDrone.jpg){width=0%}
 :::
 :::
 
