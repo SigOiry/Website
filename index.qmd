@@ -16,8 +16,8 @@
 ::: {.content-visible when-profile="english"} 
 # Welcome to my website !
 I’m **Simon Oiry**, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of **remote sensing** to investigate these captivating **coastal ecosystems**. 
-  
-Remote sensing is a method of gathering data about something without physically being in contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar** for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.
+
+On this website, I will share everything related to my work, including the **ecological, scientific, and technical aspects**. Here, I share information about the **scientific projects** I am currently working on and have worked on in the past, as well as the various **publications** I have been involved in. I will also share all the **coding, GIS, and remote** sensing experiences I have acquired during my years as a research engineer and doctoral student.
 
 ::: 
 
@@ -25,8 +25,7 @@ Remote sensing is a method of gathering data about something without physically 
 # Bienvenue sur mon site Web !
 Je suis **Simon Oiry**, doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidaux. Ma recherche se concentre sur l'utilisation de la télédétection pour étudier les **écosystèmes côtiers**. 
   
-La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des **drones ou des satellites** afin de prendre des photos (soit **dans le spectre visible, soit dans le spectre infrarouge**), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le **Lidar ou le Radar** par exemple). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.
-
+Sur ce site, je vais partager tout ce qui est en rapport avec mon travail, aussi bien du côté **écologique et scientifique que du côté technique**. Ici, je partage des informations sur les **projets scientifiques** sur lesquels je travaille et sur lesquels j'ai travaillé, ainsi que les différentes **publications** auxquelles j'ai participé. Je partagerai également toutes les expériences de **codage, de SIG et de télédétection** que j'ai acquises au cours de mes années en tant qu'ingénieur d'étude et étudiant en doctorat.
 ::: 
 
 :::
@@ -46,17 +45,15 @@ La télédétection est une méthode permettant de collecter des données sur qu
 
 ::: {.content-visible when-profile="english"} 
 # What is remote sensing ?
-**Work In Progress** *I’m Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing to investigate these captivating coastal ecosystems.*
-  
-*emote sensing is a method of gathering data about something without physically being in contact with it. It's like using satellites or aircraft to capture information from a distance. This could involve taking pictures (either in the visible or the infrared spectrum), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with Lidar or Radar for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.*
+
+Remote sensing is a method of gathering data about something without physically being in contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar** for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.
 
 ::: 
 
 ::: {.content-visible when-profile="french"} 
 # Qu'est ce que la télédetection  ?
-**Work In Progress** *Je suis Simon Oiry, doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidaux. Ma recherche se concentre sur l'utilisation de la télédétection pour étudier les écosystèmes côtiers. *
-  
-*La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des drones ou des satellites afin de prendre des photos (soit dans le spectre visible, soit dans le spectre infrarouge), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le Lidar ou le Radar par exemple). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.*
+
+La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des **drones ou des satellites** afin de prendre des photos (soit dans **le spectre visible, soit dans le spectre infrarouge**), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le **Lidar ou le Radar par exemple**). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.
 
 ::: 
 
