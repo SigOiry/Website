@@ -3,9 +3,6 @@ project:
 
 website:
   google-analytics: "G-1E839G8CKR"
-  open-graph:
-    locale: fr_FR
-    site-name: Simon Oiry
 
 profile:
   default: english

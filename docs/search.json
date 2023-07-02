@@ -42,6 +42,13 @@
     "text": "From April to June 2018 - Nantes Université\n\nMaster’s internship\n\nStudy of seasonal variability of microphytobenthos using high-resolution spatial remote sensing (Pléiades)."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my website !",
+    "section": "",
+    "text": "Welcome to my website !\nI’m Simon Oiry, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of remote sensing to investigate these captivating coastal ecosystems.\nRemote sensing is a method of gathering data about something without physically being in contact with it. It’s like using satellites or aircraft to capture information from a distance. This could involve taking pictures (either in the visible or the infrared spectrum), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with Lidar or Radar for example). It’s a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management."
+  },
+  {
     "objectID": "ShinyMap/data/TWB_OFB.html",
     "href": "ShinyMap/data/TWB_OFB.html",
     "title": "",

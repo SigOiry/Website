@@ -42,6 +42,13 @@
     "text": "Avril à juin 2018 - Nantes Université\n\nStage de Master 1\n\nEtude de la variabilité saisonnière du microphytobenthos par télédétection à haute résolution spatiale (Pléiades)"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue sur mon site Web !",
+    "section": "",
+    "text": "Bienvenue sur mon site Web !\nJe suis Simon Oiry, doctorant à l’Université de Nantes en France, spécialisé dans l’étude des macrophytes intertidaux. Ma recherche se concentre sur l’utilisation de la télédétection pour étudier les écosystèmes côtiers.\nLa télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des drones ou des satellites afin de prendre des photos (soit dans le spectre visible, soit dans le spectre infrarouge), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le Lidar ou le Radar par exemple). C’est une technique utile pour étudier la Terre, surveiller l’environnement et prendre des décisions éclairées concernant des domaines tels que l’agriculture, le développement urbain ou la gestion de l’environnement."
+  },
+  {
     "objectID": "ShinyMap/data/TWB_OFB.html",
     "href": "ShinyMap/data/TWB_OFB.html",
     "title": "",
