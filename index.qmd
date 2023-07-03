@@ -36,6 +36,27 @@ Sur ce site, je vais partager tout ce qui est en rapport avec mon travail, aussi
 :::
 :::
 
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px"}
+
+::: {.content-visible when-profile="english"} 
+
+# My PhD {style="text-align: center;"}
+The aim of my doctoral research is to **map the vegetation** that grows in the zone between high tide and low tide, which is completely exposed at low tide (it's called **intertidal zone**). This area is primarily inhabited by algae and a few flowering plants. The problem lies in the fact that some of these plants **share very similar pigment compositions**. This means that they absorb and reflect more or less the same colors (we say they have the same **spectral signature**). This poses a challenge when attempting to differentiate between these plants using remote sensing because color is the only information that can be retrieved through remote sensing. 
+
+[Therefore, I am trying to find **machine learning** methods that can effectively differentiate these plants with similar pigment compositions.]{style="text-align: adjust; color: #D96B23; font-size: 25px;"}
+
+::: 
+
+::: {.content-visible when-profile="french"} 
+
+# Mon doctorat
+Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.
+
+[Du coup j'essaie de trouver des méthodes de **machine learning** permettant de différencier efficacement ces végétaux qui ont des compositions pigmentaires similaires.]{style="text-align: adjust; color: #D96B23; font-size: 25px;"}
+::: 
+:::
+
+
 ::: {.grid}
 
 ::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/Dronepreview.png); background-size: cover; background-repeat: no-repeat;"}
@@ -59,36 +80,7 @@ La télédétection est une méthode permettant de collecter des données sur qu
 :::
 :::
 
-
-::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px"}
-
-::: {.content-visible when-profile="english"} 
-
-# My PhD {style="text-align: center;"}
-The aim of my doctoral research is to **map the vegetation** that grows in the zone between high tide and low tide, which is completely exposed at low tide (it's called **intertidal zone**). This area is primarily inhabited by algae and a few flowering plants. The problem lies in the fact that some of these plants **share very similar pigment compositions**. This means that they absorb and reflect more or less the same colors (we say they have the same **spectral signature**). This poses a challenge when attempting to differentiate between these plants using remote sensing because color is the only information that can be retrieved through remote sensing. 
-
-[Therefore, I am trying to find **machine learning** methods that can effectively differentiate these plants with similar pigment compositions.]{style="text-align: adjust; color: #D96B23; font-size: 25px;"}
-
-::: 
-
-::: {.content-visible when-profile="french"} 
-
-# Mon doctorat
-Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.
-
-Du coup j'essaie de trouver des méthodes de **machine learning** permettant de différencier efficacement ces végétaux qui ont des compositions pigmentaires similaires.
-::: 
-:::
-
-
-
-
 ::: {.grid}
-
-::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/MicasenseCamera.png); background-size: cover; background-repeat: no-repeat;"}
-![](img/MicasenseCamera.png){width=0%}
-:::
-
 ::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px"}
 
 ::: {.content-visible when-profile="english"} 
@@ -104,6 +96,10 @@ When we talk about remote sensing, one of the most important technical character
 Quand on parle de télédétection, une des caractéristiques techniques les plus importantes est se qu'on appelle la résolution spectrale. C'est tellement important, qu'en fonction de la résolution spectrale du capreur, on parle soit de télédetection **multispectrale** ou de télédetection **hyperspectrale**. La résolution spectral défini basiquement le nombre de "couleurs" (**longueur d'onde**) différentes qu'un capteur est capable de mesurer. Les capteurs hyperspectraux ont une très forte résolution spectrale, mais créent des données, lourdes, difficiles à traiter et bruités. A l'inverse, les capteurs multispectraux sont plus simple a mettre en place, créent moins de données mais ont une résolution spectrale plus faible.
 ::: 
 
+:::
+
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/MicasenseCamera.png); background-size: cover; background-repeat: no-repeat;"}
+![](img/MicasenseCamera.png){width=0%}
 :::
 
 
