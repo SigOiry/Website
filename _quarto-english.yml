@@ -10,7 +10,7 @@ website:
       - href: index.qmd
         text: "**Home**"   
       - href: GeneralMap.qmd
-        text: "**General Map**"
+        text: "**Project map**"
       - href: about_me.qmd
         text: "**About me**"
       - href: about.qmd
@@ -37,8 +37,8 @@ format:
     toc: true
     grid:
       body-width: 3000px
-      margin-width: 0px
-      sidebar-width: 0px
+      margin-width: 0ev
+      sidebar-width: 0ev
       gutter-width: 0ev
 
 lang: en

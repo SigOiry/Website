@@ -1,9 +1,6 @@
 project:
   type: website
 
-website:
-  google-analytics: "G-1E839G8CKR"
-
 profile:
   default: english
   group:
