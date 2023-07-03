@@ -19,7 +19,7 @@
 # Welcome to my website !
 I’m **Simon Oiry**, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of **remote sensing** to investigate these captivating **coastal ecosystems**. 
 
-On this website, I will share everything related to my work, including the **ecological, scientific, and technical aspects**. Here, I share information about the **scientific projects** I am currently working on and have worked on in the past, as well as the various **publications** I have been involved in. I will also share all the **coding, GIS, and remote** sensing experiences I have acquired during my years as a research engineer and doctoral student.
+On this website, I will share everything related to my work, including the **ecological, scientific, and technical aspects**. Here, I share information about the **scientific projects** I am currently working on and have worked on in the past, as well as the various **publications** I have been involved in. I will also share all the **coding, GIS, and remote sensing** experiences I have acquired during my years as a research engineer and doctoral student.
 
 ::: 
 
@@ -85,6 +85,32 @@ Du coup j'essaie de trouver des méthodes de **machine learning** permettant de 
 ::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/habitat_slides3.jpg); background-size: cover; background-repeat: no-repeat;"}
 ![](img/habitat_slides3.jpg){width=0%}
 :::
+:::
+
+::: {.grid}
+
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/habitat_slides3.jpg); background-size: cover; background-repeat: no-repeat;"}
+![](img/habitat_slides3.jpg){width=0%}
+:::
+
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px"}
+
+::: {.content-visible when-profile="english"} 
+
+# Spectral resolution
+When we talk about remote sensing, one of the most important technical characteristics is what we call spectral resolution. It is so crucial that depending on the spectral resolution, we distinguish between **multispectral** remote sensing and **hyperspectral** remote sensing. Spectral resolution basically determines the number of different "colors" (**wavelengths**) that a sensor measures. Hyperspectral sensors have a very high spectral resolution, but they generate heavy, difficult-to-process, and noisy data. In contrast, multispectral sensors are easier to deploy, generate less data, but have a lower spectral resolution.
+
+::: 
+
+::: {.content-visible when-profile="french"} 
+# Résolution spectrale
+
+Quand on parle de télédétection, une des caractéristiques techniques les plus importantes est se qu'on appelle la résolution spectrale. C'est tellement important, qu'en fonction de la résolution spectrale du capreur, on parle soit de télédetection **multispectrale** ou de télédetection **hyperspectrale**. La résolution spectral défini basiquement le nombre de "couleurs" (**longueur d'onde**) différentes qu'un capteur est capable de mesurer. Les capteurs hyperspectraux ont une très forte résolution spectrale, mais créent des données, lourdes, difficiles à traiter et bruités. A l'inverse, les capteurs multispectraux sont plus simple a mettre en place, créent moins de données mais ont une résolution spectrale plus faible.
+::: 
+
+:::
+
+
 :::
 
 
