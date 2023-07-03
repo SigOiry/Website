@@ -3,6 +3,7 @@ project:
   output-dir: "./docs/fr"
 
 website:
+  open-graph: true
   title: "Simon Oiry"
   description: "Marine Ecologist and PhD student"
   favicon: img/Website_logo.png
