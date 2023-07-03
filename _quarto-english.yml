@@ -36,10 +36,10 @@ format:
       - custom.scss
     toc: true
     grid:
+      sidebar-width: 0px
       body-width: 3000px
-      margin-width: 0ev
-      sidebar-width: 0ev
-      gutter-width: 0ev
+      margin-width: 0px
+      gutter-width: 0px
 
 lang: en
 
