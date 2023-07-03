@@ -59,38 +59,34 @@ La télédétection est une méthode permettant de collecter des données sur qu
 :::
 :::
 
-::: {.grid}
-
-
 
 ::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px"}
 
 ::: {.content-visible when-profile="english"} 
 
+# My PhD {style="text-align: center;"}
 The aim of my doctoral research is to **map the vegetation** that grows in the zone between high tide and low tide, which is completely exposed at low tide (it's called **intertidal zone**). This area is primarily inhabited by algae and a few flowering plants. The problem lies in the fact that some of these plants **share very similar pigment compositions**. This means that they absorb and reflect more or less the same colors (we say they have the same **spectral signature**). This poses a challenge when attempting to differentiate between these plants using remote sensing because color is the only information that can be retrieved through remote sensing. 
 
-Therefore, I am trying to find **machine learning** methods that can effectively differentiate these plants with similar pigment compositions.
+[Therefore, I am trying to find **machine learning** methods that can effectively differentiate these plants with similar pigment compositions.]{style="text-align: adjust; color: #D96B23; font-size: 25px;"}
 
 ::: 
 
 ::: {.content-visible when-profile="french"} 
 
+# Mon doctorat
 Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.
 
 Du coup j'essaie de trouver des méthodes de **machine learning** permettant de différencier efficacement ces végétaux qui ont des compositions pigmentaires similaires.
 ::: 
-
 :::
 
-::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/habitat_slides3.jpg); background-size: cover; background-repeat: no-repeat;"}
-![](img/habitat_slides3.jpg){width=0%}
-:::
-:::
+
+
 
 ::: {.grid}
 
-::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/habitat_slides3.jpg); background-size: cover; background-repeat: no-repeat;"}
-![](img/habitat_slides3.jpg){width=0%}
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/MicasenseCamera.png); background-size: cover; background-repeat: no-repeat;"}
+![](img/MicasenseCamera.png){width=0%}
 :::
 
 ::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px"}
