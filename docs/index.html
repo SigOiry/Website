@@ -36,10 +36,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -140,6 +142,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -163,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="wrapper">
 <div class="five">
 <div class="grid">
-<section id="welcome-to-my-website" class="level1 g-col-6" style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px">
+<section id="welcome-to-my-website" class="level1 g-col-6 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px">
 <h1>Welcome to my website !</h1>
 <p>I’m <strong>Simon Oiry</strong>, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of <strong>remote sensing</strong> to investigate these captivating <strong>coastal ecosystems</strong>.</p>
 <p>On this website, I will share everything related to my work, including the <strong>ecological, scientific, and technical aspects</strong>. Here, I share information about the <strong>scientific projects</strong> I am currently working on and have worked on in the past, as well as the various <strong>publications</strong> I have been involved in. I will also share all the <strong>coding, GIS, and remote sensing</strong> experiences I have acquired during my years as a research engineer and doctoral student.</p>
@@ -172,22 +175,22 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="img/SimonDrone1.png" class="img-fluid" style="width:0.0%"></p>
 </div>
 </div>
-<section id="my-phd" class="level1 g-col-6" style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px">
+<section id="my-phd" class="level1 g-col-6 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px">
 <h1 style="text-align: center;">My PhD</h1>
 <p>The aim of my doctoral research is to <strong>map the vegetation</strong> that grows in the zone between high tide and low tide, which is completely exposed at low tide (it’s called <strong>intertidal zone</strong>). This area is primarily inhabited by algae and a few flowering plants. The problem lies in the fact that some of these plants <strong>share very similar pigment compositions</strong>. This means that they absorb and reflect more or less the same colors (we say they have the same <strong>spectral signature</strong>). This poses a challenge when attempting to differentiate between these plants using remote sensing because color is the only information that can be retrieved through remote sensing.</p>
-<p><span style="text-align: adjust; color: #D96B23; font-size: 25px;">Therefore, I am trying to find <strong>machine learning</strong> methods that can effectively differentiate these plants with similar pigment compositions.</span></p>
+<p><span style="text-align: adjust; color: #FF9678; font-size: 25px;">Therefore, I am trying to find <strong>machine learning</strong> methods that can effectively differentiate these plants with similar pigment compositions.</span></p>
 </section>
 <div class="grid">
 <div class="g-col-6" style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/Dronepreview.png); background-size: cover; background-repeat: no-repeat;">
 <p><img src="img/Dronepreview.png" class="img-fluid" style="width:0.0%"></p>
 </div>
-<section id="what-is-remote-sensing" class="level1 g-col-6" style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px">
+<section id="what-is-remote-sensing" class="level1 g-col-6 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px">
 <h1>What is remote sensing ?</h1>
 <p>Remote sensing is a method of gathering data about something without physically being in contact with it. It’s like using <strong>satellites or drones</strong> to capture information from a distance. This could involve taking pictures (either in the <strong>visible or the infrared spectrum</strong>), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with <strong>Lidar or Radar</strong> for example). It’s a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.</p>
 </section>
 </div>
 <div class="grid">
-<section id="spectral-resolution" class="level1 g-col-6" style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2; font-size: 20px">
+<section id="spectral-resolution" class="level1 g-col-6 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px">
 <h1>Spectral resolution</h1>
 <p>When we talk about remote sensing, one of the most important technical characteristics is what we call spectral resolution. It is so crucial that depending on the spectral resolution, we distinguish between <strong>multispectral</strong> remote sensing and <strong>hyperspectral</strong> remote sensing. Spectral resolution basically determines the number of different “colors” (<strong>wavelengths</strong>) that a sensor measures. Hyperspectral sensors have a very high spectral resolution, but they generate heavy, difficult-to-process, and noisy data. In contrast, multispectral sensors are easier to deploy, generate less data, but have a lower spectral resolution.</p>
 </section>
@@ -221,6 +224,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

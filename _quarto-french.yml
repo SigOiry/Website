@@ -36,7 +36,8 @@ website:
 format:
   html:
     theme: 
-      - custom.scss
+      light: custom_light.scss
+      dark: custom_dark.scss
     toc: true
     grid:
       sidebar-width: 0px
