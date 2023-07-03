@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Simon Oiry"
-  description: "Marine Ecologist and PhD student"
+  description: "I am a PhD student in Marine Ecology at Nantes University. This is my personal website."
   favicon: img/Website_logo.png
   navbar:
     logo: img/Website_logo.png
