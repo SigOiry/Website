@@ -3,6 +3,8 @@ project:
   output-dir: "./docs"
 
 website:
+  title: "Simon Oiry"
+  description: "Marine Ecologist and PhD student"
   favicon: img/Website_logo.png
   navbar:
     logo: img/Website_logo.png
