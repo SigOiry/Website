@@ -59,9 +59,9 @@ $headings-color:              $gray-700 !default;
 
 // Tables
 
-//$table-border-color:          rgba(0, 0, 0, .05) !default;
+$table-border-color:          rgba(0, 0, 0, .05) !default;
 
-//$table-bg-scale:              0 !default;
+$table-bg-scale:              0 !default;
 
 // Dropdowns
 
@@ -203,13 +203,13 @@ legend {
   }
 }
 
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-
 
 .one {
   grid-column: 1;
@@ -235,17 +235,3 @@ legend {
   grid-column: 3;
   grid-row: 4;
 }
-
-.grid_color {
-  background-color: #F2F2F2;
-}
-
-
-@media screen and (min-width: 0px) and (max-width: 799px) {
-  .hide-on-small { display: none;}
-}
-
-@media screen and (min-width: 800px) and (max-width: 4000px) {
-  .show-on-small { display: none;}
-}
-

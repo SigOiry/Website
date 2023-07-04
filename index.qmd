@@ -4,7 +4,7 @@
 <meta name="description" content="I am a PhD student in Marine Ecology at Nantes University. This is my personal website. " />
 ```
 
-
+::: {.hide-on-small}
 
 ![](img/PortugalMeadow.png){width=100%}
 
@@ -107,4 +107,20 @@ Quand on parle de télédétection, une des caractéristiques techniques les plu
 
 
 :::
+:::
+
+:::
+
+
+::: {.show-on-small}
+![](img/PortugalMeadow.png){width=100%}
+
+::: {.content-visible when-profile="english"} 
+# The mobile version of the website is not ready yet.☺️
+:::
+
+::: {.content-visible when-profile="french"} 
+# La version mobile française du site n'est pas encore fonctionnelle ! je travaille dessus. ☺️
+:::
+
 :::
