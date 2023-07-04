@@ -1,7 +1,7 @@
 
 ![](img/PortugalMeadow.png){width=100%}
 
-::: {.wrapper .hide-on-small}
+::: {.wrapper}
 ::: {.five}
 
 
