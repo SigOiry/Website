@@ -239,3 +239,12 @@ legend {
 .grid_color {
   background-color: #467373;
 }
+
+@media screen and (min-width: 0px) and (max-width: 799px) {
+  .hide-on-small { display: none;}
+}
+
+@media screen and (min-width: 800px) and (max-width: 4000px) {
+  .show-on-small { display: none;}
+}
+

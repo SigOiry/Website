@@ -1,0 +1,124 @@
+
+::: {.content-visible when-profile="english"}
+::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+# Professional experiences
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+## 2022 - 2025 - Nantes Université 
+### Phd in marine ecology
+- Multi-scale remote sensing characterization of intertidal vegetation changes related to natural and anthropogenic pressures.
+
+## September 2019 - December 2021 - Nantes Université
+### Study engineer
+- Mapping of intertidal zones in the 42 transitional water bodies of France.
+
+- Development of a bioindicator for the quality assessment of transitional water bodies based on microphytobenthos observed by remote sensing on behalf of the French Office for Biodiversity (OFB).
+
+- Writing scientific articles and technical reports.
+
+- Co-supervision and mentoring of Master's level interns.
+
+- Teaching laboratory sessions: 'Quantitative Ecology' and 'Biostatistics' in the L3 Environmental Biology program.
+
+## From February to July 2019 - Nantes Université
+### Master's internship
+- Mapping of estuarine microphytobenthos using remote sensing (Sentinel 2) on behalf of the French Office for Biodiversity (OFB).
+
+- Development of a semi-automatic method for mapping the 42 transitional water bodies along the Atlantic and English Channel coasts.
+
+## From April to June 2018 - Nantes Université
+### Master's internship
+- Study of seasonal variability of microphytobenthos using high-resolution spatial remote sensing (Pléiades).
+:::
+:::
+:::
+::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+# Scientific contributions
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+### Scientific publications
+- **Oiry, S.**, & Barillé, L. (2021). Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries. Ecological Indicators, 121. https://doi.org/10.1016/j.ecolind.2020.107184
+
+- Davies, B. F. R., Gernez, P., Geraud, A., **Oiry, S.**, Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. Remote Sensing of Environment, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
+
+- Brunier, G., **Oiry, S.**, Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. Remote Sensing 2022, Vol. 14, Page 307, 14(2), 307. https://doi.org/10.3390/RS14020307
+
+- Brunier, G., **Oiry, S.**, Lachaussée, N., Barillé, L., Le Fouest, V., & Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. Remote Sensing, 14(22), 5857. https://doi.org/10.3390/rs14225857
+
+- Haro, S., Jesus, B., **Oiry, S.**, Papaspyrou, S., Lara, M., González, C. J., & Corzo, A. (2022). Microphytobenthos spatio-temporal dynamics across an intertidal gradient using Random Forest classification and Sentinel-2 imagery. Science of The Total Environment, 804, 149983. https://doi.org/10.1016/j.scitotenv.2021.149983
+
+- Zoffoli, M. L., Gernez, P., **Oiry, S.**, Godet, L., Dalloyau, S., Davies, B. F. R., & Barillé, L. (2022). Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation. https://doi.org/10.1002/rse2.319
+
+- Zoffoli, M. L., Gernez, P., Godet, L., Peters, S.,**Oiry, S.**, & Barillé, L. (2021). Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators, 130, 108033. https://doi.org/10.1016/j.ecolind.2021.108033
+
+:::
+:::
+:::
+:::
+
+
+
+
+::: {.content-visible when-profile="french"}
+::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+# Experiences professionnelles
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+## 2022 - 2025 - Nantes Université 
+### Doctorat en écologie marine
+- Caractérisation par télédétection multi-échelle des changements de la végétation intertidale liés aux pressions naturelles et anthropiques
+
+## Septembre 2019 - Décembre 2021 - Nantes Université
+### Ingénieur d'étude
+- Cartographie des zones intertidales des 42 masses d’eau de transition françaises
+
+- Mise au point d’un bioindicateur de la qualité des masses d’eau de transition basé sur le microphytobenthos observé par télédétection pour le compte de l’Office Français pour la Biodiversité (OFB)
+
+- Rédaction d’articles scientifiques et de rapports techniques
+
+- Co-encadrement et accompagnement de stagiaires de Master 2
+
+- Enseignement en TP : « Ecologie quantitative » et « Biostatistiques » en L3 Biologie de l’environnement
+
+## Février à Juillet 2019 - Nantes Université
+### Stage de Master 2
+- Cartographie du microphytobenthos estuarien par télédétection (Sentinel 2) pour le compte de l’Office Français pour la Biodiversité (OFB)
+
+- Création d’une méthode semi-automatique de cartographie des 42 masses d’eau de transition de la façade Atlantique et de la Manche.
+
+## Avril à juin 2018 - Nantes Université
+### Stage de Master 1
+- Etude de la variabilité saisonnière du microphytobenthos par télédétection à haute résolution spatiale (Pléiades)
+:::
+:::
+:::
+::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+# Contributions scientifiques
+::: {.grid}
+::: {.g-col-1}
+:::
+::: {.g-col-11}
+### Publications scientifiques
+- Oiry, S., & Barillé, L. (2021). Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries. Ecological Indicators, 121. https://doi.org/10.1016/j.ecolind.2020.107184
+
+- Davies, B. F. R., Gernez, P., Geraud, A., Oiry, S., Rosa, P., Zoffoli, M. L., & Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. Remote Sensing of Environment, 290, 113554. https://doi.org/10.1016/j.rse.2023.113554
+
+- Brunier, G., Oiry, S., Gruet, Y., Dubois, S. F., & Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. Remote Sensing 2022, Vol. 14, Page 307, 14(2), 307. https://doi.org/10.3390/RS14020307
+
+- Brunier, G., Oiry, S., Lachaussée, N., Barillé, L., Le Fouest, V., & Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. Remote Sensing, 14(22), 5857. https://doi.org/10.3390/rs14225857
+
+- Haro, S., Jesus, B., Oiry, S., Papaspyrou, S., Lara, M., González, C. J., & Corzo, A. (2022). Microphytobenthos spatio-temporal dynamics across an intertidal gradient using Random Forest classification and Sentinel-2 imagery. Science of The Total Environment, 804, 149983. https://doi.org/10.1016/j.scitotenv.2021.149983
+
+- Zoffoli, M. L., Gernez, P., Oiry, S., Godet, L., Dalloyau, S., Davies, B. F. R., & Barillé, L. (2022). Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation. https://doi.org/10.1002/rse2.319
+
+- Zoffoli, M. L., Gernez, P., Godet, L., Peters, S., Oiry, S., & Barillé, L. (2021). Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators, 130, 108033. https://doi.org/10.1016/j.ecolind.2021.108033
+:::
+:::
+:::
+:::
