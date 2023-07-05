@@ -1,6 +1,6 @@
 
 ::: {.content-visible when-profile="english"}
-::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.g-col-12 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 # Professional experiences
 ::: {.grid}
 ::: {.g-col-1}
@@ -34,7 +34,7 @@
 :::
 :::
 :::
-::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.g-col-12 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 # Scientific contributions
 ::: {.grid}
 ::: {.g-col-1}
@@ -64,7 +64,7 @@
 
 
 ::: {.content-visible when-profile="french"}
-::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.g-col-12 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 # Experiences professionnelles
 ::: {.grid}
 ::: {.g-col-1}
@@ -98,7 +98,7 @@
 :::
 :::
 :::
-::: {.g-col-12 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.g-col-12 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 # Contributions scientifiques
 ::: {.grid}
 ::: {.g-col-1}

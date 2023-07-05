@@ -1,9 +1,9 @@
 ::: {.grid}
-::: {.g-col-5 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.g-col-5 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 
 :::
 
-::: {.g-col-7 style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {.g-col-7 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 ::: {.content-visible when-profile="english"}
 # Professional experiences
 ::: {.grid}

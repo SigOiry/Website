@@ -7,7 +7,7 @@ about:
   image-shape: round
   image-width: 30em
 ---
-::: {#about-block style="margin: 20px; border-radius: 15px; padding: 10px; background-color: #F2F2F2;"}
+::: {#about-block .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 ::: {.content-visible when-profile="english"}
 # Who am I ? {style="text-align: center;"}
 
