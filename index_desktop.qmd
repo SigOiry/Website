@@ -98,8 +98,13 @@ Quand on parle de télédétection, une des caractéristiques techniques les plu
 
 :::
 
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+{{< video https://www.youtube.com/watch?v=mZwNZk59-bM aspect-ratio="21x9" >}}
+:::
 
 :::
 :::
+
+
 
 
