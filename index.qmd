@@ -4,7 +4,7 @@
 <meta name="description" content="I am a PhD student in Marine Ecology at Nantes University. This is my personal website. " />
 ```
 
-::: {.hide-on-small}
+::: {.hide-on-small .hide-on-medium}
 ```{r, results='asis', echo=FALSE}
 desk<-knitr::knit_child("index_desktop.qmd", envir = environment(), quiet = TRUE)
 
@@ -12,10 +12,18 @@ cat(desk, sep='\n')
 ```
 :::
 
-::: {.show-on-small}
+::: {.hide-on-large .hide-on-medium}
 ```{r, results='asis', echo=FALSE}
 a<-knitr::knit_child("index_mobile.qmd", envir = environment(), quiet = TRUE)
 
 cat(a, sep='\n')
+```
+:::
+
+::: {.hide-on-large .hide-on-small}
+```{r, results='asis', echo=FALSE}
+b<-knitr::knit_child("index_medium.qmd", envir = environment(), quiet = TRUE)
+
+cat(b, sep='\n')
 ```
 :::

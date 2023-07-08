@@ -241,11 +241,17 @@ legend {
   background-color: #467373;
 }
 
-@media screen and (min-width: 0px) and (max-width: 799px) {
+
+@media screen and (min-width: 0px) and (max-width: 1300px) {
   .hide-on-small { display: none;}
 }
 
-@media screen and (min-width: 800px) and (max-width: 4000px) {
-  .show-on-small { display: none;}
+@media screen and (min-width: 1301px) and (max-width: 1849px) {
+  .hide-on-medium { display: none;}
 }
+
+@media screen and (min-width: 1849px) and (max-width: 4000px) {
+  .hide-on-large { display: none;}
+}
+
 
