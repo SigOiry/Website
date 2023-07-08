@@ -109,8 +109,8 @@ Dans mon cas, je travaille principalement avec des données multispectrales, car
 
 :::
 
-::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
-![](video/Croisic_boomerang.mp4){width=100%; autoplay=TRUE}
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px;"}
+![](video/Croisic_boomerang.mp4){width=100%}
 :::
 
 :::

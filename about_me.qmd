@@ -44,7 +44,7 @@ cat(desk_about_me, sep='\n')
 ```
 :::
 
-::: {.show-on-small}
+::: {.hide-on-large .hide-on-medium}
 ```{r, results='asis', echo=FALSE}
 a_about_me<-knitr::knit_child("about_me_mobile.qmd", envir = environment(), quiet = TRUE)
 
