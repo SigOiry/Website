@@ -3,7 +3,7 @@
 
 ::: {.wrapper}
 ::: {.one}
-![](video/Croisic_vertical.mp4){width=100%; autoplay=TRUE}
+<!-- ![](video/Croisic_vertical.mp4){width=100%; autoplay=TRUE} -->
 :::
 
 ::: {.five}
@@ -89,7 +89,7 @@ Dans mon cas, j'utilise principalement la télédétection pour observer ce qui 
 # Spectral resolution
 When we talk about remote sensing, one of the most important technical characteristics is what we call spectral resolution. It is so crucial that depending on the spectral resolution, we distinguish between **multispectral** remote sensing and **hyperspectral** remote sensing. Spectral resolution basically determines the number of different "colors" (**wavelengths**) that a sensor measures. Hyperspectral sensors have a very high spectral resolution, but they generate heavy, difficult-to-process, and noisy data. In contrast, multispectral sensors are easier to deploy, generate less data, but have a lower spectral resolution.
 
-In my case, I mainly work with multispectral data because it is the most common type of data in remote sensing. Some products, like Sentinel-2, are freely accessible. When it comes to drones, compared to hyperspectral data, the acquisition and processing of multispectral data are much less demanding. Furthermore, a recent publication has shown that the contribution of hyperspectral data was negligible in accurately discriminating intertidal macrophytes.
+In my case, I mainly work with multispectral data because it is the most common type of data in remote sensing. Some products, like **Sentinel-2**, are freely accessible. When it comes to drones, compared to hyperspectral data, the acquisition and processing of multispectral data are much less demanding. Furthermore, a recent [publication](https://doi.org/10.1016/j.rse.2023.113554) has shown that the contribution of hyperspectral data was negligible in accurately discriminating intertidal macrophytes.
 ::: 
 
 ::: {.content-visible when-profile="french"} 
@@ -97,7 +97,7 @@ In my case, I mainly work with multispectral data because it is the most common 
 
 Quand on parle de télédétection, une des caractéristiques techniques les plus importantes est se qu'on appelle la résolution spectrale. C'est tellement important, qu'en fonction de la résolution spectrale du capreur, on parle soit de télédetection **multispectrale** ou de télédetection **hyperspectrale**. La résolution spectral défini basiquement le nombre de "couleurs" (**longueur d'onde**) différentes qu'un capteur est capable de mesurer. Les capteurs hyperspectraux ont une très forte résolution spectrale, mais créent des données, lourdes, difficiles à traiter et bruités. A l'inverse, les capteurs multispectraux sont plus simple a mettre en place, créent moins de données mais ont une résolution spectrale plus faible.
 
-Dans mon cas, je travaille principalement avec des données multispectrales, car c'est le type de données le plus répandu en télédétection. Certains produits, comme Sentinel-2, sont accessibles gratuitement. En ce qui concerne les drones, par rapport aux données hyperspectrales, l'acquisition et le traitement des données multispectrales sont bien moins contraignants. De plus, une publication récente a montré que la contribution des données hyperspectrales était négligeable pour discriminer avec précision les macrophytes intertidaux.
+Dans mon cas, je travaille principalement avec des données multispectrales, car c'est le type de données le plus répandu en télédétection. Certains produits, comme Sentinel-2, sont accessibles gratuitement. En ce qui concerne les drones, par rapport aux données hyperspectrales, l'acquisition et le traitement des données multispectrales sont bien moins contraignants. De plus, une [publication](https://doi.org/10.1016/j.rse.2023.113554)  récente a montré que la contribution des données hyperspectrales était négligeable pour discriminer avec précision les macrophytes intertidaux.
 ::: 
 
 :::
