@@ -90,6 +90,6 @@ Dans mon cas, je travaille principalement avec des données multispectrales, car
 
 
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
-{{< video https://www.youtube.com/watch?v=mZwNZk59-bM aspect-ratio="21x9" >}}
+![](video/Croisic_boomerang.mp4){width=100%; autoplay=TRUE}
 :::
 
