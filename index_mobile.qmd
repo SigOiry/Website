@@ -5,17 +5,17 @@
 
 ::: {.content-visible when-profile="english"} 
 # Welcome to my website !
-[I’m **Simon Oiry**, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of **remote sensing** to investigate these captivating **coastal ecosystems**.]{style="text-align: justify;"} 
+I’m **Simon Oiry**, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of **remote sensing** to investigate these captivating **coastal ecosystems**. 
 
-[On this website, I will share everything related to my work, including the **ecological, scientific, and technical aspects**. Here, I share information about the **scientific projects** I am currently working on and have worked on in the past, as well as the various **publications** I have been involved in. I will also share all the **coding, GIS, and remote sensing** experiences I have acquired during my years as a research engineer and doctoral student.]{style="text-align: justify;"}
+On this website, I will share everything related to my work, including the **ecological, scientific, and technical aspects**. Here, I share information about the **scientific projects** I am currently working on and have worked on in the past, as well as the various **publications** I have been involved in. I will also share all the **coding, GIS, and remote sensing** experiences I have acquired during my years as a research engineer and doctoral student.
 
 ::: 
 
 ::: {.content-visible when-profile="french"} 
 # Bienvenue sur mon site Web !
-[Je suis **Simon Oiry**, doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidaux. Ma recherche se concentre sur l'utilisation de la télédétection pour étudier les **écosystèmes côtiers**.]{style="text-align: justify;"} 
+Je suis **Simon Oiry**, doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidaux. Ma recherche se concentre sur l'utilisation de la télédétection pour étudier les **écosystèmes côtiers**.
   
-[Sur ce site, je vais partager tout ce qui est en rapport avec mon travail, aussi bien du côté **écologique et scientifique que du côté technique**. Ici, je partage des informations sur les **projets scientifiques** sur lesquels je travaille et sur lesquels j'ai travaillé, ainsi que les différentes **publications** auxquelles j'ai participé. Je partagerai également toutes les expériences de **codage, de SIG et de télédétection** que j'ai acquises au cours de mes années en tant qu'ingénieur d'étude et étudiant en doctorat.]{style="text-align: justify;"}
+Sur ce site, je vais partager tout ce qui est en rapport avec mon travail, aussi bien du côté **écologique et scientifique que du côté technique**. Ici, je partage des informations sur les **projets scientifiques** sur lesquels je travaille et sur lesquels j'ai travaillé, ainsi que les différentes **publications** auxquelles j'ai participé. Je partagerai également toutes les expériences de **codage, de SIG et de télédétection** que j'ai acquises au cours de mes années en tant qu'ingénieur d'étude et étudiant en doctorat.
 ::: 
 
 :::
@@ -29,7 +29,7 @@
 ::: {.content-visible when-profile="english"} 
 
 # My PhD {style="text-align: center;"}
-[The aim of my doctoral research is to **map the vegetation** that grows in the zone between high tide and low tide, which is completely exposed at low tide (it's called **intertidal zone**). This area is primarily inhabited by algae and a few flowering plants. The problem lies in the fact that some of these plants **share very similar pigment compositions**. This means that they absorb and reflect more or less the same colors (we say they have the same **spectral signature**). This poses a challenge when attempting to differentiate between these plants using remote sensing because color is the only information that can be retrieved through remote sensing.]{style="text-align: justify;"} 
+The aim of my doctoral research is to **map the vegetation** that grows in the zone between high tide and low tide, which is completely exposed at low tide (it's called **intertidal zone**). This area is primarily inhabited by algae and a few flowering plants. The problem lies in the fact that some of these plants **share very similar pigment compositions**. This means that they absorb and reflect more or less the same colors (we say they have the same **spectral signature**). This poses a challenge when attempting to differentiate between these plants using remote sensing because color is the only information that can be retrieved through remote sensing.
 
 [Therefore, I am trying to find **machine learning** methods that can effectively differentiate these plants with similar pigment compositions.]{style="text-align: center; color: #FF9678; font-size: 25px;"}
 
@@ -38,7 +38,7 @@
 ::: {.content-visible when-profile="french"} 
 
 # Mon doctorat
-[Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.]{style="text-align: justify;"}
+Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.
 
 [Du coup j'essaie de trouver des méthodes de **machine learning** permettant de différencier efficacement ces végétaux qui ont des compositions pigmentaires similaires.]{style="text-align: center; color: #FF9678; font-size: 25px;"}
 ::: 
@@ -52,14 +52,18 @@
 ::: {.content-visible when-profile="english"} 
 # What is remote sensing ?
 
-[Remote sensing is a method of gathering data about something without physically being in contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar** for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.]{style="text-align: justify;"}
+Remote sensing is a method of gathering data about something without physically being in contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar** for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.
+
+In my case, I primarily use remote sensing to observe what is happening in the **visible and near-infrared** part of the electromagnetic spectrum. It is in these wavelengths that the sun emits the majority of its energy. And it is precisely in these wavelengths that plant **pigments absorb light** (known as photosynthetically active radiation, or **PAR**) to carry out **photosynthesis**.
 
 ::: 
 
 ::: {.content-visible when-profile="french"} 
 # Qu'est ce que la télédetection  ?
 
-[La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des **drones ou des satellites** afin de prendre des photos (soit dans **le spectre visible, soit dans le spectre infrarouge**), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le **Lidar ou le Radar par exemple**). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.]{style="text-align: justify;"}
+La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des **drones ou des satellites** afin de prendre des photos (soit dans **le spectre visible, soit dans le spectre infrarouge**), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le **Lidar ou le Radar par exemple**). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.
+
+Dans mon cas, j'utilise principalement la télédétection pour observer ce qui se passe dans la partie **visible et proche infrarouge** du spectre électromagnétique. C'est dans ces longueurs d'onde que le soleil émet la majorité de son énergie. Et c'est précisément dans ces longueurs d'onde que les **pigments des plantes absorbent la lumière** (on appelle cela le rayonnement photosynthétiquement actif, ou **PAR**) pour réaliser la **photosynthèse**.
 ::: 
 :::
 
@@ -69,14 +73,14 @@
 ::: {.content-visible when-profile="english"} 
 
 # Spectral resolution
-[When we talk about remote sensing, one of the most important technical characteristics is what we call spectral resolution. It is so crucial that depending on the spectral resolution, we distinguish between **multispectral** remote sensing and **hyperspectral** remote sensing. Spectral resolution basically determines the number of different "colors" (**wavelengths**) that a sensor measures. Hyperspectral sensors have a very high spectral resolution, but they generate heavy, difficult-to-process, and noisy data. In contrast, multispectral sensors are easier to deploy, generate less data, but have a lower spectral resolution.]{style="text-align: justify;"}
+When we talk about remote sensing, one of the most important technical characteristics is what we call spectral resolution. It is so crucial that depending on the spectral resolution, we distinguish between **multispectral** remote sensing and **hyperspectral** remote sensing. Spectral resolution basically determines the number of different "colors" (**wavelengths**) that a sensor measures. Hyperspectral sensors have a very high spectral resolution, but they generate heavy, difficult-to-process, and noisy data. In contrast, multispectral sensors are easier to deploy, generate less data, but have a lower spectral resolution.
 
 ::: 
 
 ::: {.content-visible when-profile="french"} 
 # Résolution spectrale
 
-[Quand on parle de télédétection, une des caractéristiques techniques les plus importantes est se qu'on appelle la résolution spectrale. C'est tellement important, qu'en fonction de la résolution spectrale du capreur, on parle soit de télédetection **multispectrale** ou de télédetection **hyperspectrale**. La résolution spectral défini basiquement le nombre de "couleurs" (**longueur d'onde**) différentes qu'un capteur est capable de mesurer. Les capteurs hyperspectraux ont une très forte résolution spectrale, mais créent des données, lourdes, difficiles à traiter et bruités. A l'inverse, les capteurs multispectraux sont plus simple a mettre en place, créent moins de données mais ont une résolution spectrale plus faible.]{style="text-align: justify;"}
+Quand on parle de télédétection, une des caractéristiques techniques les plus importantes est se qu'on appelle la résolution spectrale. C'est tellement important, qu'en fonction de la résolution spectrale du capreur, on parle soit de télédetection **multispectrale** ou de télédetection **hyperspectrale**. La résolution spectral défini basiquement le nombre de "couleurs" (**longueur d'onde**) différentes qu'un capteur est capable de mesurer. Les capteurs hyperspectraux ont une très forte résolution spectrale, mais créent des données, lourdes, difficiles à traiter et bruités. A l'inverse, les capteurs multispectraux sont plus simple a mettre en place, créent moins de données mais ont une résolution spectrale plus faible.
 ::: 
 :::
 

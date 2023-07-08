@@ -61,7 +61,9 @@ Le but de mon doctorat est de faire la **cartographie des végétaux** qui se d�
 ::: {.content-visible when-profile="english"} 
 # What is remote sensing ?
 
-Remote sensing is a method of gathering data about something without physically being in contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar** for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management.
+Remote sensing is a method of gathering data about something without physically being in contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar** for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about things like agriculture, urban development, or environmental management. 
+
+In my case, I primarily use remote sensing to observe what is happening in the **visible and near-infrared** part of the electromagnetic spectrum. It is in these wavelengths that the sun emits the majority of its energy. And it is precisely in these wavelengths that plant **pigments absorb light** (known as photosynthetically active radiation, or **PAR**) to carry out **photosynthesis**.
 
 ::: 
 
@@ -69,6 +71,8 @@ Remote sensing is a method of gathering data about something without physically 
 # Qu'est ce que la télédetection  ?
 
 La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des **drones ou des satellites** afin de prendre des photos (soit dans **le spectre visible, soit dans le spectre infrarouge**), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le **Lidar ou le Radar par exemple**). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.
+
+Dans mon cas, j'utilise principalement la télédétection pour observer ce qui se passe dans la partie **visible et proche infrarouge** du spectre électromagnétique. C'est dans ces longueurs d'onde que le soleil émet la majorité de son énergie. Et c'est précisément dans ces longueurs d'onde que les **pigments des plantes absorbent la lumière** (on appelle cela le rayonnement photosynthétiquement actif, ou **PAR**) pour réaliser la **photosynthèse**.
 ::: 
 :::
 :::
@@ -99,7 +103,7 @@ Quand on parle de télédétection, une des caractéristiques techniques les plu
 :::
 
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
-{{< video https://www.youtube.com/watch?v=mZwNZk59-bM>}}
+{{< video https://www.youtube.com/watch?v=mZwNZk59-bM >}}
 :::
 
 :::
