@@ -41,9 +41,9 @@ $min-contrast-ratio:   1.45 !default;
 
 // Body
 
-$body-color:                $white !default;
+$body-color:                $gray-700 !default;
 $color-contrast-dark:       $body-color !default; // Prefer $body-color over $black inside color-contrast()
-$body-bg:                   #263F3F !default; 
+$body-bg:                   #CADAD3 !default; 
 
 // Components
 
@@ -109,10 +109,10 @@ $breadcrumb-border-radius:          .25rem !default;
 
 
 /*-- scss:rules --*/
- h1{ color: $red; line-height: 150%; margin: 1%}
- h2{ color: $red; line-height: 90%; margin: 1%}
- h3{ color: $red; font-size: 130%; line-height: 90%; margin: 1%}
- a{ color : white}
+ h1{ color: #467373; line-height: 150%; margin: 1%}
+ h2{ color: #467373; line-height: 90%; margin: 1%}
+ h3{ color: #D96B23; font-size: 130%; line-height: 90%; margin: 1%}
+ a{ color : black}
 
 // Variables
 
@@ -249,8 +249,9 @@ legend {
 }
 
 .grid_color {
-  background-color: #467373;
+  background-color: #F2F2F2;
 }
+
 
 @media screen and (min-width: 0px) and (max-width: 1300px) {
   .hide-on-small { display: none;}
@@ -263,6 +264,4 @@ legend {
 @media screen and (min-width: 1880px) and (max-width: 4000px) {
   .hide-on-large { display: none;}
 }
-
-
 
