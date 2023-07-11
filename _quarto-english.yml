@@ -11,7 +11,9 @@ website:
     logo: img/Website_logo.png
     left:
       - href: index.qmd
-        text: "**Home**"   
+        text: "**Home**"
+      - href: My_PhD.qmd
+        text: "**My PhD**" 
       - href: GeneralMap.qmd
         text: "**Project map**"
       - href: about_me.qmd

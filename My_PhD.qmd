@@ -1,0 +1,24 @@
+::: {.hide-on-small .hide-on-medium}
+```{r, results='asis', echo=FALSE}
+desk_PhD<-knitr::knit_child("My_PhD_desktop.qmd", envir = environment(), quiet = TRUE)
+
+cat(desk_PhD, sep='\n')
+```
+:::
+
+
+::: {.hide-on-large .hide-on-medium}
+```{r, results='asis', echo=FALSE}
+a_PhD<-knitr::knit_child("My_PhD_mobile.qmd", envir = environment(), quiet = TRUE)
+
+cat(a_PhD, sep='\n')
+```
+:::
+
+::: {.hide-on-large .hide-on-small}
+```{r, results='asis', echo=FALSE}
+b_PhD<-knitr::knit_child("My_PhD_medium.qmd", envir = environment(), quiet = TRUE)
+
+cat(b_PhD, sep='\n')
+```
+:::

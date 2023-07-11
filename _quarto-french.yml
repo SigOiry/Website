@@ -11,7 +11,9 @@ website:
     logo: img/Website_logo.png
     left:
       - href: index.qmd
-        text: "**Accueil**"   
+        text: "**Accueil**"
+      - href: My_PhD.qmd
+        text: "**Mon Doctorat**" 
       - href: GeneralMap.qmd
         text: "**Carte de mes Projets**"
       - href: about_me.qmd
