@@ -10,15 +10,15 @@
 
 ::: {.content-visible when-profile="english"} 
 # Welcome to my website !
-I’m **Simon Oiry**, a PhD student at the University of Nantes in France, specializing in the study of intertidal macrophytes. My research focuses on harnessing the power of **remote sensing** to investigate these captivating **coastal ecosystems**. 
+I’m **Simon Oiry**, a PhD student at the University of Nantes in France, specializing in the study of intertidal vegetation. My research focuses on harnessing the power of **remote sensing** to investigate these sensitive **coastal ecosystems**. 
 
-On this website, I will share everything related to my work, including the **ecological, scientific, and technical aspects**. Here, I share information about the **scientific projects** I am currently working on and have worked on in the past, as well as the various **publications** I have been involved in. I will also share all the **coding, GIS, and remote sensing** experiences I have acquired during my years as a research engineer and doctoral student.
+On this website, I will share different elements related to my work, including **ecological, scientific, and technical aspects**. Here, I will share information about past and ongoing scientific projects, as well as various publications in which I have been involved. I will also share my experiences in **coding, GIS, and remote sensing** that I have acquired throughout my years as a research engineer and doctoral student.
 
 ::: 
 
 ::: {.content-visible when-profile="french"} 
 # Bienvenue sur mon site Web !
-Je suis **Simon Oiry**, doctorant à l'Université de Nantes en France, spécialisé dans l'étude des macrophytes intertidaux. Ma recherche se concentre sur l'utilisation de la télédétection pour étudier les **écosystèmes côtiers**. 
+Je suis **Simon Oiry**, doctorant à l'Université de Nantes en France, spécialisé dans l'étude des végétaux intertidaux. Ma recherche se concentre sur l'utilisation de la télédétection pour étudier les **écosystèmes côtiers**. 
   
 Sur ce site, je vais partager tout ce qui est en rapport avec mon travail, aussi bien du côté **écologique et scientifique que du côté technique**. Ici, je partage des informations sur les **projets scientifiques** sur lesquels je travaille et sur lesquels j'ai travaillé, ainsi que les différentes **publications** auxquelles j'ai participé. Je partagerai également toutes les expériences de **codage, de SIG et de télédétection** que j'ai acquises au cours de mes années en tant qu'ingénieur d'étude et étudiant en doctorat.
 ::: 
