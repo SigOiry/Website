@@ -1,29 +1,10 @@
+::: {.wrapper}
+::: {.five}
+::: {.grid}
 
-![](img/PortugalMeadow_small.png){width=100%}
-
-
-::: {.g-col-12 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px;"}
-
-::: {.content-visible when-profile="english"} 
-
-# My PhD {style="text-align: center;"}
-The aim of my doctoral research is to **map the vegetation** that grows in the zone comprised between high and low tide, known as the **intertidal zone**. This area is primarily vegetated by algae and a few flowering plant species. The problem lies in the fact that some of these plants **share a similar pigment composition**. This means that they reflect more or less the same colors, which is technically referred to as having the same **spectral signature**. This poses a challenge when attempting to differentiate between these vegetation types using remote sensing because color is the only information that is measured by this technique. 
-
-[Therefore,my objective is to find advanced methods based **machine learning** to effectively distinguish between intertidal vegetation.]{style="text-align: adjust; color: #FF9678; font-size: 25px;"}
-
-::: 
-
-::: {.content-visible when-profile="french"} 
-
-# Mon doctorat {style="text-align: center;"}
-Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.
-
-[Du coup j'essaie de trouver des méthodes de **machine learning** permettant de différencier efficacement ces végétaux qui ont des compositions pigmentaires similaires.]{style="text-align: center; color: #FF9678; font-size: 25px;"}
-::: 
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/Dronepreview.png); background-size: cover; background-repeat: no-repeat;"}
+![](img/Dronepreview.png){width=0%}
 :::
-
-![](img/Dronepreview.png){width=100%}
-
 
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
 
@@ -44,17 +25,17 @@ La télédétection est une méthode permettant de collecter des données sur qu
 Dans mon cas, j'utilise principalement la télédétection pour observer ce qui se passe dans la partie **visible et proche infrarouge** du spectre électromagnétique. C'est dans ces longueurs d'onde que le soleil émet la majorité de son énergie. Et c'est précisément dans ces longueurs d'onde que les **pigments des plantes absorbent la lumière** (on appelle cela le rayonnement photosynthétiquement actif, ou **PAR**) pour réaliser la **photosynthèse**.
 ::: 
 :::
+:::
 
-![](img/MicasenseCamera.png){width=100%}
-
+::: {.grid}
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+
 ::: {.content-visible when-profile="english"} 
 
 # Spectral resolution
 When discussing remote sensing, one of the most important technical characteristics is known as spectral resolution. Spectral resolution refers to the number of different "colors" (**wavelengths**) that a sensor can measure. We can distinguish between **multispectral** sensors, which can measure energy only in a few bands, and **hyperspectral** sensors, which are capable of recording energy in hundreds of bands. While hyperspectral data provides a more extensive set of information, it tends to be more difficult to process and typically noisier than multispectral data.
 
 In my case, I mainly work with multispectral data because it is the most common type of data systematically acquired by satellite. Some products, like **Sentinel-2**, are freely accessible. When it comes to **drones**, the acquisition and processing of multispectral data are much less demanding compared to hyperspectral data. Furthermore, a recent [publication](https://doi.org/10.1016/j.rse.2023.113554) has shown that the contribution of hyperspectral data was negligible in accurately discriminating some types of intertidal macrophytes.
-
 ::: 
 
 ::: {.content-visible when-profile="french"} 
@@ -64,7 +45,11 @@ Quand on parle de télédétection, une des caractéristiques techniques les plu
 
 Dans mon cas, je travaille principalement avec des données multispectrales, car c'est le type de données le plus répandu en télédétection. Certains produits, comme **Sentinel-2**, sont accessibles gratuitement. En ce qui concerne les **drones**, par rapport aux données hyperspectrales, l'acquisition et le traitement des données multispectrales sont bien moins contraignants. De plus, une [publication](https://doi.org/10.1016/j.rse.2023.113554)  récente a montré que la contribution des données hyperspectrales était négligeable pour discriminer avec précision les macrophytes intertidaux.
 ::: 
+
 :::
 
-
-
+::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/MicasenseCamera1.png); background-size: cover; background-repeat: no-repeat;"}
+![](img/MicasenseCamera1.png){width=0%}
+:::
+:::
+:::

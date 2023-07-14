@@ -30,8 +30,8 @@ Sur ce site, je vais partager tout ce qui est en rapport avec mon travail, aussi
 :::
 
 
-::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px;"}
-![](video/Croisic_boomerang.mp4){width=100%}
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px;  padding: 10px; font-size: 20px;"}
+![](video/Croisic_boomerang.mp4){width=100% autoplay}
 :::
 
 :::

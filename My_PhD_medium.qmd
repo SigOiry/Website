@@ -1,84 +1,73 @@
+
 ::: {.wrapper_medium}
 ::: {.five_medium}
 
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
-
 ::: {.content-visible when-profile="english"} 
 
-# My PhD {style="text-align: center;"}
-The aim of my doctoral research is to **map the vegetation** that grows in the zone comprised between high and low tide, known as the **intertidal zone**. This area is primarily vegetated by algae and a few flowering plant species. The problem lies in the fact that some of these plants **share a similar pigment composition**. This means that they reflect more or less the same colors, which is technically referred to as having the same **spectral signature**. This poses a challenge when attempting to differentiate between these vegetation types using remote sensing because color is the only information that is measured by this technique. 
-
-[Therefore,my objective is to find advanced methods based **machine learning** to effectively distinguish between intertidal vegetation.]{style="text-align: adjust; color: #FF9678; font-size: 25px;"}
-
-::: 
+#  Multiscale remote sensing of intertidal vegetation of European coasts in response to natural and anthropogenic pressures. {style="text-align: center;"}
+:::
 
 ::: {.content-visible when-profile="french"} 
 
-# Mon doctorat
-Le but de mon doctorat est de faire la **cartographie des végétaux** qui se développent dans la zone entre marée haute et marée basse (on l'appelle "**Zone intertidale**"). On y trouve principalement des algues ainsi que quelques plantes à fleurs. le problème c'est que certains de ces végétaux **partagent des compositions pigmentaires très similaires**. Cela veux dire qu'ils absorbent et reflechissent plus ou moins les même couleurs (on dit qu'ils ont la même **signature spectrale**). Cela est un problème quand on cherche à différencier les végétaux avec la télédéctection, car justement la couleur est l'unique information que l'on peut mesurer par télédetection.
-
-[Du coup j'essaie de trouver des méthodes de **machine learning** permettant de différencier efficacement ces végétaux qui ont des compositions pigmentaires similaires.]{style="text-align: adjust; color: #FF9678; font-size: 25px;"}
-::: 
+#  Caractérisation par télédétection multi-échelle des changements de la végétation intertidale liés aux pressions naturelles et anthropiques.  {style="text-align: center;"}
 :::
-
-
-::: {.grid}
-
-::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/Dronepreview.png); background-size: cover; background-repeat: no-repeat;"}
-![](img/Dronepreview.png){width=0%}
 :::
 
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
 
 ::: {.content-visible when-profile="english"} 
-# What is remote sensing ?
-Remote sensing is a method of gathering data about an object without being in direct contact with it. It's like using **satellites or drones** to capture information from a distance. This could involve taking pictures (either in the **visible or the infrared spectrum**), measuring temperature, or even penetrating through clouds and vegetation to understand the terrain (with **Lidar or Radar**, for example). It's a useful technique for studying the Earth, monitoring the environment, and making informed decisions about activities like agriculture, urban development, or environmental management. 
+Habitats formed by marine vegetation in **intertidal zones** that are exposed at low tide (seagrass beds, microphytobenthos, macroalgae) are heavily impacted by human activities. **Seagrass beds** are threatened by numerous anthropogenic activities ([McKenzie et al., 2020](https://doi.org/10.1088/1748-9326/ab7d06)), microphytobenthos is affected by the global decrease in intertidal mudflats ([Murray et al., 2019](https://doi.org/10.1038/s41586-018-0805-8)), and the expansion of wild oysters may have reduced the areas colonized by macroalgae ([Le Bris et al., 2016](https://doi.org/10.1016/j.ecss.2016.01.039)). These habitats fulfill recognized **ecological functions**, including protection against coastal erosion, mitigation of eutrophication effects, absorption of atmospheric CO2, and acting as biodiversity hotspots that support specific flora and fauna.
 
-In my case, I primarily use remote sensing to observe phenomena in the visible and near-infrared regions of the electromagnetic spectrum, specifically the wavelengths where the sun emits the majority of its energy. It is precisely within these wavelengths, know as Photosynthetically Active Radiation (PAR), that plant **pigments absorb light** to carry out **photosynthesis**.
-
-::: 
-
-::: {.content-visible when-profile="french"} 
-# Qu'est ce que la télédetection  ?
-
-La télédétection est une méthode permettant de collecter des données sur quelque chose sans être en contact physique avec. Cela peut impliquer utiliser des **drones ou des satellites** afin de prendre des photos (soit dans **le spectre visible, soit dans le spectre infrarouge**), de mesurer la température, voire de pénétrer les nuages et la végétation pour cartographier les reliefs (avec le **Lidar ou le Radar par exemple**). C'est une technique utile pour étudier la Terre, surveiller l'environnement et prendre des décisions éclairées concernant des domaines tels que l'agriculture, le développement urbain ou la gestion de l'environnement.
-
-Dans mon cas, j'utilise principalement la télédétection pour observer ce qui se passe dans la partie **visible et proche infrarouge** du spectre électromagnétique. C'est dans ces longueurs d'onde que le soleil émet la majorité de son énergie. Et c'est précisément dans ces longueurs d'onde que les **pigments des plantes absorbent la lumière** (on appelle cela le rayonnement photosynthétiquement actif, ou **PAR**) pour réaliser la **photosynthèse**.
-::: 
-:::
-:::
+However, intertidal zones, such as **mudflats**, are challenging to access, and traditional field sampling would require excessive time and effort to cover the target areas. Nonetheless, regulatory requirements for monitoring the ecological status of coastal marine habitats necessitate regular mapping. This is the case with the **Water Framework Directive** (WFD) or the **Marine Strategy Framework Directive** (MSFD), which use the diversity of marine habitats as bioindicators of coastal or estuarine water quality ([Borja et al., 2013](https://doi.org/https://doi.org/10.1016/j.marpolbul.2013.08.042); [Zoffoli et al., 2021](https://doi.org/10.1016/j.ecolind.2021.108033)).
 
 ::: {.grid}
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+Spatial remote sensing is an innovative tool for studying essential variables for the biodiversity of these habitats ([Peirera et al., 2013](https://doi.org/10.1126/science.1229931); [Skidmore et al., 2015](https://doi.org/10.1038/523403a)). However, past and current satellite missions do not possess optimal technical characteristics (spatial, spectral, and temporal resolution) to be fully operational ([Muller-Karger et al., 2018](https://doi.org/10.1002/eap.1682 )). For some habitats, multispectral resolution may be sufficient under certain conditions ([Zoffoli et al., 2020](https://doi.org/10.1016/j.rse.2020.112020)), but there are still risks of confusion. For others, higher resolution or the presence of specific spectral bands is essential for distinguishing taxonomically distinct organism classes ([Fyfe et al., 2003](https://doi.org/10.4319/lo.2003.48.1_part_2.0464); [Launeau et al., 2018](https://doi.org/10.3390/rs10050716); [Méléder et al., 2018](https://doi.org/10.1371/journal.pone.0197093)). The identification principle relies, in part, on the presence of absorption bands in the visible spectrum related to the presence of photosynthetic and accessory pigments, which can be detected and quantified using high-pressure liquid chromatography ([Méléder et al., 2003](https://doi.org/10.1016/j.rse.2003.08.009), [2005](10.3354/meps297083); [Bargain et al., 2013](https://doi.org/10.1016/j.jembe.2013.04.012); [Jesus et al., 2014](https://doi.org/10.1016/j.rse.2013.08.040)). The analysis of the phenology of these organisms could also be exploited to aid in their discrimination.
 
-::: {.content-visible when-profile="english"} 
 
-# Spectral resolution
-When discussing remote sensing, one of the most important technical characteristics is known as spectral resolution. Spectral resolution refers to the number of different "colors" (wavelengths) that a sensor can measure. We can distinguish between multispectral sensors, which can measure energy only in a few bands, and hyperspectral sensors, which are capable of recording energy in hundreds of bands. While hyperspectral data provides a more extensive set of information, it tends to be more difficult to process and typically noisier than multispectral data.
-
-In my case, I mainly work with multispectral data because it is the most common type of data systematically acquired by satellite. Some products, like **Sentinel-2**, are freely accessible. When it comes to drones, the acquisition and processing of multispectral data are much less demanding compared to hyperspectral data. Furthermore, a recent [publication](https://doi.org/10.1016/j.rse.2023.113554) has shown that the contribution of hyperspectral data was negligible in accurately discriminating some types of intertidal macrophytes.
-::: 
+With its revisit time of 3 to 5 days, the Sentinel 2 satellite can also help identify seasonal cycles of marine vegetation ([Zoffoli et al., 2020](https://doi.org/10.1016/j.rse.2020.112020)). Temporal variations in intertidal vegetation have been less documented than spatial variations, mainly due to the limited availability of high-resolution satellite images (e.g., SPOT, LANDSAT) and the constraints of acquiring images at low tide related to the study object. Therefore, there is currently no sensor that can provide high spatial, spectral, and temporal resolutions simultaneously. Consequently, this thesis will employ a multi-sensor analysis (Sentinel 2; MODIS) and will notably utilize very high-resolution spatial mapping using drones.
+:::
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+![](img/bands_vs_revisit.png){width=100%}
+:::
+:::
+:::
 
 ::: {.content-visible when-profile="french"} 
-# Résolution spectrale
 
-Quand on parle de télédétection, une des caractéristiques techniques les plus importantes est se qu'on appelle la résolution spectrale. C'est tellement important, qu'en fonction de la résolution spectrale du capreur, on parle soit de télédetection **multispectrale** ou de télédetection **hyperspectrale**. La résolution spectral défini basiquement le nombre de "couleurs" (**longueur d'onde**) différentes qu'un capteur est capable de mesurer. Les capteurs hyperspectraux ont une très forte résolution spectrale, mais créent des données, lourdes, difficiles à traiter et bruités. A l'inverse, les capteurs multispectraux sont plus simple a mettre en place, créent moins de données mais ont une résolution spectrale plus faible.
+Les habitats structurés par des végétaux marins dans les **zones intertidales** qui découvrent à marée basse (herbiers d’angiospermes marines, microphytobenthos, macroalgues) sont fortement impactés par les activités humaines: les **herbiers d’angiospermes marines** sont menacés par de nombreuses activités anthropiques ([McKenzie et al., 2020](https://doi.org/10.1088/1748-9326/ab7d06)), le microphytobenthos est affecté par la diminution mondiale des vasières intertidales ([Murray et al., 2019](https://doi.org/10.1038/s41586-018-0805-8)), l’expansion des huîtres sauvages pourraient avoir réduit les surfaces colonisées par les macroalgues  ([Le Bris et al., 2016](https://doi.org/10.1016/j.ecss.2016.01.039)). Ces habitats remplissent des **fonctions écologiques** reconnues : protection contre l’érosion côtière, atténuation des effets de l’eutrophisation, consommation du CO2 atmosphérique, hotspots de biodiversité abritant une flore et une faune spécifique.
 
-Dans mon cas, je travaille principalement avec des données multispectrales, car c'est le type de données le plus répandu en télédétection. Certains produits, comme Sentinel-2, sont accessibles gratuitement. En ce qui concerne les drones, par rapport aux données hyperspectrales, l'acquisition et le traitement des données multispectrales sont bien moins contraignants. De plus, une [publication](https://doi.org/10.1016/j.rse.2023.113554)  récente a montré que la contribution des données hyperspectrales était négligeable pour discriminer avec précision les macrophytes intertidaux.
-::: 
+Les zones intertidales sont néanmoins difficiles d’accès comme les zones de **vasières** et les échantillonnages traditionnels de terrain demanderaient trop de temps et d’effort pour couvrir les surfaces considérées. Cependant, la demande réglementaire de suivi du bon état écologique des habitats marins côtiers nécessitent des cartographies régulières. C’est le cas de la Directive **Cadre sur l’Eau** (DCE) ou de la **Directive Cadre Stratégie pour  le Milieu Marin** (DCSMM) qui utilisent la diversité des habitats marins comme bioindicateurs de la qualité des eaux côtières ou estuariennes ([Borja et al., 2013](https://doi.org/https://doi.org/10.1016/j.marpolbul.2013.08.042); [Zoffoli et al., 2021](https://doi.org/10.1016/j.ecolind.2021.108033))).
 
+::: {.grid}
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+La télédétection spatiale est un outil novateur pour étudier les variables essentielles pour la biodiversité de ces habitats ([Peirera et al., 2013](https://doi.org/10.1126/science.1229931); [Skidmore et al., 2015](https://doi.org/10.1038/523403a)), mais les missions satellite passées et présentes n’ont pas les caractéristiques techniques optimales (résolution spatiale, spectrale et temporelle) pour être pleinement opérationnelles ([Muller-Karger et al., 2018](https://doi.org/10.1002/eap.1682 )). Pour certains habitats, une résolution multispectrale peut suffire sous certaines conditions ([Zoffoli et al., 2020](https://doi.org/10.1016/j.rse.2020.112020)), mais des risques de confusion demeurent. Pour d’autres, une résolution plus importante, ou la présence de quelques bandes spectrales, est indispensable pour permettre de distinguer des classes d’organismes distincts du point de vue taxonomique ([Fyfe et al., 2003](https://doi.org/10.4319/lo.2003.48.1_part_2.0464); [Launeau et al., 2018](https://doi.org/10.3390/rs10050716); [Méléder et al., 2018](https://doi.org/10.1371/journal.pone.0197093)). Le principe d’identification repose en effet en partie sur la présence de bandes d’absorption dans le visible liées à la présence de pigments photosynthétiques et accessoires, qu’il est possible de détecter et de quantifier par chromatographie liquide haute pression ([Méléder et al., 2003](https://doi.org/10.1016/j.rse.2003.08.009), [2005](10.3354/meps297083); [Bargain et al., 2013](https://doi.org/10.1016/j.jembe.2013.04.012); [Jesus et al., 2014](https://doi.org/10.1016/j.rse.2013.08.040)). L’analyse de la phénologie de ces organismes pourrait également être exploitée pour aider à leur discrimination.  
+
+Grâce à son temps de revisite de 3 à 5 jours, le satellite Sentinel 2, peut également permettre d’identifier des cycles saisonniers de végétaux marins ([Zoffoli et al., 2020](https://doi.org/10.1016/j.rse.2020.112020)). Les variations temporelles de la végétation intertidale ont été beaucoup moins documentées que les variations spatiales, notamment en raison de la disponibilité réduite d’images satellitales à haute résolution spatiale (eg. SPOT, LANDSAT) et des contraintes d’acquisition des images à marée basse liées à l’objet d’étude. Il n’existe donc pas de capteur permettant à la fois d’avoir des résolutions spatiale/spectrales/temporelles élevées. Cette thèse va donc faire appel à une analyse multi-capteurs (Sentinel 2 ; MODIS) et utiliser notamment la cartographie à très-haute résolution spatiale par drone. 
+:::
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+![](img/bands_vs_revisit.png){width=100%}
 :::
 
-::: {.g-col-6 style="margin: 20px; border-radius: 15px; padding: 10px; background-image: url(img/MicasenseCamera1.png); background-size: cover; background-repeat: no-repeat;"}
-![](img/MicasenseCamera1.png){width=0%}
 :::
-
-
-:::
-
 :::
 :::
 
+::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
+::: {.content-visible when-profile="english"} 
+The objectives are related to mapping the spatiotemporal variations of plant biodiversity in intertidal zones through remote sensing, particularly using the Sentinel 2 satellite. The aim is to analyze the main natural and anthropogenic factors responsible for these changes. The ultimate goal is to demonstrate that remote sensing can meet the regulatory requirement for monitoring the ecological status of habitats of community interest (Papathanasopoulou et al., 2019) and that marine angiosperms could be used as an indicator of water quality.
+:::
 
+::: {.content-visible when-profile="english"} 
+Les objectifs sont  liés  à la cartographie des variations spatio-temporelles de la biodiversité des végétaux des zones intertidales par télédétection, notamment avec le satellite Sentinel 2, puis à l’analyse des principaux facteurs naturels et anthropiques responsables des changements. L’enjeu sera enfin de montrer que la télédétection peut répondre à la demande réglementaire de suivi de l’état écologique des habitats d’intérêt communautaires (Papathanasopoulou et al. 2019) et que les angiospermes marines pourrait être utilisé comme indicateur de la qualité de l’eau.
+:::
+:::
+
+
+
+
+:::
+:::
 
 
