@@ -1,13 +1,5 @@
 
 ::: {.wrapper_medium}
-
-::: {.one} 
-last update : 
-```{r}
-Sys.Date() 
-```
-::: 
-
 ::: {.five_medium}
 
 ::: {.g-col-6 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px; font-size: 20px"}
