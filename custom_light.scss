@@ -265,3 +265,64 @@ legend {
   .hide-on-large { display: none;}
 }
 
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+ 
+    border: 2px solid #467373;
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #467373;
+   
+ 
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#coding-bar{
+    animation: coding-fill 3s forwards;
+}
+@keyframes coding-fill{
+    100%{
+        width: 95%;
+    }
+}
+#qgis-bar{
+    animation: qgis-fill 2s forwards;
+}
+@keyframes qgis-fill{
+    100%{
+        width: 90%;
+    }
+}
+#photogrammetry-bar{
+    animation: photogrammetry-fill 2s forwards;
+}
+@keyframes photogrammetry-fill {
+    100%{
+        width: 80%;
+    }
+}
+#rs-bar{
+    animation: rs-fill 2s forwards;
+}
+@keyframes rs-fill{
+    100%{
+        width: 70%;
+    }
+} 
