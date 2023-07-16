@@ -15,7 +15,7 @@ website:
       - href: My_PhD.qmd
         text: "**My PhD**" 
       - href: GeneralMap.qmd
-        text: "**Project map**"
+        text: "**My Project**"
       - href: about_me.qmd
         text: "**About me**"
       - href: about.qmd
