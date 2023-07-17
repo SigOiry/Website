@@ -1,5 +1,5 @@
 
-::: {.hide-on-small}
+::: {.hide-on-small style="height=100%"}
 ```{r, results='asis', echo=FALSE}
 desk_about_me<-knitr::knit_child("about_me_desktop.qmd", envir = environment(), quiet = TRUE)
 

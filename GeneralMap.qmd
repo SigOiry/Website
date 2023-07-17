@@ -1,4 +1,4 @@
-::: {.hide-on-small}
+::: {.hide-on-small .overlay}
 
 
 ```{=html}
