@@ -1,11 +1,10 @@
 ::: {.hide-on-small}
-::: {.grid}
-```{r, results='asis', echo=FALSE}
-desk_GM<-knitr::knit_child("GeneralMap_desktop.qmd", envir = environment(), quiet = TRUE)
 
-cat(desk_GM, sep='\n')
+
+```{=html}
+<iframe width="100%" height="100%" frameborder="0" src="https://oirysimon.shinyapps.io/shinymap/" title="Shiny Map"></iframe>
 ```
-:::
+
 :::
 
 ::: {.hide-on-large .hide-on-medium}

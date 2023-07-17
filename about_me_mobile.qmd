@@ -1,3 +1,4 @@
+::: {.hide-on-large .hide-on-medium}
 ![](img/simonteledetection3.png){hight=100%}
 ```{=html}
 
@@ -189,6 +190,7 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 - [Zoffoli, M. L., Gernez, P., **Oiry, S.**, Godet, L., Dalloyau, S., Davies, B. F. R., & Barillé, L. (2022). Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation.](https://doi.org/10.1002/rse2.319)
 
 - [Zoffoli, M. L., Gernez, P., Godet, L., Peters, S.,**Oiry, S.**, & Barillé, L. (2021). Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators, 130, 108033.](https://doi.org/10.1016/j.ecolind.2021.108033)
+:::
 :::
 :::
 :::
