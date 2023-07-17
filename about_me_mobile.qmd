@@ -1,5 +1,4 @@
 ![](img/simonteledetection3.png){hight=100%}
-::: {.g-col-5 .grid_color style="margin: 20px; border-radius: 15px; padding: 10px;"}
 ```{=html}
 
 <h2>My Skills </h2>
