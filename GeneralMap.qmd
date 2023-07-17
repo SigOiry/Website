@@ -1,9 +1,11 @@
 ::: {.hide-on-small}
+::: {.grid}
 ```{r, results='asis', echo=FALSE}
 desk_GM<-knitr::knit_child("GeneralMap_desktop.qmd", envir = environment(), quiet = TRUE)
 
 cat(desk_GM, sep='\n')
 ```
+:::
 :::
 
 ::: {.hide-on-large .hide-on-medium}

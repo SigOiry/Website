@@ -192,4 +192,3 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 :::
 :::
 :::
-:::
