@@ -1,6 +1,11 @@
 ---
 title: "Publications"
-
+format:
+  html:
+    grid: 
+      sidebar-width: 250px
+      margin-width: 250px
+      gutter-width: 250px
 listing:
   - id: First
     contents: publication1
@@ -8,7 +13,6 @@ listing:
     categories: true
     sort-ui: [categories,date]
     fields: [image, title, author, categories]
-    feed: true
   - id: Co
     contents: publication2
     type: default
