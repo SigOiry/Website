@@ -1,0 +1,28 @@
+---
+title: "Publications"
+
+listing:
+  - id: First
+    contents: publication1
+    type: grid
+    categories: true
+    sort-ui: [categories,date]
+    fields: [image, title, author, categories]
+    feed: true
+  - id: Co
+    contents: publication2
+    type: default
+    fields: [image, title, description, author, categories]
+---
+
+## First Author Publications:
+
+::: {#First}
+
+:::
+
+## Co-Author Publications:
+
+::: {#Co}
+
+:::

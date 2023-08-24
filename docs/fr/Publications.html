@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Simon Oiry – about_me_mobile</title>
+<title>Simon Oiry - Publications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./img/Website_logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,8 +64,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-First .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-First'] = new List('listing-First', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Co .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Co'] = new List('listing-Co', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta property="og:title" content="Simon Oiry - Publications">
+<meta property="og:image" content="./publication1/OFB.jpg">
+<meta property="og:site-name" content="Simon Oiry">
 </head>
 
 <body class="nav-fixed">
@@ -158,140 +222,106 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#qui-suis-je" id="toc-qui-suis-je" class="nav-link active" data-scroll-target="#qui-suis-je">Qui suis-je ?</a></li>
-  <li><a href="#experiences-professionnelles" id="toc-experiences-professionnelles" class="nav-link" data-scroll-target="#experiences-professionnelles">Experiences professionnelles</a></li>
-  <li><a href="#contributions-scientifiques" id="toc-contributions-scientifiques" class="nav-link" data-scroll-target="#contributions-scientifiques">Contributions scientifiques</a></li>
+  <li><a href="#first-author-publications" id="toc-first-author-publications" class="nav-link active" data-scroll-target="#first-author-publications">First Author Publications:</a></li>
+  <li><a href="#co-author-publications" id="toc-co-author-publications" class="nav-link" data-scroll-target="#co-author-publications">Co-Author Publications:</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecology">Ecology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="First Author">First Author <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Remote Sensing">Remote Sensing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Satellite">Satellite <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sentinel">Sentinel <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-<div class="hide-on-large hide-on-medium">
-<p><img src="img/simonteledetection3.png" class="img-fluid" data-hight="100%"></p>
-
-<h2 class="anchored">My Skills </h2>
-<div class="skills">
-    <div class="details">
-        <h3 class="anchored">Coding: R, Rstudio, Quarto</h3>
-        <span>95%</span>
-    </div>
-    <div class="bar">
-        <div id="coding-bar"></div>
-    </div>
-</div>
-<div class="skills">
-    <div class="details">
-        <h3 class="anchored">GIS: Qgis</h3>
-        <span>90%</span>
-    </div>
-    <div class="bar">
-        <div id="qgis-bar"></div>
-    </div>
-</div>
-<div class="skills">
-    <div class="details">
-        <h3 class="anchored">Photogrammetry: Agisoft Metashape, Pix4D</h3>
-        <span>80%</span>
-    </div>
-    <div class="bar">
-        <div id="photogrammetry-bar"></div>
-    </div>
-</div>
-<div class="skills">
-    <div class="details">
-        <h3 class="anchored">Remote Sensing: Envi/SNAP</h3>
-        <span>70%</span>
-    </div>
-    <div class="bar">
-        <div id="rs-bar"></div>
-    </div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publications</h1>
 </div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="first-author-publications" class="level2">
+<h2 class="anchored" data-anchor-id="first-author-publications">First Author Publications:</h2>
+<div id="listing-First" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-First-sort" class="form-select" aria-label="Trier par" onchange="window['quarto-listings']['listing-First'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Trier par</option>
+       <option value="index" data-direction="asc">Ordre par défaut</option>
+         <option value="listing-categories" data-direction="asc">
+          Catégories
+        </option>
+     </select>
+  </div>
 </div>
-<section id="qui-suis-je" class="level1 g-col-12 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px;">
-<h1 style="text-align: center">Qui suis-je ?</h1>
-<p>Je suis Simon Oiry, un doctorant à l’Université de Nantes en France, spécialisé dans l’étude des macrophytes intertidales. Ma recherche se concentre sur l’utilisation de la télédétection, en particulier des données hyperspectrales issues de spectroradiomètres, ainsi que des données multispectrales provenant de drones et de satellites, pour étudier ces écosystèmes côtiers.</p>
-<p>En utilisant un spectroradiomètre, je collecte des données hyperspectrales avec une résolution spectrale élevée, ce qui me permet de capturer des informations détaillées sur les signatures spectrales uniques des macrophytes intertidales. En plus des données hyperspectrales, j’utilise également les capacités des drones et des satellites pour acquérir des images multispectrales. Les drones équipés de capteurs multispectraux me permettent de capturer des données à haute résolution à une échelle locale, offrant ainsi une vue détaillée des zones intertidales. De plus, les données multispectrales des satellites offrent une perspective plus large, me permettant d’étudier les distributions et les variations des macrophytes à des échelles spatiales plus vastes.</p>
-<p>En combinant ces différentes sources de données, mon objectif est d’obtenir une compréhension globale des macrophytes intertidales et de leur dynamique écologique. Ma recherche se concentre sur le développement de méthodes efficaces pour analyser et interpréter les données hyperspectrales et multispectrales afin de discriminer les espèces de macrophytes ayant des compositions pigmentaires similaires.</p>
-<p>À travers mon travail, je m’efforce de contribuer à la conservation et à la gestion durable de ces habitats côtiers essentiels. En surveillant et en cartographiant la distribution et la santé des macrophytes intertidales, nous pouvons mieux comprendre leur rôle écologique et mettre en œuvre des mesures appropriées pour leur préservation.</p>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Remote Sensing,Ecology,Satellite,Sentinel,Machine Learning,First Author" data-listing-date-sort="1612134000000" data-listing-file-modified-sort="1692892954539" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./publication1/OFB.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./publication1/OFB.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Remote Sensing'); return false;">
+Remote Sensing
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ecology'); return false;">
+Ecology
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Satellite'); return false;">
+Satellite
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Sentinel'); return false;">
+Sentinel
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
+Machine Learning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('First Author'); return false;">
+First Author
+</div>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Simon Oiry; Laurent Barillé
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+Aucun article correspondant
+</div>
+</div>
 </section>
-<section id="experiences-professionnelles" class="level1 g-col-12 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px;">
-<h1>Experiences professionnelles</h1>
-<div class="grid">
-<div class="g-col-1">
+<section id="co-author-publications" class="level2">
+<h2 class="anchored" data-anchor-id="co-author-publications">Co-Author Publications:</h2>
+<div id="listing-Co" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
 
 </div>
-<div class="g-col-11">
-<section id="nantes-université-1" class="level2">
-<h2 class="anchored" data-anchor-id="nantes-université-1">2022 - 2025 - Nantes Université</h2>
-<section id="doctorat-en-écologie-marine" class="level3">
-<h3 class="anchored" data-anchor-id="doctorat-en-écologie-marine">Doctorat en écologie marine</h3>
-<ul>
-<li>Caractérisation par télédétection multi-échelle des changements de la végétation intertidale liés aux pressions naturelles et anthropiques</li>
-</ul>
-</section>
-</section>
-<section id="septembre-2019---décembre-2021---nantes-université" class="level2">
-<h2 class="anchored" data-anchor-id="septembre-2019---décembre-2021---nantes-université">Septembre 2019 - Décembre 2021 - Nantes Université</h2>
-<section id="ingénieur-détude" class="level3">
-<h3 class="anchored" data-anchor-id="ingénieur-détude">Ingénieur d’étude</h3>
-<ul>
-<li><p>Cartographie des zones intertidales des 42 masses d’eau de transition françaises</p></li>
-<li><p>Mise au point d’un bioindicateur de la qualité des masses d’eau de transition basé sur le microphytobenthos observé par télédétection pour le compte de l’Office Français pour la Biodiversité (OFB)</p></li>
-<li><p>Rédaction d’articles scientifiques et de rapports techniques</p></li>
-<li><p>Co-encadrement et accompagnement de stagiaires de Master 2</p></li>
-<li><p>Enseignement en TP : « Ecologie quantitative » et « Biostatistiques » en L3 Biologie de l’environnement</p></li>
-</ul>
-</section>
-</section>
-<section id="février-à-juillet-2019---nantes-université" class="level2">
-<h2 class="anchored" data-anchor-id="février-à-juillet-2019---nantes-université">Février à Juillet 2019 - Nantes Université</h2>
-<section id="stage-de-master-2" class="level3">
-<h3 class="anchored" data-anchor-id="stage-de-master-2">Stage de Master 2</h3>
-<ul>
-<li><p>Cartographie du microphytobenthos estuarien par télédétection (Sentinel 2) pour le compte de l’Office Français pour la Biodiversité (OFB)</p></li>
-<li><p>Création d’une méthode semi-automatique de cartographie des 42 masses d’eau de transition de la façade Atlantique et de la Manche.</p></li>
-</ul>
-</section>
-</section>
-<section id="avril-à-juin-2018---nantes-université" class="level2">
-<h2 class="anchored" data-anchor-id="avril-à-juin-2018---nantes-université">Avril à juin 2018 - Nantes Université</h2>
-<section id="stage-de-master-1" class="level3">
-<h3 class="anchored" data-anchor-id="stage-de-master-1">Stage de Master 1</h3>
-<ul>
-<li>Etude de la variabilité saisonnière du microphytobenthos par télédétection à haute résolution spatiale (Pléiades)</li>
-</ul>
-</section>
-</section>
+<div class="listing-no-matching d-none">
+Aucun article correspondant
 </div>
 </div>
-</section>
-<section id="contributions-scientifiques" class="level1 g-col-12 grid_color" style="margin: 20px; border-radius: 15px; padding: 10px;">
-<h1>Contributions scientifiques</h1>
-<div class="grid">
-<div class="g-col-1">
-
-</div>
-<section id="publications-scientifiques" class="level3 g-col-11">
-<h3 class="anchored" data-anchor-id="publications-scientifiques">Publications scientifiques</h3>
-<ul>
-<li><p><a href="https://doi.org/10.1016/j.ecolind.2020.107184"><strong>Oiry, S.</strong>, &amp; Barillé, L. (2021). Using sentinel-2 satellite imagery to develop microphytobenthos-based water quality indices in estuaries. Ecological Indicators, 121.</a></p></li>
-<li><p><a href="https://doi.org/10.1016/j.rse.2023.113554">Davies, B. F. R., Gernez, P., Geraud, A., <strong>Oiry, S.</strong>, Rosa, P., Zoffoli, M. L., &amp; Barillé, L. (2023). Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing. Remote Sensing of Environment, 290, 113554.</a></p></li>
-<li><p><a href="https://doi.org/10.3390/RS14020307">Brunier, G., <strong>Oiry, S.</strong>, Gruet, Y., Dubois, S. F., &amp; Barillé, L. (2022). Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution. Remote Sensing 2022, Vol. 14, Page 307, 14(2), 307.</a></p></li>
-<li><p><a href="https://doi.org/10.3390/rs14225857">Brunier, G., <strong>Oiry, S.</strong>, Lachaussée, N., Barillé, L., Le Fouest, V., &amp; Méléder, V. (2022). A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring. Remote Sensing, 14(22), 5857.</a></p></li>
-<li><p><a href="https://doi.org/10.1016/j.scitotenv.2021.149983">Haro, S., Jesus, B., <strong>Oiry, S.</strong>, Papaspyrou, S., Lara, M., González, C. J., &amp; Corzo, A. (2022). Microphytobenthos spatio-temporal dynamics across an intertidal gradient using Random Forest classification and Sentinel-2 imagery. Science of The Total Environment, 804, 149983.</a></p></li>
-<li><p><a href="https://doi.org/10.1002/rse2.319">Zoffoli, M. L., Gernez, P., <strong>Oiry, S.</strong>, Godet, L., Dalloyau, S., Davies, B. F. R., &amp; Barillé, L. (2022). Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades. Remote Sensing in Ecology and Conservation.</a></p></li>
-<li><p><a href="https://doi.org/10.1016/j.ecolind.2021.108033">Zoffoli, M. L., Gernez, P., Godet, L., Peters, S.,<strong>Oiry, S.</strong>, &amp; Barillé, L. (2021). Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series. Ecological Indicators, 130, 108033.</a></p></li>
-</ul>
-</section>
-</div>
-</section>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
