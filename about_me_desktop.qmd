@@ -70,7 +70,7 @@ En combinant ces différentes sources de données, mon objectif est d'obtenir un
 :::
 :::
 ::: {.g-col-4 }
-![](img/simonteledetection2.jpg){hight=100%}
+![](img/simonteledetection2.jpg){height=650}
 :::
 
 :::
