@@ -1,23 +1,18 @@
 ---
-title: "Publications"
-format:
-  html:
-    grid: 
-      sidebar-width: 250px
-      margin-width: 250px
-      gutter-width: 250px
 listing:
   - id: First
     contents: publication1
-    type: grid
-    categories: true
-    sort-ui: [categories,date]
-    fields: [image, title, author, categories]
+    sort: "date desc"
+    date-format: "MMM YYYY"
+    fields: [image, title, author, categories, date]
   - id: Co
-    contents: publication2
-    type: default
-    fields: [image, title, description, author, categories]
+    contents: publication2    
+    sort: "date desc"
+    date-format: "MMM YYYY"
+    fields: [image, title, author, categories, date]
 ---
+::: {.wrapper}
+::: {.five}
 
 ## First Author Publications:
 
@@ -29,4 +24,7 @@ listing:
 
 ::: {#Co}
 
+:::
+
+:::
 :::

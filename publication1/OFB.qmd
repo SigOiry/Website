@@ -5,6 +5,7 @@ author: [Simon Oiry; Laurent Barillé]
 image: OFB.jpg
 id: First
 date: "02-01-2021"
+date-format: "MMM YYYY"
 categories: [Remote Sensing, Ecology, Satellite, Sentinel, Machine Learning,  First Author]
 ---
 

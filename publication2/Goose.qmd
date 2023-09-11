@@ -1,0 +1,14 @@
+---
+title: "Remote sensing in seagrass ecology: coupled dynamics between migratory herbivorous birds and intertidal meadows observed by satellite during four decades"
+# description: "Simon Oiry & Laurent Barillé"
+author: [Laura Zoffoli; Pierre Gernez; Simon Oiry; Laurent Godet; Sébastien Dalloyau; Bede Davies; Barillé Laurent]
+image: Goose.jpg
+id: Co
+date: "12-01-2022"
+date-format: "MMM YYYY"
+categories: [Remote Sensing, Satelitte, Ecology, Birds, Seagrass]
+---
+
+DOI: [10.1002/rse2.319](http://dx.doi.org/10.1002/rse2.319)
+
+Taking into account trophic relationships in seagrass meadows is crucial to explain and predict seagrass temporal trajectories, as well as for implementing and evaluating seagrass conservation policies. However, this type of interaction has been rarely investigated over the long term and at the scale of the whole seagrass habitat. In this work, reciprocal links between an intertidal seagrass species, Zostera noltei, and a herbivorous bird feeding on this seagrass species, the migratory goose Branta bernicla bernicla, were investigated using an original combination of long-term Earth Observation (EO) and bird census data. Seagrass Essential Biodiversity Variables (EBVs) such as seagrass abundance and phenology were measured from 1985 to 2020 using high-resolution satellite remote sensing over Bourgneuf Bay (France), and cross-analysed with in situ measurements of bird population size during the goose wintering season. Our results showed a mutual relationship between seagrass and Brent geese over the four last decades, suggesting that the relationship between the two species extends beyond a simple grass-herbivore consumptive effect. We provided evidence of two types of interactions: (i) a bottom-up control where the latesummer seagrass abundance drives the wintering population of herbivorous geese and (ii) an indirect top-down effect of Brent goose on seagrass habitat, where seagrass development is positively influenced by the bird population during the previous wintering season. Such a mutualistic relationship has strong implications for biodiversity conservation because protecting one species is beneficial to the other one, as demonstrated here by the positive trajectories observed from 1985 to 2020 in both seagrass and bird populations. Importantly, we also demonstrated here that exploring the synergy between EO and in situ bird data can benefit seagrass ecology and ecosystem management.

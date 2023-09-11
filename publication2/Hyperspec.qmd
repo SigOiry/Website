@@ -1,0 +1,14 @@
+---
+title: "Multi- and hyperspectral classification of soft-bottom intertidal vegetation using a spectral library for coastal biodiversity remote sensing"
+# description: "Simon Oiry & Laurent Barillé"
+author: [Bede Davies; Pierre Gernez; Andréa Geraud; Simon Oiry; Philippe Rosa; Laura Zoffoli; Barillé Laurent]
+image: LaurentLisboa.jpg
+id: Co
+date: "05-01-2023"
+date-format: "MMM YYYY"
+categories: [Remote Sensing,hyperspectral, Machine Learning, Neural Network]
+---
+
+DOI: [10.1016/j.rse.2023.113554](http://dx.doi.org/10.1016/j.rse.2023.113554)
+
+Monitoring biodiversity and how anthropogenic pressures impact this is critical, especially as anthropogenically driven climate change continues to affect all ecosystems. Intertidal areas are exposed to particularly high levelsof pressures owing to increased population density in coastal areas. Traditional methods of monitoring intertidalareas do not provide datasets with full coverage in a cost-effective or timely manner, and so the use of remotesensing to monitor these areas is becoming more common. Monitoring of ecologically important monospecifichabitats, such as seagrass beds, using remote sensing techniques is well documented. However, the ability formultispectral data to distinguish efficiently and accurately between classes of vegetation with similar pigmentcomposition, such as seagrass and green algae, has proved difficult, often requiring hyperspectral data. A machine learning approach was used to differentiate between soft-bottom intertidal vegetation classes whenexposed at low tide, comparing 6 different multi- and hyperspectral remote and in situ sensors. For the library of366 spectra, collected across Northern Europe, high accuracy (>80%) was found across all spectral resolutions.While a higher spectral resolution resulted in higher accuracy, there was no discernible increase in accuracyabove 10 spectral bands (95%: Sentinel-2 MSI sensor with a spatial resolution of 20 m). This work highlights theability of multispectral sensors to discriminate intertidal vegetation types, while also showing the most importantwavelengths for this discrimination (~530 and ~ 730 nm), giving recommendations for spectral ranges of futuresatellite missions. The ability for multispectral sensors to aid in accurate and rapid intertidal vegetation classification at the taxonomic resolution of classes, could be a significant contribution for future sustainable andeffective ecosystem management.

@@ -2,7 +2,15 @@
   {
     "listing": "/Publications.html",
     "items": [
-      "/publication1/OFB.html"
+      "/publication1/OFB.html",
+      "/publication2/Kappa.html",
+      "/publication2/Oyster.html",
+      "/publication2/Hyperspec.html",
+      "/publication2/Goose.html",
+      "/publication2/Mud.html",
+      "/publication2/Sabellaria.html",
+      "/publication2/MudCadiz.html",
+      "/publication2/ZosEco.html"
     ]
   }
 ]

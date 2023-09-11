@@ -1,0 +1,14 @@
+---
+title: "Precision Aquaculture Drone Mapping of the Spatial Distribution of Kappaphycus alvarezii Biomass and Carrageenan"
+# description: "Simon Oiry & Laurent Barillé"
+author: [Nurjannah Nurdin; Evangelos Alevizos; Rajuddin Syamsuddin; Hasni Asis; Elmi Nurhaidah Zainuddin; Agus Aris ; Simon Oiry; Guillaume Brunier; Teruhisa Komatsu; Barillé Laurent]
+image: Kappa.jpg
+id: Co
+date: "07-01-2023"
+date-format: "MMM YYYY"
+categories: [Remote Sensing, Drone, Aquaculture, Machine Learning, Kappaphycus alvarezii]
+---
+
+DOI: [10.3390/rs15143674](http://dx.doi.org/10.3390/rs15143674)
+
+The aquaculture of Kappaphycus alvarezii (Kappaphycus hereafter) seaweed has rapidly expanded among coastal communities in Indonesia due to its relatively simple farming process, low capital costs and short production cycles. This species is mainly cultivated for its carrageenan content used as a gelling agent in the food industry. To further assist producers in improving cultivation management and providing quantitative information about the yield, a novel approach involving remote sensing techniques was tested. In this study, multispectral images obtained from a drone (Unoccupied Aerial Vehicle, UAV) were processed to estimate the fresh and carrageenan weights of Kappaphycus at a cultivation site in South Sulawesi. The UAV imagery was geometrically and radiometrically corrected, and the resulting orthomosaics were used for detecting and classifying Kappaphycus using a random forest algorithm. The classification results were combined with in situ measurements of Kappaphycus fresh weight and carrageenan content using empirical relations between the area and weight of fresh seaweed/carrageenan. This approach allowed quantifying seaweed biometry and biochemistry at single cultivation lines and cultivation plot scales. Fresh seaweed and carrageenan weights were estimated for different dates within three distinct cultivation cycles, and the daily growth rate for each cycle was derived. Data were upscaled to a small family-scale farm and a large-scale leader farm and compared with previous estimations. To our knowledge, this study provides, for the first time, an estimation of yield at the scale of cultivation lines by exploiting the very high spatial resolution of drone data. Overall, the use of UAV remote sensing proved to be a promising approach for seaweed monitoring, opening the way to precision aquaculture of Kappaphycus.

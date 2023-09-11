@@ -1,0 +1,14 @@
+---
+title: "A Machine-Learning Approach to Intertidal Mudflat Mapping Combining Multispectral Reflectance and Geomorphology from UAV-Based Monitoring"
+# description: "Simon Oiry & Laurent Barillé"
+author: [Guillaume Brunier; Simon Oiry; Nicolas Lachaussée; Barillé Laurent; Vincent Le Fouest; Vona Méléder]
+image: Mud.png
+id: Co
+date: "11-01-2022"
+date-format: "MMM YYYY"
+categories: [Remote Sensing, Drone, Ecology, Mudflats, Machine learning,  Oysters]
+---
+
+DOI: [10.3390/rs14225857](http://dx.doi.org/10.3390/rs14225857)
+
+Remote sensing is a relevant method to map inaccessible areas, such as intertidal mudflats. However, image classification is challenging due to spectral similarity between microphytobenthos and oyster reefs. Because these elements are strongly related to local geomorphic features, including biogenic structures, a new mapping method has been developed to overcome the current obstacles. This method is based on unmanned aerial vehicles (UAV), RGB, and multispectral (four bands: green, red, red-edge, and near-infrared) surveys that combine high spatial resolution (e.g., 5 cm pixel), geomorphic mapping, and machine learning random forest (RF) classification. A mudflat on the Atlantic coast of France (Marennes-Oléron bay) was surveyed based on this method and by using the structure from motion (SfM) photogrammetric approach to produce orthophotographs and digital surface models (DSM). Eight classes of mudflat surface based on indexes, such as NDVI and spectral bands normalised to NIR, were identified either on the whole image (i.e., standard RF classification) or after segmentation into five geomorphic units mapped from DSM (i.e., geomorphic-based RF classification). The classification accuracy was higher with the geomorphic-based RF classification (93.12%) than with the standard RF classification (73.45%), showing the added value of combining topographic and radiometric data to map soft-bottom intertidal areas and the user-friendly potential of this method in applications to other ecosystems, such as wetlands or peatlands.

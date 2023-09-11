@@ -1,0 +1,14 @@
+---
+title: "Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution"
+# description: "Simon Oiry & Laurent Barillé"
+author: [Guillaume Brunier; Simon Oiry; Yves Gruet; Stanislas Dubois; Barillé Laurent]
+image: Sabellaria.jpg
+id: Co
+date: "01-01-2022"
+date-format: "MMM YYYY"
+categories: [Remote Sensing, Drone, Ecology, Polychaete reefs, Topographic analysis]
+---
+
+DOI: [10.3390/rs14020307](http://dx.doi.org/10.3390/rs14020307)
+
+In temperate coastal regions of Western Europe, the polychaete Sabellaria alveolata (Linné) builds large intertidal reefs of several hectares on soft-bottom substrates. These reefs are protected by the European Habitat Directive EEC/92/43 under the status of biogenic structures hosting a high biodiversity and providing ecological functions such as protection against coastal erosion. As an alternative to time-consuming field campaigns, a UAV-based Structure-from-Motion photogrammetric survey was carried out in October 2020 over Noirmoutier Island (France) where the second-largest known European reef is located in a tidal delta. A DJI Phantom 4 Multispectral UAV provided a topographic dataset at very high resolutions of 5 cm/pixel for the Digital Surface Model (DSM) and 2.63 cm/pixel for the multispectral orthomosaic images. The reef footprint was mapped using a combination of two topographic indices: the Topographic Openness Index and the Topographic Position Index. The reef structures covered an area of 8.15 ha, with 89% corresponding to the main reef composed of connected and continuous biogenic structures, 7.6% of large isolated structures (<60 m2), and 4.4% of small isolated reef clumps (<2 m2). To further describe the topographic complexity of the reef, the Geomorphon landform classification was used. The spatial distribution of tabular platforms considered as a healthy stage of the reef in contrast to a degraded stage was mapped with a proxy that consists in comparing the reef volume to a theoretical tabular-shaped reef volume. Epibionts colonizing the reef (macroalgae, mussels, and oysters) were also mapped by combining multispectral indices such as the Normalised Difference Vegetation Index and simple band ratios with topographic indices. A confusion matrix showed that macroalgae and mussels were satisfactorily identified but that oysters could not be detected by an automated procedure due to their spectral complexity. The topographic indices used in this work should now be further exploited to propose a health index for these large intertidal reefs.

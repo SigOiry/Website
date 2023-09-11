@@ -1,0 +1,14 @@
+---
+title: "Microphytobenthos spatio-temporal dynamics across an intertidal gradient using Random Forest classification and Sentinel-2 imagery"
+# description: "Simon Oiry & Laurent Barillé"
+author: [Sara Haro; Bruno Jesus; Simon Oiry; Sokratis Papaspyrou; M. Lara; Carlos José González; Alfonso Corzo]
+image: MudCadiz.jpg
+id: Co
+date: "08-01-2021"
+date-format: "MMM YYYY"
+categories: [Remote Sensing, Satellite, Ecology, Water Framework Directive, Seagrass meadows, Time series]
+---
+
+DOI: [10.1016/j.scitotenv.2021.149983](http://dx.doi.org/10.1016/j.scitotenv.2021.149983)
+
+Microphytobenthos (MPB) provides important ecosystem functions and services, contributing significantly to the total primary production in shallow coastal ecosystems. However, determining the factors that regulate the seasonal changes of MPB and its distribution patterns at larger scales is hindered by the considerable spatial and temporal variability in these environments. Here, we studied the dynamics of intertidal MPB biomass, cover, and net growth rates in a south European tidal flat (Cadiz Bay, Spain) over a four-year period using the Normalized Difference Vegetation Index (NDVI) calculated from Sentinel-2 satellite images. Pixels dominated by different benthic communities (MPB, Zostera sp., Caulerpa sp. and green macroalgae) were identified at a 10-m resolution using a Random Forest (RF) machine learning classification algorithm. MPB dominated the intertidal zone. MPB cover did not show a clear seasonal pattern and was clearly higher in the middle of the intertidal range of sea level. Despite interannual variability, MPB biomass was always higher during winter, coinciding with observations from other low latitude intertidal flats with temperate climate, and in the upper-middle intertidal. Net rates of MPB biomass change, calculated from the differences in MPB NDVI over time, showed maximal net growth rates from autumn to winter and maximum loss rates during spring and summer, although with high variability. Our study demonstrates that RF algorithms allow mapping MPB and other intertidal communities from Sentinel-2 multispectral satellite imagery accurately obtaining invaluable information from large areas at very high spatio-temporal resolution. The dissimilarities observed in the patterns of MPB variables over time or sea level, indicate differences in their ecological regulation, still largely unknown both here and in other temperate climate intertidal flats. High resolution remote sensing can aid in their detailed and systematic study producing a more integrated view of these systems and contributing to their science-based management and conservation.

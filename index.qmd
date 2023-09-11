@@ -1,4 +1,3 @@
-
 ```{=html}
 <meta name="title" content="Simon Oiry" />
 <meta name="description" content="I am a PhD student in Marine Ecology at Nantes University. This is my personal website. " />
