@@ -1,5 +1,5 @@
 ---
-title: "Topographic Analysis of Intertidal Polychaete Reefs (Sabellaria alveolata) at a Very High Spatial Resolution"
+title: "Decadal increase in the ecological status of a North-Atlantic intertidal seagrass meadow observed with multi-mission satellite time-series"
 # description: "Simon Oiry & Laurent Barillé"
 author: [Laura Zoffoli; Pierre Gernez; Laurent Godet; Simon Oiry; Barillé Laurent]
 image: ZosEco.jpg
